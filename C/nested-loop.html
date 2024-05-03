@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial,loop,for loop,while loop,do-while loop,go,return,jump statement html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+
+    <title>Nested  Loop-MK Tutorial</title>
+     <link rel="canonical" href="https://www.mktutorial.in/C/nested-loop.html">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>C LANGUAGE</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of C</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Of C-Assignment</a>
+                </li>
+				<li>
+                    <a href="variables-and-data-types.html">Variables and Data Types</a>
+                </li>
+				<li>
+                    <a href="variables-and-data-types-assignment.html">Variables and Data Types-Assignment</a>
+                </li>
+				<li>
+                    <a href="operators-and-expressions.html">Operators and Expressions</a>
+                </li>
+				<li>
+                    <a href="operators-and-expressions-assignment.html">Operators and Expressions-Assignment</a>
+                </li>
+				<li>
+                    <a href="input-and-output-in-c.html">Input and Output in C</a>
+                </li>
+				<li>
+                    <a href="input-and-output-in-c-assignment.html">Input and Output in C-Assignment</a>
+                </li>
+				<li>
+                    <a href="conditions.html">Conditions</a>
+                </li>
+				<li>
+                    <a href="conditions-assignment.html">Conditions-Assignment</a>
+                </li>
+				<li>
+                    <a href="loop.html">Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="loop-assignment.html">Loop Concepts-Assignment</a>
+                </li>
+				<li>
+                    <a href="nested-loop.html">Nested Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="nested-loop-assignment.html">Nested Loop Concepts-Assignment</a>
+                </li>
+				<li>
+                    <a href="arrays.html">Arrays</a>
+                </li>
+				<li>
+                    <a href="arrays-assignment.html">Arrays-Assignment</a>
+                </li>
+				<li>
+                    <a href="functions.html">Functions</a>
+                </li>
+				<li>
+                    <a href="functions-assignment.html">Functions-Assignment</a>
+                </li>
+				<li>
+                    <a href="pointers.html">Pointers</a>
+                </li>
+				<li>
+                    <a href="pointers-assignment.html">Pointers-Assignment</a>
+                </li>
+				 <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+				<li>
+                    <a href="strings-assignment.html">strings-Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+           
+
+            <h2>Nested Loop</h2>
+            <div>Loop inside the loop is called nested loop There are three types of nested loop in c<br>
+				Nested For<br>
+				Nested While<br>
+				Nested Do while<br></div>
+            <div class="line"></div>
+
+            <h2>Nested For</h2>
+            <div>For inside the for is called nested for<br>
+			Syntax:-<br>
+			For(initialization;condition;inc/dec)<br>
+			{<br>
+			For(initialization;condition;inc/dec)<br>
+			{<br>
+			statement<br>
+			}<br>
+			}  </div><br><br>       
+			
+			
+			<h2>*<br>**<br>***<br>****<br>*****<br></h2>
+            <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r,c;<br>
+			clrscr();<br>
+			for(r=1;r<=5;r++)<br>
+			{<br>
+			for(c=1;c<=r;c++)<br>
+			{<br>
+			printf("*");<br>
+			}<br>
+			printf("\n");<br>
+			}<br>
+			getch();<br>
+			}
+			</div><br><br>
+          
+			
+			<h2>1<br>12<br>123<br>1234<br>12345<br></h2>
+            <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r,c;<br>
+			clrscr();<br>
+			for(r=1;r<=5;r++)<br>
+			{<br>
+			for(c=1;c<=r;c++)<br>
+			{<br>
+			printf("%d",c);<br>
+			}<br>
+			printf("\n");<br>
+			}<br>
+			getch();<br>
+			}
+			</div><br><br>
+            
+
+			<h2>1<br>22<br>333<br>4444<br>55555<br></h2>
+            <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r,c;<br>
+			clrscr();<br>
+			for(r=1;r<=5;r++)<br>
+			{<br>
+			for(c=1;c<=r;c++)<br>
+			{<br>
+			printf("%d",r);<br>
+			}<br>
+			printf("\n");<br>
+			}<br>
+			getch();<br>
+			}
+			</div><br><br>
+          
+			
+			
+			<h2>1<br>23<br>456<br>78910<br>1112131415<br></h2>
+            <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r,c,k=1;<br>
+			clrscr();<br>
+			for(r=1;r<=5;r++)<br>
+			{<br>
+			for(c=1;c<=r;c++)<br>
+			{<br>
+			printf("%d",k);<br>
+			k++;<br>
+			}<br>
+			printf("\n");<br>
+			}<br>
+			getch();<br>
+			}
+			</div>>
+            <div class="line"></div>
+			
+			
+			
+			<h2>Nested While</h2>
+            <div>While inside the While is called nested while<br>
+			Syntax:-<br>
+			while(condition)<br>
+			{<br>
+			while(condition)<br>
+			{<br>
+			statement<br>
+			}<br>
+			}</div><br><br>
+           
+			
+			
+			<h2>*<br>**<br>***<br>****<br>*****<br></h2>
+            <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r=1,c;<br>
+			clrscr();<br>
+			while(r<=5)<br>
+			{<br>
+			c=1;<br>
+			while(c<=r)<br>
+			{<br>
+			printf("*");<br>
+			c++;<br>
+			}<br>
+			printf("\n");<br>
+			r++;<br>
+			}<br>
+			getch();<br>
+			}
+			</div><br><br>
+         
+			
+			<h2>1<br>12<br>123<br>1234<br>12345<br></h2>
+            <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r=1,c;<br>
+			clrscr();<br>
+			while(r<=5)<br>
+			{<br>
+			c=1;<br>
+			while(c<=r)<br>
+			{<br>
+			printf("%d",c);<br>
+			c++;<br>
+			}<br>
+			printf("\n");<br>
+			r++;<br>
+			}<br>
+			getch();<br>
+			}
+			</div><br><br>
+        
+
+			<h2>1<br>22<br>333<br>4444<br>55555<br></h2>
+            <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r=1,c;<br>
+			clrscr();<br>
+			while(r<=5)<br>
+			{<br>
+			c=1;<br>
+			while(c<=r)<br>
+			{<br>
+			printf("%d",r);<br>
+			c++;<br>
+			}<br>
+			printf("\n");<br>
+			r++;<br>
+			}<br>
+			getch();<br>
+			}
+			</div><br><br>
+           
+			
+			
+			<h2>1<br>23<br>456<br>78910<br>1112131415<br></h2>
+           <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r=1,c,k=1;<br>
+			clrscr();<br>
+			while(r<=5)<br>
+			{<br>
+			c=1;<br>
+			while(c<=r)<br>
+			{<br>
+			printf("%d",k);<br>
+			k++;<br>
+			c++;<br>
+			}<br>
+			printf("\n");<br>
+			r++;<br>
+			}<br>
+			getch();<br>
+			}
+			</div>
+            <div class="line"></div>
+			
+			
+			
+			<h2>Nested Do While</h2>
+            <div>Do While inside the Do While is called nested Do while<br>
+			Syntax:-<br>
+			do<br>
+			{<br>
+			do<br>
+			{<br>
+			statement<br>
+			}<br>
+			while(condition);<br>
+			}<br>
+			while(condition);</div>
+        
+			
+			
+			<h2>*<br>**<br>***<br>****<br>*****<br></h2>
+            <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r=1,c;<br>
+			clrscr();<br>
+			do<br>
+			{<br>
+			c=1;<br>
+			do<br>
+			{<br>
+			printf("*");<br>
+			c++;<br>
+			}<br>
+			while(c<=r);<br>
+			printf("\n");<br>
+			r++;<br>
+			}<br>
+			while(r<=5);<br>
+			getch();<br>
+			}
+			</div><br><br>
+           
+			
+			<h2>1<br>12<br>123<br>1234<br>12345<br></h2>
+            <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r=1,c;<br>
+			clrscr();<br>
+			do<br>
+			{<br>
+			c=1;<br>
+			do<br>
+			{<br>
+			printf("%d",c);<br>
+			c++;<br>
+			}<br>
+			while(c<=r);<br>
+			printf("\n");<br>
+			r++;<br>
+			}<br>
+			while(r<=5);<br>
+			getch();<br>
+			}
+			</div><br><br>
+           
+
+			<h2>1<br>22<br>333<br>4444<br>55555<br></h2>
+            <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r=1,c;<br>
+			clrscr();<br>
+			do<br>
+			{<br>
+			c=1;<br>
+			do<br>
+			{<br>
+			printf("%d",r);<br>
+			c++;<br>
+			}<br>
+			while(c<=r);<br>
+			printf("\n");<br>
+			r++;<br>
+			}<br>
+			while(r<=5);<br>
+			getch();<br>
+			}
+			</div><br><br>
+           
+			
+			
+			<h2>1<br>23<br>456<br>78910<br>1112131415<br></h2>
+           <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+			int r=1,c,k=1;<br>
+			clrscr();<br>
+			do<br>
+			{<br>
+			c=1;<br>
+			do<br>
+			{<br>
+			printf("%d",k);<br>
+			c++;<br>
+			k++<br>
+			}<br>
+			while(c<=r);<br>
+			printf("\n");<br>
+			r++;<br>
+			}<br>
+			while(r<=5);<br>
+			getch();<br>
+			}
+			</div>
+			<br>
+			<h2>Break Statement in C</h2>
+			<div>
+			    In a looping statement, the break command ends the loop and moves control to the next command outside the loop.
+			</div>
+			<br>
+			 <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+		    int a;<br>
+		    clrscr();<br>
+		    for(a=1;a<=10;a++)<br>
+		    {<br>
+		        if(a==6)<br>
+		        {<br>
+		        break;<br>
+		        }<br>
+		        printf("%d\n",a);<br>
+		  }<br>
+		  getch();<br>
+		  }
+			</div>
+			<br>
+			
+				<h2>Continue Statement in C</h2>
+			<div>
+			    The continue statement is used to skip the current iteration of any loop and bring the control to the beginning of the iteration. 
+			</div>
+			<br>
+			 <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			void main()<br>
+			{<br>
+		    int a;<br>
+		    clrscr();<br>
+		    for(a=1;a<=10;a++)<br>
+		    {<br>
+		        if(a==6)<br>
+		        {<br>
+		        continue;<br>
+		        }<br>
+		        printf("%d\n",a);<br>
+		  }<br>
+		  getch();<br>
+		  }
+			</div>
+			<br>
+			
+				<h2>Infinite loop and Exit Statement in C</h2>
+			<div>
+			    An infinite loop is a sequence of instructions in a computer program which loops endlessly, either due to the loop having no terminating condition, having one that can never be met, or one that causes the loop to start over. 
+			</div>
+			<br>
+			<div>
+			    The EXIT statement exits the current iteration of a loop, either conditionally or unconditionally, and transfers control to the end of either the current loop or an enclosing labeled loop. An EXIT statement must be inside a LOOP statement.
+			</div>
+			<br>
+			 <div>
+			#include&lt;stdio&gt;.h<br>
+			#include&lt;conio&gt;.h<br>
+			#include&lt;stdlib&gt;.h<br>
+			void main()<br>
+			{<br>
+		   int a,b,ch;<br>
+		   clrscr();<br>
+		   printf("Enter two nos=");<br>
+		   scanf("%d%d",&a,&b);<br>
+		   while(1)<br>
+		   {<br>
+		   printf("Enter 1 for sum\nEnter 2 for mul\nEnter 3 for sub\nEnter 4 for div\nEnter 5 for exit\nEnter your choice=");<br>
+		   scanf("%d",&ch);<br>
+		   switch(ch)<br>
+		   {<br>
+		    case 1:<br>
+		        printf("sum=%d\n",a+b);<br>
+		        break;<br>
+		   case 2:<br>
+		   printf("mul=%d\n",a*b);<br>
+		   break;<br>
+		   case 3:<br>
+		   printf("sub=%d\n",a-b);<br>
+		   break;<br>
+		   case 4:<br>
+		   printf("div=%d\n",a/b);<br>
+		   break;<br>
+		   case 5:<br>
+		    exit(0)<br>
+		   }<br>
+		   }<br>
+		   getch();<br>
+		   }
+         <br><br><a href="loop-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="nested-loop-assignment.html"><button class="btn btn-success">Next</button></a>  
+            
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
