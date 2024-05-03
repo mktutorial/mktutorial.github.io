@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial,pseudo-class, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>CSS-Pseudo-class-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/CSS/pseudo-class.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>PSEUDO-CLASS</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+              
+                <li class="active">
+                    <a href="index.html" >CSS Intro</a>
+                  
+                    </li>
+                   
+                <li>
+                    <a href="selector.html">Selector(class/id)</a>
+					
+                </li>
+                <li>
+                    <a href="div.html">Div-tag</a>
+					
+                </li>
+                <li>
+                    <a href="position.html">Position</a>
+					
+                </li>
+                 <li>
+                    <a href="formatting.html">Advance-css tag</a>
+					
+                </li>
+                <li>
+                    <a href="overlay.html">Overlay</a>
+					
+                </li>
+                <li>
+                    <a href="position.html">Hover Effect</a>
+					
+                </li>
+                <li>
+                    <a href="pseudo-class.html">Pseudo-class</a>
+					
+                </li>
+
+                <li>
+                    <a href="pseudo-element.html">Pseudo-element</a>
+					
+                </li>
+                 <li>
+                    <a href="z-index.html">Z-index</a>
+					
+                </li>
+                <li>
+                    <a href="opacity.html">Opacity</a>
+					
+                </li>
+                <li>
+                    <a href="nav.html">Navigation-Bar</a>
+					
+                </li>
+                 <li>
+                    <a href="#">Drop-Down </a>
+					
+                </li>
+                 <li>
+                    <a href="#">Image-Gallery</a>
+					
+                </li>
+
+
+
+                
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="img/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>Pseudo-Classes</h2>
+            <br>
+            <p>pseudo classes allow the users to apply different style to the elements such as buttons,hyperlinks and so on.</p>
+            <ul>
+                <li>Style an element when a user mouses over it</li>
+                <li>Style visited and unvisited links differently</li>
+                <li>Style an element when it gets focus</li>
+            </ul>
+<br>
+<h3>List the different states of the element</h3>
+<br>
+<p>
+A pseudo-class starts with a colon (:). Let's see its syntax.<br>
+
+selector: pseudo-class<br> {<br>  
+  property: value;  <br>
+}  </p><br>
+<table border=2px solid>
+<tr>
+    <th>class</th>
+    <th style="text-align:center">Description</th>
+</tr>    
+<tr>
+    <td>:active</td>
+    <td>Defines a different style to an element that is activated by the user.</td>
+</tr>    
+<tr>
+    <td>:hover</td>
+    <td>Defines a different style to an element when the mouse pointer is moved over it.</td>
+</tr>
+<tr>
+    <td>:link</td>
+    <td>Defines a different style to an unvisited link</td>
+</tr>
+<tr>
+    <td>:visited</td>
+    <td>Defines  a different style to an visited link </td>
+</tr>
+<tr>
+    <td>:lang</td>
+    <td>It is used to define a language to use in a specified element.</td>
+</tr>
+<tr>
+    <td>:focus</td>
+    <td>It selects the element which is focused by the user currently.</td>
+</tr>
+<tr>
+    <td>:first-child</td>
+    <td>It adds special effects to an element, which is the first child of another element.</td>
+    </tr>
+
+</table>    
+    <br><br>		
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+a:visited <br>{<br>color:green;<br>}<br>
+a:hover <br>{<br>color:aqua;<br>}<br>
+a:unvisited <br>{<br>color:yellow;<br>}<br>
+a:link <br>{<br>color:pink;<br>}<br>
+ p:lang(abc)<br>{<br>font-family:Verdana;<br>color:blue;<br>}<br>  
+  h1:first-child<br>{<br>text-indent: 200px;<br>color:blue;<br>}<br>
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;div class="a1"&gt;<br>
+&lt;a href="https://www.google.com"&gt;Click the link to see the result&lt;/a&gt;<br>
+&lt;/div&gt;<br>
+&lt;p&gt;Without :lang pseudo class&lt;/p&gt; <br>
+&lt;p lang="abc"&gt;With :lang pseudo class with the value abc&lt;/p&gt;<br>
+&lt;div&gt;<br>
+&lt;h1&gt;It is the first heading in div. It will be indented, and its color will be blue&lt;/h1&gt;<br>
+&lt;h1&gt;It is the Second heading in div, which will not be affected&lt;/h1&gt;<br>
+&lt;/div&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+
+       </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+
+    <title>Selector in css-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/CSS/selector.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>CSS</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+              
+                <li class="active">
+                    <a href="index.html" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">CSS Intro</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                       
+                    </ul>
+                    </li>
+                    
+                <li>
+                    <a href="selector.html">Selector(class/id)</a>
+					
+                </li>
+                <li>
+                    <a href="div.html">Div-tag</a>
+					
+                </li>
+                <li>
+                    <a href="position.html">Position</a>
+					
+                </li>
+                <li>
+                    <a href="formatting.html">Advance-css tag</a>
+					
+                </li>
+                <li>
+                    <a href="overlay.html">Overlay</a>
+					
+                </li>
+                <li>
+                    <a href="position.html">Hover Effect</a>
+					
+                </li>
+                <li>
+                    <a href="pseudo-class.html">Pseudo-class</a>
+					
+                </li>
+
+                <li>
+                    <a href="pseudo-element.html">Pseudo-element</a>
+					
+                </li>
+                 <li>
+                    <a href="z-index.html">Z-index</a>
+					
+                </li>
+                <li>
+                    <a href="opacity.html">Opacity</a>
+					
+                </li>
+                <li>
+                    <a href="nav.html">Navigation-Bar</a>
+					
+                </li>
+                 <li>
+                    <a href="#">Drop-Down </a>
+					
+                </li>
+                 <li>
+                    <a href="#">Image-Gallery</a>
+					
+                </li>
+
+
+
+                
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="img/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>Selector -tag</h2>
+            <h6>Selectors refers to the <b>HTML</b> elements with the styles the users want to apply to them.The four different types of CSS selector are as follows.</h6>
+            <br>
+            <ul>
+                <li>Type/Element selector</li>
+                <li>class selector</li>
+                <li>id selector</li>
+                <li>universal selector</li>
+            </ul>
+<br>		<img src="img/type_s.png">
+<h1>Type/Element Selector</h1>
+<p>A type selector simply specifies the element name along with the style to aaplied to the element .This result in applying the specified style to all the occurance of that element in a web page. </p>
+<h2>Example-</h2>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+p <br>{<br>width:100%;<br>height:50%;<br>background-color:red;<br>}<br>
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;p&gt; is a type/element selector&lt;/p&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+
+<br>		
+<h1>Class Selector</h1>
+<p>The .class selector is used to select all elements which belong to a particular class attribute. In order to select the elements with a particular class, use the period (.) character specifying the class name ie., it will match the HTML element based on the contents of their class attribute. </p>
+<h2>Example-</h2>
+<h3>class selector start with(.)period</h3>
+
+
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+.demo <br>{<br>width:100%;<br>height:10%;<br>background-color:lightblue;<br>tetx-align:center}<br>
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;div class="demo"&gt;this is demo example of using class selector&lt;/div&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+<h2>output</h2>
+<html>
+<head>
+<title>CSS</title>
+<style>
+.demo
+{
+width:100%;
+height:2%;
+background-color:lightblue;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="demo">this is demo example of using class selector</div>
+</body>
+</html>
+<br>		
+<h1>ID Selector</h1>
+<p>The “#” CSS id selector is used to set the style of the given id. The id attribute is the unique identifier in an HTML document. The id selector is used with a # character.</p>
+<h2>Example-</h2>
+<h3>An ID selector start with hash symbol(#) .</h3>
+
+
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+#demo <br>{<br>width:100%;<br>height:10%;<br>background-color:lightblue;<br>tetx-align:center}<br>
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;div id="demo"&gt;this is demo example of using ID selector&lt;/div&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+<h2>output</h2>
+<html>
+<head>
+<title>CSS</title>
+<style>
+.demo
+{
+width:100%;
+height:2%;
+background-color:lightblue;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="demo">this is demo example of using class attribute</div>
+</body>
+</html>
+<br>
+<h4>Differance between id and class selector</h4>
+<br>
+<table border="2px">
+    <tr >
+        <th text-align="center" >KEY</th>
+        <th text-align="center">ID</th>
+        <th text-align="center">CLASS</th>
+    </tr>
+    <tr>
+        <td>Syntax</td>
+        <td>In HTML, for an element, the ID name starts with the "#" symbol followed by a unique name assigned to it.</td>
+        <td>"class" assigned to an element has its name starts with "." followed by class name.</td>
+    </tr>
+    <tr>
+        <td>Selector</td>
+        <td>Only one ID selector can be attached to an element.</td>
+        <td>Multiple class selectors can be attached to an element.</td>
+    </tr><tr>
+        <td>Uniqueness</td>
+        <td>ID is unique in a page and can only apply to at most one element</td>
+        <td>The class can be applied to multiple elements so it could be multiple times on a single page.</td>
+    </tr>
+</table>
+<br>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+
+#myHeader <br>{<br>width:100%;<br>text-align:center;<br>color:black;<br>background-color:lightblue;<br>}<br>
+.city <br>{<br>width:100%;<br>text-align:center;<br>background-color:tomato;<br>color:white<br>}<br>
+
+
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;h2&gt;Difference Between Class and ID&lt;/h2&gt;<br>
+&lt;p&gt;A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:&lt;/p&gt;<br>
+&lt;h1 id="myHeader"&gt;My Cities&lt;/h1&gt;<br>
+&lt;h2 class="city"&gt;London&lt;/h2&gt;<br>&lt;p&gt;London is the capital of England.&lt;/p&gt;<br>
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;<br>&lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br>
+&lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;<br>&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br>
+
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br> 
+  <h2>output</h2>
+<html>
+<head>
+<style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+</head>
+<body>
+
+<h2>Difference Between Class and ID</h2>
+<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+
+
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+</body>
+</html>
+
+  <br>
+
+
+<br>		
+<h1>Universal Selector</h1>
+<p>As the name suggests, Universal Selector in CSS is used to select all the elements on the HTML page, such as &lt;p&gt;, &lt;h1&gt;, &lt;img&gt; etc. Therefore, CSS styles applied to the universal selector affect every element on the web page (including <html> and <body>). Asterisk (*): symbol denotes the universal selector in CSS. </p>
+<h2>Example-</h2>
+<h3>universal selector start with(*)Asterisk</h3>
+
+
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+* <br>{<br>font-family:monotype corsiva;<br>text-align:center<br>}<br>
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;h6&gt;this is demo example of using class selector&lt;/h6&gt;<br>
+&lt;div class="demo"&gt;<br>&lt;p&gt;this is demo example of using class selector&lt;/p&gt;<br>
+&lt;b&gt;this is demo example of using class selector&lt;/b&gt;<br>
+&lt;/div&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+
+<h1>Grouping and Nesting of Selector/Comma Operator</h1>
+<p>The grouping selector selects all the HTML elements with the same style definitions.
+
+Look at the following CSS code (the h1, h2, and p elements have the same style definitions): </p>
+<h2>Example-</h2>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+p,h6,b<br>{<br>color:green;<br>font-size:20px;<br>text-decoration:underline;<br>}<br>
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;p&gt; This is a paragraph &lt;/p&gt;<br>
+&lt;h6&gt; Smaller Heading &lt;/h6&gt;<br>
+&lt;b&gt; This is bold tag &lt;/b&gt;<br>
+
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

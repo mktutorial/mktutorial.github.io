@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial,position,static,fixed,relative,absolute,sticky, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>CSS-case-cading-stylsheet-MK Tutorial</title>
+    <link rel="canonical" href="https://www.mktutorial.in/CSS/position.html">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>CSS</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+              
+                <li class="active">
+                    <a href="index.html" >CSS Intro</a>
+                    
+                    </li>
+                    
+                <li>
+                    <a href="selector.html">Selector(class/id)</a>
+					
+                </li>
+                <li>
+                    <a href="div.html">Div-tag</a>
+					
+                </li>
+                <li>
+                    <a href="position.html">Position</a>
+					
+                </li>
+                <li>
+                    <a href="formatting.html">Advance-css tag</a>
+					
+                </li>
+                <li>
+                    <a href="overlay.html">Overlay</a>
+					
+                </li>
+                <li>
+                    <a href="hover.html">Hover Effect</a>
+					
+                </li>
+                <li>
+                    <a href="pseudo-class.html">Pseudo-class</a>
+					
+                </li>
+
+                <li>
+                    <a href="pseudo-element.html">Pseudo-element</a>
+					
+                </li>
+                <li>
+                    <a href="z-index.html">Z-index</a>
+					
+                </li>
+                <li>
+                    <a href="opacity.html">Opacity</a>
+					
+                </li>
+                <li>
+                    <a href="nav.html">Navigation-Bar</a>
+					
+                </li>
+                 <li>
+                    <a href="#">Drop-Down </a>
+					
+                </li>
+                 <li>
+                    <a href="#">Image-Gallery</a>
+					
+                </li>
+
+
+
+                
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="img/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>Position in css</h2>
+            <h6>The CSS position property is used to set position for an element.You can position an element using the top, bottom, left and right properties. These properties can be used only after position property is set first. A position element's computed position property is relative, absolute, fixed or sticky.</h6>
+			<p>CSS Positioning Type </p>
+			<ul>
+			<li>Static</li>
+			<li>Fixed</li>
+			<li>Relative</li>
+			<li>Absolute</li>
+			<li>Sticky</li>
+			</ul>
+<h2>CSS Static Position</h2>
+<p>This is a  default position for HTML elements. It always positions an element according to the normal flow of the page. It is not affected by the top, bottom, left and right properties.</p>
+<h2>CSS Fixed Position</h2>
+<p>To make an element stay in the same place on the screen even when the user scrolls, you can set the position property to fixed. You can then use the left, right, top, and bottom properties to position the element where you want it.</p>
+<br>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+.f1 <br>{<br>position:fixed;<br>top:100px;<br>left:100px;</br>}<br>
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;div class="f1"&gt;This is a fixed position demo example&lt;/div&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+<h2>CSS Relative Position</h2>  	
+  	<p>The CSS position: relative property positions the elements relative to their original position in the page. You can use the left, right, top, and bottom properties to move the element around, but it will still take up space in the document flow.</p>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+.f2 <br>{<br>position:relative;<br>top:100px;<br>left:100px;</br>}<br>
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;div class="f2"&gt;This is a Relative position demo example&lt;/div&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+<h2>CSS Absolute Position</h2>  	
+<p>The absolute positioning is used to position an element relative to the first parent element that has a position other than static. If no such element is found, the containing block is HTML.
+
+With the absolute positioning, you can place an element anywhere on a page.</p>
+<br>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+.f3 <br>{<br>position:absolute;<br>top:100px;<br>left:100px;</br>}<br>
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;div class="f3"&gt;This is a absolute position demo example&lt;/div&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+<h2>CSS Position Sticky</h2>
+  	<p>you can set the position property to sticky to create an element that sticks to the top of the viewport when the user scrolls through a page.
+
+The position: sticky property is a combination of the position: relative and position: fixed properties</p>
+<br>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;CSS&lt;/title&gt;  <br>
+&lt;style&gt;  <br>
+.f4 <br>{<br>background-color:lavender;<br>position:sticky;<br>top:20px;<br>left:0px;<br>font-size:50px;</br>}<br>
+&lt;/style&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;div class="f4"&gt;This is a sticky position demo example&lt;/div&gt;<br>
+<p >Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
+Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
+
+</p>
+<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+<b>copy paste code and scroll down the page</b>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
