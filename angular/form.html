@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, angular,Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips,bootstrap5,images " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>AngularJS Forms -MKTutorial</title>
+    <link rel="canonical" href="https://www.mktutorial.in/angular/form.html">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9528213249119409"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Angular-JS Form Validation</h3>
+            </div>
+
+             <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="index.html">Basics Of Angular-JS</a>
+                </li>
+                <li>
+                    <a href="mvc.html">MVC-Concept</a>
+                </li>
+                <li>
+                    <a href="data.html">Data Binding</a>
+                </li>
+                <li>
+                    <a href="expression.html">Expression</a>
+                </li>
+                <li>
+                    <a href="directives.html">Angular-JS Directives</a>
+                </li>
+                <li>
+                    <a href="controllers.html">Angular-JS Controllers</a>
+                </li>
+                <li>
+                    <a href="modules.html">Angular-JS Modules</a>
+                </li>
+                <li>
+                    <a href="directives.html">Angular-JS Directives</a>
+                </li>
+                <li>
+                    <a href="filter.html">Angular-JS Filters</a>
+                </li>
+                <li>
+                    <a href="routes.html">Angular-JS Routes</a>
+                </li>
+                <li>
+                    <a href="custom.html">Angular-JS Custom Diretives</a>
+                </li>
+                <li>
+                    <a href="scopes.html">Angular-JS Scopes</a>
+                </li>
+                <li>
+                    <a href="services.html">Angular-JS Services</a>
+                </li>
+                <li>
+                    <a href="form.html">Angular-JS Form validation</a>
+                </li>
+                <li>
+                    <a href="animation.html">Angular-JS Animation</a>
+                </li>
+                
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+							<li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../angular/index.html">AngularJS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <h1>AngularJS Forms Validation</h1>
+  <p>Forms are the major way users communicate with the apps we develop and an important mechanism of modern websites and applications.It's how are users tell us who they are,sign up for services, and purchase our product.<br>we will need to gather some or other information about users or their choice at some point and most of the time this is done through a form</p>
+  <br>
+  <p>We create new directives using the .directive method; the arguments we provide to this are the name of the new directive and a function that creates the directive.ngularJS provides support to create custom directives for following type of elements.</p>
+  <ul>
+      <li>AngularJS offers client-side form validation.</li>
+      <li>AngularJS monitors the state of the form and input fields (input, textarea, select), and lets you notify the user about the current state.</li>
+      <li>AngularJS also holds information about whether they have been touched, or modified, or not.</li>
+      <li>You can use standard HTML5 attributes to validate input, or you can make your own validation functions..</li>
+      
+      
+  </ul>
+  <p>Following are the input controls used in AngularJS forms:</p>
+  <ul>
+      <li>input elements</li>
+      <li>select elements</li>
+      <li>button elements</li>
+      <li>textarea elements</li>
+  </ul>
+  <p>Following is a list of events supported in AngularJS:</p>
+  <ul>
+      <li>ng-click</li>
+      <li>ng-dbl-click</li>
+      <li>ng-mousedown</li>
+      <li>ng-mouseup</li>
+      <li>ng-mouseenter</li>
+      <li>ng-mouseleave</li>
+      <li>ng-mousemove</li>
+      <li>ng-keydown</li>
+      <li>ng-keyup</li>
+      <li>ng-keypress</li>
+      <li>ng-change</li>
+      
+  </ul>
+  <h1>Required</h1>
+  &lt;html &gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;AngularJS&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"&gt;<br>
+&lt;/script&gt;<br>
+&lt;body ng-app=""&gt;<br>
+
+&lt;p&gt;Try writing in the input field:&lt;/p&gt;<br>
+
+&lt;form name="myForm"&gt;<br>
+&lt;input name="myInput" ng-model="myInput" required&gt;<br>
+&lt;/form&gt;<br>
+
+&lt;p&gt;The input's valid state is:&lt;/p&gt;<br>
+&lt;h1&gt;{{myForm.myInput.$valid}}&lt;/h1&gt;<br>
+
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br>
+  <h1>Validate Data</h1>
+  <ul>
+      <li><b>$dirty −</b>states that value has been changed.</li>
+      <li><b>$invalid − </b>states that value entered is invalid.</li>
+      <li><b>$error −</b>states the exact error.</li>
+  </ul>
+ 
+ 
+ &lt;html&gt;<br>
+   &lt;head&gt;<br>
+      &lt;title&gt;Angular JS Forms&lt;/title&gt;<br>
+      &lt;script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/script&gt;<br>
+      
+      &lt;style&gt;<br>
+         table, th , td {<br>
+            border: 1px solid grey;<br>
+            border-collapse: collapse;<br>
+            padding: 5px;<br>
+         }<br>
+         table tr:nth-child(odd) {<br>
+            background-color: #f2f2f2;<br>
+         }<br>
+         table tr:nth-child(even) {<br>
+            background-color: #ffffff;<br>
+         }<br>
+      &lt;/style&gt;<br>
+      
+   &lt;/head&gt;<br>
+   &lt;body&gt;<br>
+      
+      &lt;h2&gt;AngularJS Sample Application&lt;/h2&gt;<br>
+      &lt;div ng-app = "mainApp" ng-controller = "studentController"&gt;<br>
+         
+         &lt;form name = "studentForm" novalidate&gt;<br>
+            &lt;table border = "0"&gt;<br>
+             &lt;tr&gt;<br>
+                   &lt;td&gt;Enter first name: &lt;/td&gt;<br>
+                   &lt;td&gt;&lt;input name = "firstname" type = "text" ng-model = "firstName" required&gt;<br>
+                     &lt;span style = "color:red" ng-show = "studentForm.firstname.$dirty && studentForm.firstname.$invalid"&gt;<br>
+                        &lt;span ng-show = "studentForm.firstname.$error.required"&gt;First Name is required.&lt;/span&gt;<br>
+                     &lt;/span&gt;<br>
+                 &lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+               
+           &lt;tr&gt;<br>
+                   &lt;td&gt;Enter last name:  &lt;/td&gt;<br>
+                   &lt;td&gt;&lt;input name = "lastname"  type = "text" ng-model = "lastName" required&gt;<br>
+                     &lt;span style = "color:red" ng-show = "studentForm.lastname.$dirty && studentForm.lastname.$invalid"&gt;<br>
+                        &lt;span ng-show = "studentForm.lastname.$error.required"&gt;Last Name is required.&lt;/span&gt;<br>
+                     &lt;/span&gt;<br>
+                   &lt;/td&gt;<br>
+              &lt;/tr&gt;
+               
+            &lt;tr&gt;<br>
+                   &lt;td&gt;Email:  &lt;/td&gt &lt;td&gt;&lt;input name = "email" type = "email" ng-model = "email" length = "100" required&gt;<br>
+                    &lt;span style = "color:red" ng-show = "studentForm.email.$dirty && studentForm.email.$invalid"&gt;<br>
+                        &lt;span ng-show = "studentForm.email.$error.required"&gt;Email is required.&lt;/span&gt;<br>
+                       &lt;span ng-show = "studentForm.email.$error.email"&gt;Invalid email address.&lt;/span&gt;<br>
+                     &lt;/span&gt;<br>
+                   &lt;/td&gt;<br>
+              &lt;/tr&gt;<br>
+               
+            &lt;tr&gt;<br>
+                  &lt;td&gt;<br>
+                     &lt;button ng-click = "reset()">Reset&lt;/button&gt;<br>
+                  &lt;/td&gt;<br>
+                  &lt;td&gt;<br>
+                     &lt;button ng-disabled = "studentForm.firstname.$dirty &&<br>
+                        studentForm.firstname.$invalid || studentForm.lastname.$dirty &&<br>
+                        studentForm.lastname.$invalid || studentForm.email.$dirty &&<br>
+                        studentForm.email.$invalid" ng-click="submit()">Submit&lt;/button&gt;<br>
+                  &lt;/td&gt;<br>
+               &lt;/tr&gt;<br>
+					
+            &lt;/table&gt;<br>
+         &lt;/form&gt;<br>
+      &lt;/div&gt;<br>
+      
+      &lt;script&gt;<br>
+         var mainApp = angular.module("mainApp", []);<br>
+         
+         mainApp.controller('studentController', function($scope) {<br>
+            $scope.reset = function() {<br>
+               $scope.firstName = "Riya";<br>
+               $scope.lastName = "Kapoor";<br>
+               $scope.email = "riyakapoor@tutorialspoint.com";<br>
+            }<br>
+            
+            $scope.reset();<br>
+         });<br>
+      &lt;/script&gt;<br>
+      
+   &lt;/body&gt;<br>
+&lt;/html&gt;<br>
+ 
+ 
+ 
+ 
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
