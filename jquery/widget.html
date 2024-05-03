@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips,bootstrap5,images " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Widget in jQuery-MK Tutorial</title>
+    <link rel="canonical" href="https://www.mktutorial.in/jQuery/widget.html">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9528213249119409"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Effects in jQuery</h3>
+            </div>
+
+             <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="index.html">Basics Of Jquery</a>
+                </li>
+                <li>
+                    <a href="selector.html">Jquery Selector</a>
+                </li>
+                <li>
+                    <a href="event.html">Jquery Events</a>
+                </li>
+                <li>
+                    <a href="effect.html">Jquery Effects</a>
+                </li>
+                <li>
+                    <a href="widget.html">Jquery Widget</a>
+                </li>
+                <li>
+                    <a href="function.html">Jquery function</a>
+                </li>
+                
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+							<li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <h2>Widget in jQuery</h2>
+    <p>jQuery widgets are specialized, platform-independent, cross-browser compatible, stateful plugins with a full life cycle and certain methods and events, built on an extensible foundation known as the jQuery UI Widget Factory. The jQuery UI Widget Factory facilitates state management.</p>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Sr.No.</th>
+                <th>Widgets & Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Accordion</td>
+                <td>Enable to collapse the content, that is broken into logical sections.</td>
+            </tr>
+            <tr>
+                <td>Autocomplete</td>
+                <td>Enable to provides the suggestions while you type into the field.</td>
+            </tr>
+            <tr>
+                <td>Button</td>
+                <td>Button is an input of type submit and an anchor.</td>
+            </tr>
+            <tr>
+                <td>Datepicker</td>
+                <td>It is to open an interactive calendar in a small overlay.</td>
+            </tr>
+            <tr>
+                <td>Dialog</td>
+                <td>Dialog boxes are one of the nice ways of presenting information on an HTML page.</td>
+            </tr>
+            <tr>
+                <td>Menu</td>
+                <td>Menu shows list of items.</td>
+            </tr>
+            <tr>
+                <td>Progressbar</td>
+                <td>It shows the progress information.</td>
+            </tr>
+            <tr>
+                <td>Select menu</td>
+                <td>Enable a style able select element/elements.</td>
+            </tr>
+            <tr>
+                <td>Slider</td>
+                <td>The basic slider is horizontal and has a single handle that can be moved with the mouse or by using the arrow keys.</td>
+            </tr>
+            <tr>
+                <td>Spinner</td>
+                <td>It provides a quick way to select one value from a set.</td>
+            </tr>
+            <tr>
+                <td>Tabs</td>
+                <td>It is used to swap between content that is broken into logical sections.</td>
+            </tr>
+            <tr>
+                <td>Tooltip</td>
+                <td>Its provides the tips for the users.</td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+<br>
+<h1>Accordion</h1>
+<p>The Widget accordion function can be used with widgets in JqueryUI.Accordion is same like as Tabs,When user click headers to expand content that is broken into logical sections.</p>
+
+
+<!doctype html>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery UI Accordion - Default functionality &lt;/title&gt; <br> 
+&lt;link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"&gt;<br>
+  &lt;script src="https://code.jquery.com/jquery-1.10.2.js"&gt;&lt;/script&gt; <br>
+  &lt;script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"&gt;&lt;/script&gt;  <br>
+  &lt;link rel="stylesheet" href="/resources/demos/style.css"&gt;  <br>
+&lt;script&gt;<br>
+         $(function() {<br>
+            $( "#accordion" ).accordion();<br>
+         });<br>
+      &lt;/script&gt;<br>
+      &lt;/head&gt;<br>
+   &lt;body&gt;<br>
+  &lt;div id = "accordion"&gt;<br>
+         &lt;h3&gt;Android&lt;/h3&gt;<br>
+			
+        &lt;div&gt;<br>
+            &lt;p&gt;<br>
+               Android is an open source and Linux-based operating system for<br>
+               mobile devices such as smartphones and tablet computers. <br>
+               Android was developed by the Open Handset Alliance, led by <br>
+               Google, and other companies.<br>
+            &lt;/p&gt;<br>
+        &lt;/div&gt;<br>
+        	
+         &lt;h3&gt;CSS &lt;/h3&gt;<br>
+			
+         &lt;div&gt;<br>
+            &lt;p&gt;<br>
+               CSS is the acronym for "Cascading Style Sheet". This <br>
+               tutorial covers both the versions CSS1,CSS2 and CSS3, <br>
+               and gives a complete understanding of CSS,<br>
+               starting from its basics to advanced concepts.<br>
+            &lt;/p&gt;<br>
+        &lt;/div&gt;<br>
+			
+         &lt;h3&gt;Angular JS &lt;/h3&gt;<br>
+			
+         &lt;div&gt;<br>
+            &lt;p&gt;<br>
+               AngularJS is a very powerful JavaScript library. It is used in <br>
+               Single Page Application (SPA) projects. It extends HTML DOM<br>
+               with additional attributes and makes it more responsive to <br>
+               user actions. AngularJS is open source, completely free, <br>
+               and used by thousands of developers around the world.<br>
+               It is licensed under the Apache license version 2.0.<br>
+             &lt;/p&gt;<br>
+        
+				
+            &lt;ul&gt;<br>
+               &lt;li&gt;List item one&lt;/li&gt;<br>
+               &lt;li&gt;List item two&lt;/li&gt;<br>
+               &lt;li&gt;List item three&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+				
+         
+        &lt;/div&gt;<br>
+			
+         &lt;h3&gt;PHP &lt;/h3&gt;<br>
+		
+			
+         &lt;div&gt;<br>
+            &lt;p&gt;<br>
+               The PHP Hypertext Preprocessor (PHP) is a programming language <br>
+               hat allows web developers to create dynamic content that<br>
+               interacts with databases. PHP is basically used for developing <br>
+               web based software applications. This tutorial helps you to <br>
+               build your base with PHP.<br>
+            &lt;/p&gt;<br>
+				
+         &lt;p&gt;<br>
+               Before proceeding with this tutorial you should have at least basic <br>
+               understanding of computer programming, Internet, Database, and <br>
+               MySQL etc is very helpful.<br>
+           &lt;/p&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+   &lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<br>
+<h1> AutoComplete </h1><br>
+<p>The Widget AutoComplete function can be used with widgets in JqueryUI.The Autocomplete widgets provides suggestions while you type into the field</p><br>
+
+&lt;html lang="en"&gt;  <br>
+&lt;head&gt;  <br>
+ 
+ &lt;title&gt;jQuery UI Autocomplete - Default functionality&lt;/title&gt;  <br>
+  &lt;link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"&gt; <br>
+  &lt;script src="https://code.jquery.com/jquery-1.10.2.js"&gt; &lt;/script&gt;<br>
+  &lt;script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"&gt; &lt;/script&gt; <br>
+  &lt;link rel="stylesheet" href="/resources/demos/style.css"&gt;<br>
+  &lt;script&gt;  <br>
+  $(function() { <br> 
+    var availableTags = [  <br>
+      "ActionScript",  <br>
+      "AppleScript", <br> 
+      "Asp",  <br>
+      "BASIC",  <br>
+      "C",  <br>
+      "C++",  <br>
+      "Clojure",  <br>
+      "COBOL",  <br>
+      "ColdFusion", <br> 
+      "Erlang",  <br>
+      "Fortran",  <br>
+      "Groovy",  <br>
+      "Haskell",  <br>
+      "Java",  <br>
+      "JavaScript",<br>  
+      "Lisp",  <br>
+      "Perl",  <br>
+      "PHP",  <br>
+      "Python",  <br>
+      "Ruby",  <br>
+      "Scala",  <br>
+      "Scheme"  <br>
+    ];  <br>
+    $( "#tags" ).autocomplete({  <br>
+      source: availableTags  <br>
+    });  <br>
+  });  <br>
+   &lt;/script&gt;<br>
+   &lt;/head&gt;<br>
+   &lt;body&gt; <br>
+&lt;div class="ui-widget"&gt;  <br>
+&lt;p&gt;Available Courses:&lt;/p&gt;  <br>
+&lt;label for="tags"&gt;Tags: &lt;/label&gt;<br>
+  &lt;input id="tags"&gt;  <br>
+&lt;/div&gt;<br>
+   &lt;/body&gt;<br>
+&lt;/html&gt;<br><br>
+
+
+<h1>jQuery  Button</h1>
+
+&lt;html lang="en"&gt;  <br>
+&lt;head&gt;  <br>
+ 
+ &lt;title&gt;jQuery UI Autocomplete - Default functionality&lt;/title&gt;  <br>
+ &lt;link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"&gt;<br>
+  &lt;script src="https://code.jquery.com/jquery-1.10.2.js"&gt; &lt;/script&gt;<br>
+  &lt;script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"&gt; &lt;/script&gt; <br>
+  &lt;script&gt;  <br>
+         $(function() { <br> 
+            $( "#button-1, #button-2, #button-3, #button-4" ).button();  <br>
+            $( "#button-5" ).buttonset();  <br>
+         });  <br>
+      &lt;/script&gt;<br>
+   &lt;/head&gt;<br>
+   &lt;body&gt; <br>
+      &lt;button id="button-1"&gt;A button element&lt;/button&gt;  <br>
+      &lt;input id="button-2" type="submit" value="A submit button"&gt;  <br>
+      &lt;a id="button-3" href=""&gt;An anchor&lt;/a&gt;  <br>
+      &lt;input type="checkbox"  id="button-4" &gt;<br>
+      &lt;label for="button-4"&gt;Toggle&lt;/label&gt;  <br>
+      <br><br>  
+      &lt;div id="button-5"&gt; <br>
+         &lt;input type="checkbox" id="check1"&gt;<br>
+         &lt;label for="check1"&gt;Left&lt;/label&gt;  <br>
+         &lt;input type="checkbox" id="check2"&gt;<br>
+         &lt;label for="check2"&gt;Middle&lt;/label&gt; <br> 
+         &lt;input type="checkbox" id="check3"&gt;<br>
+         &lt;label for="check3"&gt;Right&lt;/label&gt;<br>
+     &lt;/div&gt;<br>
+   &lt;/body&gt;<br>
+&lt;/html&gt;<br><br>
+
+<h1>Datepicker</h1>
+
+&lt;html lang="en"&gt;  <br>
+&lt;head&gt;  <br>
+      
+      &lt;title&gt;jQuery UI Datepicker functionality&lt;/title&gt;  <br>
+      &lt;link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" &gt;<br>
+      &lt;script src="https://code.jquery.com/jquery-1.10.2.js"&gt;&lt;/script&gt;  <br>
+      &lt;script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"&gt;&lt;/script&gt;  <br>
+  
+      <!-- Javascript -->  
+      &lt;script&gt; <br>
+         $(function() {  <br>
+            $( "#datepicker-1" ).datepicker();  <br>
+         });  <br>
+      &lt;/script&gt;<br>
+   &lt;/head&gt;<br>
+   &lt;body&gt; <br>
+      <!-- HTML -->   
+      &lt;p&gt;Enter Date: &lt;input type="text" id="datepicker-1"&gt;&lt;/p&gt;  <br>
+  
+   &lt;/body&gt;<br>
+&lt;/html&gt;<br><br>
+<h1>jQuery  Dialog</h1><br>
+
+&lt;html lang="en"&gt;  <br>
+   &lt;head&gt;  <br>
+      &lt;title&gt;jQuery UI Dialog functionality&lt;/title&gt;  <br>
+      &lt;link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"&gt;<br>
+      &lt;script src="https://code.jquery.com/jquery-1.10.2.js"&gt;&lt;/script&gt;  <br>
+      &lt;script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"&gt;&lt;/script&gt;  <br>
+      <!-- CSS -->  
+      &lt;style&gt;  <br>
+         .ui-widget-header,.ui-state-default, ui-button{  <br>
+            background:#b9cd6d;  <br>
+            border: 1px solid #b9cd6d;  <br
+            color: #FFFFFF;  <br>
+            font-weight: bold;  <br>
+         }  <br>
+      &lt;/style&gt;  <br>
+      <!-- Javascript -->  
+      &lt;script&gt;  <br>
+         $(function() {  <br>
+            $( "#dialog-1" ).dialog({  <br>
+               autoOpen: false,    <br>
+            });  <br>
+            $( "#opener" ).click(function() {  <br>
+               $( "#dialog-1" ).dialog( "open" ); <br> 
+            });  <br>
+         });  <br>
+      &lt;/script&gt; <br> 
+   &lt;/head&gt;  <br>
+   &lt;body&gt;  <br>
+      <!-- HTML -->   
+      &lt;div id="dialog-1" title="jQuery"&gt;"jQuery is a JavaScript Library" &lt;/div&gt;  <br>
+      &lt;button id="opener"&gt;Open Dialog&lt;/button&gt;  <br>
+   &lt;/body&gt;  <br>
+&lt;/html&gt;  <br>
+
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

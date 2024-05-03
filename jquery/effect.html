@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips,bootstrap5,images " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Effects in jQuery-MK Tutorial</title>
+    <link rel="canonical" href="https://www.mktutorial.in/jQuery/index.html">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9528213249119409"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Effects in jQuery</h3>
+            </div>
+
+             <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="index.html">Basics Of Jquery</a>
+                </li>
+                <li>
+                    <a href="selector.html">Jquery Selector</a>
+                </li>
+                <li>
+                    <a href="event.html">Jquery Events</a>
+                </li>
+                <li>
+                    <a href="effect.html">Jquery Effects</a>
+                </li>
+                <li>
+                    <a href="widget.html">Jquery Widget</a>
+                </li>
+                <li>
+                    <a href="function.html">Jquery function</a>
+                </li>
+                
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+							<li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <h2>Effects in jQuery</h2>
+    <p>jQuery enables us to add effects on a web page. jQuery effects can be categorized into fading, sliding, hiding/showing and animation effects.</p>
+    <img src="images/effects.png" width="50%">
+<h1>jQuery hide()  and show() effect</h1>
+
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){<br>
+  $("#hide").click(function(){<br>
+    $("p").hide();<br>
+  });<br>
+  $("#show").click(function(){<br>
+    $("p").show();<br>
+  });<br>
+});<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;If you click on the "Hide" button, I will disappear.&lt;/p&gt;<br>
+&lt;button id="hide"&gt;Read More&lt;/button&gt;
+&lt;button id="show"&gt;less&lt;/button&gt;
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<h2><u>Output</u></h2>
+<html lang = "en">
+<head>
+<title> jQuery </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+<script>
+$(document).ready(function(){
+$("#hide").click(function(){
+$("p").hide();
+});
+$("#show").click(function(){
+$("p").show();
+});
+});
+</script>
+</head>
+<body>
+<p>If you click on the "Hide" button, I will disappear.</p>
+<button id="hide">Read More</button> <button id="show">Read Less</button> </body>
+</html><br><br>
+<p>The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.</p>
+<p>$(selector).hide(speed,callback);<br>
+$(selector).show(speed,callback);<br>
+The optional callback parameter is a function to be executed after the hide() or show() method completes (you will learn more about callback functions in a later chapter).<br>
+</p>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide(1000);
+  });
+});
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;button id="hide"&gt;hide&lt;/button&gt;
+&lt;p&gt;This is a paragraph with little content.&lt;/p&gt;<br>
+&lt;p&gt;This is another small paragraph.&lt;/p&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<h2><u>OUTPUT</u></h2>
+<html lang = "en">
+<head>
+<title> jQuery </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide(1000);
+  });
+});
+</script>
+</head>
+<body>
+<button id="hide">hide</button> <p>This is a paragraph with little content.</p>
+<p>This is another small paragraph.</p>
+</body>
+</html>
+<br>
+<br>
+<h1>jQuery toggle()</h1>
+You can also toggle between hiding and showing an element with the toggle() method.<br>
+Shown elements are hidden and hidden elements are shown:<br>
+
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){<br>
+  $("button").click(function(){<br>
+   $("p").toggle();<br>
+  });
+});
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;button &gt;Toggle between hiding and showing the paragraph&lt;/button&gt;<br>
+&lt;p&gt;This is a paragraph with little content.&lt;/p&gt;<br>
+&lt;p&gt;This is another small paragraph..&lt;/p&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<html lang = "en">
+<head>
+<title> jQuery </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+<script>
+$(document).ready(function(){ $("button").click(function(){ $("p").hide(1000); }); }); </script>
+</head>
+<body>
+<button>Toggle between hiding and showing the paragraph</button> <p>This is a paragraph with little content.</p>
+<p>This is another small paragraph..</p>
+</body>
+</html>
+<br>
+<h1>jQuery FADE EFFECT</h1>
+<p>With jQuery you can fade an element in and out of visibility.<br>
+
+jQuery has the following fade methods:</p>
+<ul>
+    <li>fadeIn()</li>
+    <li>fadeOut()</li>
+    <li>fadeToggle()</li>
+    <li>fadeTo()</li>
+</ul>
+<br>
+<h3>jQuery fadeIn() method </h3>
+The jQuery fadeIn() method is used to fade in a hidden element.<br>
+<br>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){<br>
+  $("button").click(function(){<br>
+    $("#div1").fadeIn();<br>
+    $("#div2").fadeIn("slow");<br>
+    $("#div3").fadeIn(3000);<br>
+  });
+});
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;Demonstrate fadeIn() with different parameters.&lt;/p&gt;
+&lt;button &gt;Click to fade in boxes&lt;/button&gt;<br>
+&lt;div id="div1" style="width:80px;height:80px;display:none;background-color:red;"&gt;&lt;/div&gt;<br>
+&lt;div id="div2" style="width:80px;height:80px;display:none;background-color:green;"&gt;&lt;/div&gt;<br>
+&lt;div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"&gt;&lt;/div&gt;
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<br>
+<h3>fade out() method</h3><br>
+<p>The jQuery fadeOut() method is used to fade out a visible element.</p>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){<br>
+  $("button").click(function(){<br>
+    $("#div1").fadeOut();<br>
+    $("#div2").fadeOut("slow");<br>
+    $("#div3").fadeOut(3000);<br>
+  });
+});
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;Demonstrate fadeIn() with different parameters.&lt;/p&gt;
+&lt;button &gt;Click to fade in boxes&lt;/button&gt;<br>
+&lt;div id="div1" style="width:80px;height:80px;background-color:red;"&gt;&lt;/div&gt;<br>
+&lt;div id="div2" style="width:80px;height:80px;background-color:green;"&gt;&lt;/div&gt;<br>
+&lt;div id="div3" style="width:80px;height:80px;background-color:blue;"&gt;&lt;/div&gt;
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<br>
+<h3>fade toggle() method</h3>
+
+<p>The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut() methods.<br>
+If the elements are faded out, fadeToggle() will fade them in.<br>
+If the elements are faded in, fadeToggle() will fade them out.<br></p>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){<br>
+  $("button").click(function(){<br>
+    $("#div1").fadeToggle();<br>
+    $("#div2").fadeToggle("slow");<br>
+    $("#div3").fadeToggle(3000);<br>
+  });
+});
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;Demonstrate fadeIn() with different parameters.&lt;/p&gt;
+&lt;button &gt;Click to fade in boxes&lt;/button&gt;<br>
+&lt;div id="div1" style="width:80px;height:80px;background-color:red;"&gt;&lt;/div&gt;<br>
+&lt;div id="div2" style="width:80px;height:80px;background-color:green;"&gt;&lt;/div&gt;<br>
+&lt;div id="div3" style="width:80px;height:80px;background-color:blue;"&gt;&lt;/div&gt;
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<br>
+<h3>jQuery fadeTo() Method</h3>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){<br>
+  $("button").click(function(){<br>
+   $("#div1").fadeTo("slow", 0.15);<br>
+    $("#div2").fadeTo("slow", 0.4);<br>
+    $("#div3").fadeTo("slow", 0.7);<br>
+  });
+});
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;Demonstrate fadeIn() with different parameters.&lt;/p&gt;
+&lt;button &gt;Click to fade in boxes&lt;/button&gt;<br>
+&lt;div id="div1" style="width:80px;height:80px;background-color:red;"&gt;&lt;/div&gt;<br>
+&lt;div id="div2" style="width:80px;height:80px;background-color:green;"&gt;&lt;/div&gt;<br>
+&lt;div id="div3" style="width:80px;height:80px;background-color:blue;"&gt;&lt;/div&gt;
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<h3>jQuery Sliding Methods</h3>
+<p>With jQuery you can create a sliding effect on elements.<br>
+jQuery has the following slide methods:</p>
+<ul>
+    <li>slideDown()</li>
+    <li>slideUp()</li>
+    <li>slideToggle()</li>
+</ul>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){<br>
+  $("#flip").click(function(){<br>
+    $("#panel").slideToggle("slow");<br>
+  });<br>
+});<br>
+&lt;/script&gt;<br>
+&lt;style&gt;<br>
+#panel, #flip {<br>
+  padding: 5px;<br>
+  text-align: center;<br>
+  background-color: #e5eecc;<br>
+  border: solid 1px #c3c3c3;<br>
+}<br>
+#panel {<br>
+  padding: 50px;<br>
+  display: none;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;div id="flip"&gt;Click to slide the panel down or up&lt;/div&gt;<br>
+&lt;div id="panel"&gt;Hello World&lt;/div&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<br>
+<h3>jQuery Animations - The animate() Method    </h3>
+<p>The jQuery animate() method is used to create custom animations.</p>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){<br>
+  $("button").click(function(){<br>
+    var div = $("div");  <br>
+    div.animate({left: '100px'}, "slow");<br>
+    div.animate({fontSize: '3em'}, "slow");<br>
+  });<br>
+});<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;button &gt;Start Animation&lt;/button&gt;<br>
+&lt;div style="background:#98bf21;height:100px;width:200px;position:absolute;"&gt;HELLO&lt;/div&gt;
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<br>
+<h3>jQuery stop() Method</h3>
+<p>The jQuery stop() method is used to stop an animation or effect before it is finished.<br>
+
+The stop() method works for all jQuery effect functions, including sliding, fading and custom animations.</p>
+<br>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){<br>
+  $("#flip").click(function(){<br>
+    $("#panel").slideDown(5000);<br>
+  });<br>
+  $("#stop").click(function(){<br>
+    $("#panel").stop();<br>
+  });<br>
+});<br>
+&lt;/script&gt;<br>
+&lt;style&gt;<br>
+#panel, #flip {<br>
+  padding: 5px;<br>
+  font-size: 18px;<br>
+  text-align: center;<br>
+  background-color: #555;<br>
+  color: white;<br>
+  border: solid 1px #666;<br>
+  border-radius: 3px;<br>
+}<br>
+
+#panel {<br>
+  padding: 50px;<br>
+  display: none;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;button id="stop">Stop sliding&lt;/button&gt;
+
+&lt;div id="flip"&gt;Click to slide down panel&lt;/div&gt;
+&lt;div id="panel"&gt;Hello world!&lt;/div&gt;
+
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<h3>jQuery Callback Functions</h3>
+<p>JavaScript statements are executed line by line. However, with effects, the next line of code can be run even though the effect is not finished. This can create errors.
+<br><br>
+To prevent this, you can create a callback function.<br>
+A callback function is executed after the current effect is finished.<br>
+Typical syntax: $(selector).hide(speed,callback);</p>
+<br>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt; jQuery &lt;/title&gt; <br> 
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+&lt;script&gt;<br>
+$(document).ready(function(){<br>
+  $("button").click(function(){<br>
+    $("p").hide("slow", function(){<br>
+      alert("The paragraph is now hidden");<br>
+    });<br>
+  });<br>
+});<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;This is a paragraph with little content.&lt;/p&gt;<br>
+&lt;button id="hide"&gt;HIDE&lt;/button&gt;
+&lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

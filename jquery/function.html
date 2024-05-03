@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips,bootstrap5,images " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>jQuery html()-MK Tutorial</title>
+    <link rel="canonical" href="https://www.mktutorial.in/jQuery/index.html">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9528213249119409"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>jQuery html()</h3>
+            </div>
+
+             <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="index.html">Basics Of Jquery</a>
+                </li>
+                <li>
+                    <a href="selector.html">Jquery Selector</a>
+                </li>
+                <li>
+                    <a href="event.html">Jquery Events</a>
+                </li>
+                <li>
+                    <a href="effect.html">Jquery Effects</a>
+                </li>
+                <li>
+                    <a href="widget.html">Jquery Widget</a>
+                </li>
+                <li>
+                    <a href="function.html">Jquery function</a>
+                </li>
+                
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+							<li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <h2>jQuery html()</h2>
+    <p>jQuery html() method is used to change the entire content of the selected elements. It replaces the selected element content with new contents.<br><br>Note: It is a very useful function but works in a limited area because of its API documentation. The API documentation of the jQuery html function consists of three method signatures.
+<br><br>
+The first method signature has no argument, so it just returns the HTML within that element. The remaining two signatures take a single argument: i.e. a string or a function that returns a string.</p>
+<ul>
+    <li>$(selector).html()</li>
+    <li>$(selector).html(content)</li>
+    <li>$(selector).html(function (index, currentcontent)) </li>
+</ul>
+<br>
+<p>It is used to set content by calling function.<br>
+
+The jQuery html() method is used either for set the content or return the content of the selected elements.</p>
+<b>To set content:</b><p>When you use this method to set content, it overwrites the content of the all matched elements.</p>
+<b>To return content:</b><p>When you use this method to return content, it returns the content of the first matched element.</p>
+   
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt; &lt;/script&gt;  <br>
+&lt;script&gt;  <br>
+$(document).ready(function(){  <br>
+    $("button").click(function(){  <br>
+        $("p").html("Hello &lt;b&gt;MKtutorial.in&lt;/b&gt;");  <br>
+    });  <br>
+});  <br>
+&lt;/script&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;button&gt;Click here to change the content of all p elements&lt;/button&gt;  
+&lt;p&gt;This is a paragraph.&lt;/p&gt; 
+&lt;p&gt;This is another paragraph.&lt;/p&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;  
+<br>
+<h1>jQuery text()</h1>
+<p>The jQuery text() method is used to set or return the text content of the selected elements.<br><br>
+
+To return content: When this method is used to return content, it returns the combined text content of all matched elements without the HTML markup.<br><br>
+
+To set content: When this method is used to set content, it overwrites the content of all matched elements.<br><br>
+
+<h1>Difference between jQuery text() method and jQuery html() method<br><br></h1>
+<ul>
+<li>The jQuery text() method is used to set or return html content without HTML markup while, html() method is used to set or return the innerHtml (text + HTML markup).</li>
+<li>The jQuery text() method can be used in both XML and HTML document while jQuery html() method can't.</li></ul>
+  </p>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt;  <br>
+&lt;script&gt;  <br>
+$(document).ready(function(){  <br>
+    $("button").click(function(){  <br>
+        $("p").text("Welcome to MKtutorial.in!");  <br>
+    });  <br>
+});  <br>
+&lt;/script&gt;<br>  
+&lt;/head&gt;<br>  
+&lt;body&gt;<br>  
+&lt;button&gt;Click here to set text content for all p elements&lt;/button&gt;  <br>
+&lt;p&gt;Hello Guys!&lt;/p&gt;  <br>
+&lt;p&gt;Looking for online training....&lt;/p&gt;  <br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;<br>
+<h1>jQuery val()</h1>
+<p>There are two usage of jQuery val() method.</p>
+<ul>
+<li>It is used to get current value of the first element in the set of matched elements.</li>
+<li>It is used to set the value of every matched element.</li>
+</ul>
+<br>
+&lt;html lang="en"&gt;    <br>
+&lt;head&gt;    <br>
+  &lt;title&gt;val demo&lt;/title&gt;    <br>
+  &lt;style&gt;    <br>
+  p {    <br>
+    color: red;    <br>
+    margin: 4px;    <br>
+  }    <br>
+  b {    <br>
+    color: blue;<br>    
+  }    <br>
+  &lt;/style&gt;<br>   
+  &lt;script src="https://code.jquery.com/jquery-1.10.2.js"&gt;&lt;/script&gt;    <br>
+&lt;/head&gt;    <br>
+&lt;body&gt;    <br>
+&lt;p&gt; &lt;/p&gt;<br>    
+&lt;select id="single"&gt;<br>
+ &lt;option&gt;Single&lt;/option&gt;    <br>
+  &lt;option&gt;Double&lt;/option&gt;    <br>
+ &lt;option&gt;Triple&lt;/option&gt;    <br>
+ &lt;/select&gt;   <br>
+&lt;script&gt;    <br>
+function displayVals() {<br>    
+  var singleValues = $( "#single" ).val();    <br>
+  $( "p" ).html( "&lt;b&gt;Value:&lt;/b&gt; " + singleValues);<br>    
+}    <br>
+$( "select" ).change( displayVals );    <br>
+displayVals();    <br>
+&lt;/script&gt;    <br>
+&lt;/body&gt;    <br>
+&lt;/html&gt;    <br>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
