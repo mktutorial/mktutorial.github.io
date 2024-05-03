@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>File Handling-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/python/filehandling.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>PYTHON</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of Python</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+				<li>
+                    <a href="list.html">List</a>
+                </li>
+				<li>
+                    <a href="list-assignment.html">List Assignment</a>
+                </li>
+				<li>
+                    <a href="tuples.html">Tuples</a>
+                </li>
+				<li>
+                    <a href="tuples-assignment.html">Tuples Assignment</a>
+                </li>
+                  	<li>
+                    <a href="dictionary.html">Dictionary</a>
+                </li>
+				<li>
+                    <a href="dictionary-assignment.html">Dictionary Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+				<li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="statementandsyntax.html">Statement and Syntax</a>
+                </li>
+				<li>
+                    <a href="statementandsyntax-assignment.html">Statement and Syntax Assignment</a>
+                </li>
+                <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+				<li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="functionsandpackages.html">Functions and Packages</a>
+                </li>
+				<li>
+                    <a href="functionsandpackages-assignment.html">Functions and Packages Assignment</a>
+                </li>
+                 <li>
+                    <a href="classes.html">Classes</a>
+                </li>
+				<li>
+                    <a href="classes-assignment.html">Classes Assignment</a>
+                </li>
+                 <li>
+                    <a href="filehandling.html">File Handling</a>
+                </li>
+				<li>
+                    <a href="filehandling-assignment.html">File Handling Assignment</a>
+                </li>
+                 <li>
+                    <a href="comprehensions.html">Comprehensions</a>
+                </li>
+				<li>
+                    <a href="comprehensions-assignment.html">Comprehensions Assignment</a>
+                </li>
+                <li>
+                    <a href="generatoranddecorator.html">Generator and Decorator</a>
+                </li>
+				<li>
+                    <a href="generatoranddecorator-assignment.html">Generator and Decorator Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h2>Python File Handling</h2>
+            <div>The file handling plays an important role when the data needs to be stored permanently into the file. A file is a named location on disk to store related information. We can access the stored information (non-volatile) after the program termination.</div>
+            <div class="line"></div>
+            
+            <h2>The open() Function</h2>
+            <div>This function creates a file object, which would be utilized to call other support methods associated with it.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>file object = open(file_name ,access_mode)</div>
+            <br>
+            <div><b>Here are the parameter details:-</b></div>
+            <br>
+            <div>
+                <ul>
+                    <li><b>file_name:-</b>The file_name argument is a string value that contains the name of the file that you want to access.</li>
+                    <li><b>access_mode:-</b>The access_mode determines the mode in which the file has to be opened, i.e., read, write, append, etc. A complete list of possible values is given below in the table. This is an optional parameter and the default file access mode is read (r).</li>
+                </ul>
+            </div>
+            <br>
+            <div><b>File Opening Modes</b></div>
+            <br>
+            <table border="1">
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Modes & Description</th>
+                </tr>
+                
+                <tr>
+                    <td>1</td>
+                    <td><b>r</b><br>Opens a file for reading only. The file pointer is placed at the beginning of the file. This is the default mode.</td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td><b>w</b><br>Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.</td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td><b>a</b><br>Opens a file for appending. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.</td>
+                </tr>
+            </table>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+                # Open a file<br>
+fo = open("foo.txt", "w")<br>
+print ("Name of the file: ", fo.name)<br>
+print ("Closed or not: ", fo.closed)<br>
+print ("Opening mode: ", fo.mode)<br>
+fo.close()
+            </div>
+            <div class="line"></div>
+            
+            
+            <h2>The write() Function</h2>
+            <div>After you obtain the file object with the open() function, you can use the write() method to write any string to the file represented by the file object.</div>
+            <div>The write() method does not add a newline character ('\n') to the end of the string.</div>
+          <br>
+          <div><b>Syntax:-</b></div>
+          <br>
+          <div>fileObject.write(string)</div>
+          <br>
+          <div><b>Example:-</b></div>
+          <br>
+          <div># Open a file<br>
+fo = open("foo.txt", "w")<br>
+fo.write( "Python is a great language.\nYeah its great!!\n")<br>
+
+# Close opened file<br>
+fo.close()</div>
+<div class="line"></div>
+
+<h2>Appending to a File</h2>
+<div>When any existing file is opened in 'w' mode to store additional text, its earlier contents are erased. Whenever a file is opened with write permission, it is treated as if it is a new file. To add data to an existing file, use 'a' for append mode.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileobject = open(file_name,"a")</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div># Open a file in append mode<br>
+fo = open("foo.txt", "a")<br>
+text = "TutorialsPoint has a fabulous Python tutorial"<br>
+fo.write(text)<br>
+
+# Close opened file<br>
+fo.close()</div>
+<div class="line"></div>
+
+<h2>Python - Read Files</h2>
+<div>To programmatically read data from a file using Python, it must be opened first.To read data from the opened file, use read() method of the File object. It is important to note that Python strings can have binary data apart from the text data.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileObject.read()</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>
+    # Open a file<br>
+fo = open("foo.txt", "r")<br>
+text = fo.read()<br>
+print (text)<br>
+
+# Close the opened file<br>
+fo.close()
+</div>
+<div class="line"></div>
+
+<h2>File Functions</h2>
+<br>
+<h2>The seek() Method</h2>
+<div>The method seek() sets the file's current position at the offset.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileObject.seek(offset)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>
+    # Open a file in read-write mode<br>
+fo=open("foo.txt","w")<br>
+fo.write("This is a rat race")<br>
+fo.seek(10)<br>
+data=fo.read(3)<br>
+fo.seek(10)<br>
+fo.write('cat')<br>
+fo.seek(0)<br>
+data=fo.read()<br>
+print (data)<br>
+fo.close()
+</div>
+<div class="line"></div>
+
+
+<h2>rename() Method</h2>
+<div>The rename() method takes two arguments, the current filename and the new filename.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>os.rename(current_file_name, new_file_name)</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+    import os<br>
+# Rename a file from test1.txt to test2.txt<br>
+os.rename( "test1.txt", "test2.txt" )
+</div>
+<div class="line"></div>
+
+
+<h2>remove() Method</h2>
+<div>You can use the remove() method to delete files by supplying the name of the file to be deleted as the argument.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>os.remove(file_name)</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+    import os<br>
+# Delete file test2.txt<br>
+os.remove("text2.txt")
+</div>
+<div class="line"></div>
+
+
+<h2>mkdir() Method</h2>
+<div>You can use the mkdir() method of the os module to create directories in the current directory. You need to supply an argument to this method, which contains the name of the directory to be created.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>os.mkdir("newdir")</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+    import os<br>
+# Create a directory "test"<br>
+os.mkdir("test")
+</div>
+<div class="line"></div>
+
+
+<h2>chdir() Method</h2>
+<div>You can use the chdir() method to change the current directory. The chdir() method takes an argument, which is the name of the directory that you want to make the current directory.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>os.chdir("newdir")</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+    import os<br>
+# Changing a directory to "/home/newdir"<br>
+os.chdir("/home/newdir")
+</div>
+<div class="line"></div>
+
+
+
+<h2>getcwd() Method</h2>
+<div>The getcwd() method displays the current working directory.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>os.getcwd()</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+    import os<br>
+# This would give location of the current directory<br>
+os.getcwd()
+</div>
+<div class="line"></div>
+
+
+
+<h2>rmdir() Method</h2>
+<div>The rmdir() method deletes the directory, which is passed as an argument in the method.Before removing a directory, all the contents in it should be removed.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>os.rmdir('dirname')</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+    import os<br>
+# This would remove "/tmp/test" directory.<br>
+os.rmdir( "/tmp/test" )
+</div>
+<div class="line"></div>
+
+
+<h2>flush() Method</h2>
+<div>The method flush() flushes the internal buffer, like stdio's fflush. This may be a no-op on some file-like objects.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileObject.flush()</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+    # Open a file<br>
+fo = open("foo.txt", "w")<br>
+print ("Name of the file: ", fo.name)<br>
+# Here it does nothing, but you can call it with read operation.<br>
+fo.flush()<br>
+# Close the opened file<br>
+fo.close()
+</div>
+<div class="line"></div>
+
+<h2>fileno() Method</h2>
+<div>The method fileno() returns the integer file descriptor that is used by the underlying implementation to request I/O operations from the operating system.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileObject.fileno()</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+    # Open a file<br>
+fo = open("foo.txt", "w")<br>
+print ("Name of the file: ", fo.name)<br>
+fid = fo.fileno()<br>
+print ("File Descriptor: ", fid)<br>
+# Close the opened file<br>
+fo.close()
+</div>
+<div class="line"></div>
+
+
+<h2>isatty() Method</h2>
+<div>The method isatty() returns True if the file is connected (is associated with a terminal device) to a tty(-like) device, else False.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileObject.isatty()</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+ # Open a file<br>
+fo = open("foo.txt", "w")<br>
+print ("Name of the file: ", fo.name)<br>
+ret = fo.isatty()<br>
+print ("Return value : ", ret)<br>
+# Close the opened file<br>
+fo.close()
+</div>
+<div class="line"></div>
+
+<h2>next() function</h2>
+<div>File object in Python 3 does not support next() method. Python 3 has a built-in function next() which retrieves the next item from the iterator by calling its __next__() method.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>next(iterator)</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+f=open("foo.txt","r")<br>
+while True:<br>
+   try:<br>
+      line=next(f)<br>
+      print (line)<br>
+   except:<br>
+      StopIteration<br>
+      break<br>
+f.close()
+</div>
+<div class="line"></div>
+
+<h2>readline() Method</h2>
+<div>The method readline()reads one entire line from the file.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileObject.readline( size )</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+# Open a file<br>
+fo = open("foo.txt", "r")<br>
+print ("Name of the file: ", fo.name)<br>
+line = fo.readline()<br>
+print ("Read Line: %s" % (line))<br>
+line = fo.readline(5)<br>
+print ("Read Line: %s" % (line))<br>
+# Close opened file<br>
+fo.close()
+</div>
+<div class="line"></div>
+
+
+<h2>readlines() Method</h2>
+<div>The method readlines() reads until EOF using readline() and returns a list containing the lines.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileObject.readlines( sizehint )</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+# Open a file<br>
+fo = open("foo.txt", "r")<br>
+print ("Name of the file: ", fo.name)<br>
+line = fo.readlines()<br>
+print ("Read Line: %s" % (line))<br>
+line = fo.readlines(2)<br>
+print ("Read Line: %s" % (line))<br>
+# Close the opened file<br>
+fo.close()
+</div>
+<div class="line"></div>
+
+
+<h2>tell() Method</h2>
+<div>The method tell() returns the current position of the file read/write pointer within the file.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileObject.tell()</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+fo = open("foo.txt", "r")<br>
+print ("Name of the file: ", fo.name)<br>
+line = fo.readline()<br>
+print ("Read Line: %s" % (line))<br>
+pos=fo.tell()<br>
+print ("current position : ",pos)<br>
+# Close the opened file<br>
+fo.close()
+</div>
+<div class="line"></div>
+
+
+<h2>truncate() Method</h2>
+<div>The method truncate() truncates the file's size. If the optional size argument is present, the file is truncated to (at most) that size.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileObject.truncate( [ size ])</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+fo = open("foo.txt", "r")<br>
+print ("Name of the file: ", fo.name)<br>
+line = fo.readline()<br>
+print ("Read Line: %s" % (line))<br>
+fo.truncate()<br>
+line = fo.readlines()<br>
+print ("Read Line: %s" % (line))<br>
+# Close opened file<br>
+fo.close()
+</div>
+<div class="line"></div>
+
+
+<h2>writelines() Method</h2>
+<div>The method writelines() writes a sequence of strings to the file. The sequence can be any iterable object producing strings, typically a list of strings. There is no return value.</div>	
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>fileObject.writelines( sequence )</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>
+# Open a file in read/write mode<br>
+fo=open("foo.txt","r")<br>
+seq = ["This is 6th line\n", "This is 7th line"]<br>
+# Write sequence of lines at the end of the file.<br>
+fo.seek(0, 2)<br>
+line = fo.writelines( seq )<br>
+fo.seek(0,0)<br>
+while True:<br>
+   try:<br>
+      line=next(fo)<br>
+      print (line)<br>
+   except:<br>
+      StopIteration<br>
+      break<br>
+fo.close()
+</div>
+
+
+
+
+<br><br><a href="classes-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="filehandling-assignment.html"><button class="btn btn-success">Next</button></a>
+
+
+
+
+			</div>
+			
+			
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

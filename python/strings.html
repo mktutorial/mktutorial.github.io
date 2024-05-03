@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Strings-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/python/strings.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>PYTHON</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of Python</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+				<li>
+                    <a href="list.html">List</a>
+                </li>
+				<li>
+                    <a href="list-assignment.html">List Assignment</a>
+                </li>
+				<li>
+                    <a href="tuples.html">Tuples</a>
+                </li>
+				<li>
+                    <a href="tuples-assignment.html">Tuples Assignment</a>
+                </li>
+                  	<li>
+                    <a href="dictionary.html">Dictionary</a>
+                </li>
+				<li>
+                    <a href="dictionary-assignment.html">Dictionary Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+				<li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="statementandsyntax.html">Statement and Syntax</a>
+                </li>
+				<li>
+                    <a href="statementandsyntax-assignment.html">Statement and Syntax Assignment</a>
+                </li>
+                <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+				<li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="functionsandpackages.html">Functions and Packages</a>
+                </li>
+				<li>
+                    <a href="functionsandpackages-assignment.html">Functions and Packages Assignment</a>
+                </li>
+                 <li>
+                    <a href="classes.html">Classes</a>
+                </li>
+				<li>
+                    <a href="classes-assignment.html">Classes Assignment</a>
+                </li>
+                 <li>
+                    <a href="filehandling.html">File Handling</a>
+                </li>
+				<li>
+                    <a href="filehandling-assignment.html">File Handling Assignment</a>
+                </li>
+                 <li>
+                    <a href="comprehensions.html">Comprehensions</a>
+                </li>
+				<li>
+                    <a href="comprehensions-assignment.html">Comprehensions Assignment</a>
+                </li>
+                <li>
+                    <a href="generatoranddecorator.html">Generator and Decorator</a>
+                </li>
+				<li>
+                    <a href="generatoranddecorator-assignment.html">Generator and Decorator Assignment</a>
+                </li>
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h2>What is Python String</h2>
+           <div>Python string is the collection of the characters surrounded by single quotes, double quotes, or triple quotes. The computer does not understand the characters; internally, it stores manipulated character as the combination of the 0's and 1's.</div><br>
+           <div><b>Syntax:-</b></div><br>
+           <div>str = "Hi Python !"  </div>
+           <div class="line"></div>
+           
+           <h2>Strings indexing and splitting</h2>
+           <div>Like other languages, the indexing of the Python strings starts from 0. For example, The string "HELLO" is indexed as given in the below figure.</div><br>
+           <img src="images/image3.png" alt="image3"><br><br><br>
+           <img src="images/image4.png" alt="image4"><br><br><br>
+            <img src="images/image5.png" alt="image5">
+            <div class="line"></div>
+            
+            <h2>Reassigning Strings</h2>
+            <div>Updating the content of the strings is as easy as assigning it to a new string. The string object doesn't support item assignment i.e., A string can only be replaced with new string since its content cannot be partially replaced. Strings are immutable in Python.</div><br>
+            <div>
+                str = "HELLO"<br>    
+                str[0] = "h" <br>   
+                print(str)<br>
+                <b>it returns error</b><br><br>
+                
+                str = "HELLO" <br>   
+                print(str)   <br> 
+                str = "hello"   <br> 
+                print(str)    
+            </div>
+            <div class="line"></div>
+            
+            <h2>Deleting the String</h2>
+            <div>As we know that strings are immutable. We cannot delete or remove the characters from the string.  But we can delete the entire string using the del keyword.</div><br>
+            <div>
+                str = "MK Tutorial" <br> 
+                del str[1]  <br>
+                <b>it returns error</b><br><br>
+                
+                str1 = "MK Tutorial" <br> 
+                del str1  <br>
+                print(str1)  
+            </div>
+            <div class="line"></div>
+            <h2>String Operators</h2><br>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th>Operator</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>+</td>
+                        <td>It is known as concatenation operator used to join the strings given either side of the operator.</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>It is known as repetition operator. It concatenates the multiple copies of the same string.</td>
+                    </tr>
+                    <tr>
+                        <td>[]</td>
+                        <td>	It is known as slice operator. It is used to access the sub-strings of a particular string.</td>
+                    </tr>
+                    <tr>
+                        <td>[:]</td>
+                        <td>It is known as range slice operator. It is used to access the characters from the specified range.</td>
+                    </tr>
+                    <tr>
+                        <td>in</td>
+                        <td>It is known as membership operator. It returns if a particular sub-string is present in the specified string</td>
+                    </tr>
+                    <tr>
+                        <td>not in</td>
+                        <td>It is also a membership operator and does the exact reverse of in. It returns true if a particular substring is not present in the specified string.</td>
+                    </tr>
+                    <tr>
+                        <td>r/R</td>
+                        <td>It is used to specify the raw string. Raw strings are used in the cases where we need to print the actual meaning of escape characters such as "C://python". To define any string as a raw string, the character r or R is followed by the string.</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>It is used to perform string formatting. It makes use of the format specifiers used in C programming like %d or %f to map their values in python. We will discuss how formatting is done in python.</td>
+                    </tr>
+                </table><br>
+                <div><b>Example:-</b></div><br><br>
+                <div>str = "Hello" <br>    
+str1 = " world"     <br> 
+print(str*3) # prints HelloHelloHello     <br> 
+print(str+str1)# prints Hello world   <br>    
+print(str[4]) # prints o        <br>          
+print(str[2:4]); # prints ll      <br>                
+print('w' in str) # prints false as w is not present in str     <br> 
+print('wo' not in str1) # prints false as wo is present in str1.    <br>   
+print(r'C://python37') # prints C://python37 as it is written     <br> 
+print("The string str : %s"%(str)) # prints The string str : Hello     </div>
+            </div>
+            <div class="line"></div>
+            
+            <h2>Python String functions</h2><br>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th>Method</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>capitalize()</td>
+                        <td>It capitalizes the first character of the String. This function is deprecated in python3
+                        <br><br>
+                        <b>Example:-</b><br><br>
+                        str = "mktutorial"<br>
+                        str2 = str.capitalize()  <br>
+                        print(str2)<br>
+                        <b>It returns Mktutorial</b>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>center(width)</td>
+                        <td>It returns a space padded string with the original string centred with equal number of left and right spaces. <br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MKTutorial"<br>
+                        str2 = str.center(20)   <br>
+                        print(str2)<br>
+                        <b>It returns MKTUTORIAL</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>count(string)</td>
+                        <td>It counts the number of occurrences of a substring in a String between begin and end index.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MKTutorial"<br>
+                        str2 = str.count('t')   <br>
+                        print(str2)<br>
+                        <b>It returns 1</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>endswith(suffix)</td>
+                        <td>It returns a Boolean value if the string terminates with given suffix between begin and end.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MKTutorial."<br>
+                       isends = str.endswith(".")     <br>
+                        print(isends)<br>
+                        <b>It returns True</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>find(substring)</td>
+                        <td>It returns the index value of the string where substring is found between begin index and end index.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MK Tutorial"<br>
+                      substring = "Tutorial"     <br>
+                      index = str.find(substring)<br>  
+                        print(index)  <br>
+                        <b>It returns 3</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>index(subsring)</td>
+                        <td>It throws an exception if string is not found. It works same as find() method.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "Welcome to the MK Tutorial"<br>
+                      str2 = str.index("to")      <br>
+                      print(str2)    <br>
+                        <b>It returns 20</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>isalnum()</td>
+                        <td>It returns true if the characters in the string are alphanumeric i.e., alphabets or numbers and there is at least 1 character. Otherwise, it returns false.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "Welcome to the MK Tutorial"<br>
+                      str2 = str.isalnum()       <br>
+                      print(str2)    <br>
+                        <b>It returns True</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>isalpha()</td>
+                        <td>It returns true if all the characters are alphabets and there is at least one character, otherwise False.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "Welcome to the MK Tutorial"<br>
+                      str2 = str.isalpha()         <br>
+                      print(str2)    <br>
+                        <b>It returns True</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>isdecimal()</td>
+                        <td>It returns true if all the characters of the string are decimals.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "Welcome to the MK Tutorial"<br>
+                      str2 = str.isdecimal()         <br>
+                      print(str2)    <br>
+                        <b>It returns False</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>isdigit()</td>
+                        <td>It returns true if all the characters are digits and there is at least one character, otherwise False.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "Welcome to the MK Tutorial"<br>
+                      str2 = str.isdigit()         <br>
+                      print(str2)    <br>
+                        <b>It returns False</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>islower()</td>
+                        <td>It returns true if the characters of a string are in lower case, otherwise false.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "Welcome to the MK Tutorial"<br>
+                      str2 = str.islower()         <br>
+                      print(str2)    <br>
+                        <b>It returns False</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>isnumeric()</td>
+                        <td>It returns true if the string contains only numeric characters.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "Welcome to the MK Tutorial"<br>
+                      str2 = str.isnumeric()         <br>
+                      print(str2)    <br>
+                        <b>It returns False</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>isupper()</td>
+                        <td>	It returns false if characters of a string are in Upper case, otherwise False.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "Welcome to the MK Tutorial"<br>
+                      str2 = str.isupper()         <br>
+                      print(str2)    <br>
+                        <b>It returns False</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>isspace()</td>
+                        <td>It returns true if the characters of a string are white-space, otherwise false.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "Welcome to the MK Tutorial"<br>
+                      str2 = str.isspace()         <br>
+                      print(str2)    <br>
+                        <b>It returns False</b>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>len(string)</td>
+                        <td>It returns the length of a string.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MK Tutorial"<br>
+                      n=len(str)<br>
+                      print(n)    <br>
+                        <b>It returns 11</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>lower()</td>
+                        <td>It converts all the characters of a string to Lower case.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MK Tutorial"<br>
+                     str = str.lower()  <br>
+                      print(str)    <br>
+                        <b>It returns mk tutorial</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>lstrip()</td>
+                        <td>It removes all leading whitespaces of a string and can also be used to remove particular character from leading.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MK Tutorial"<br>
+                     str2 = str.lstrip()    <br>
+                      print(str2)    <br>
+                        <b>It returns MK Tutorial</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>replace(old,new[,count])</td>
+                        <td>It replaces the old sequence of characters with the new sequence. The max characters are replaced if max is given.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MK Tutorial"<br>
+                    str2 = str.replace("MK","IT")       <br>
+                      print(str2)    <br>
+                        <b>It returns IT Tutorial</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>rfind(str,beg=0,end=len(str))</td>
+                        <td>It is similar to find but it traverses the string in backward direction.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MK Tutorial"<br>
+                    str2 = str.rfind("t")       <br>
+                      print(str2)    <br>
+                        <b>It returns 5</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>rindex(str,beg=0,end=len(str))</td>
+                        <td>	It is same as index but it traverses the string in backward direction.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MK Tutorial"<br>
+                    str2 = str.rindex("t")       <br>
+                      print(str2)    <br>
+                        <b>It returns 5</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>split(str,num=string.count(str))</td>
+                        <td>Splits the string according to the delimiter str. The string splits according to the space if the delimiter is not provided. It returns the list of substring concatenated with the delimiter.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MK Tutorial"<br>
+                    str2 = str.split(" ")       <br>
+                      print(str2)    <br>
+                        <b>It returns ["MK","Tutorial"]</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>startswith(str,beg=0,end=len(str))</td>
+                        <td>It returns a Boolean value if the string starts with given str between begin and end.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MK Tutorial"<br>
+                    str2 = str.startswith("M")       <br>
+                      print(str2)    <br>
+                        <b>It returns True</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>upper()</td>
+                        <td>It converts all the characters of a string to Upper Case.<br><br>
+                        <b>Example:-</b><br><br>
+                        str = "MK Tutorial"<br>
+                    str2 = str.upper()         <br>
+                      print(str2)    <br>
+                        <b>It returns MK TUTORIAL</b>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+<br><br><a href="dictionary-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="strings-assignment.html"><button class="btn btn-success">Next</button></a>
+
+
+      </div>      
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Comprehensions-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/python/filehandling.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>PYTHON</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of Python</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+				<li>
+                    <a href="list.html">List</a>
+                </li>
+				<li>
+                    <a href="list-assignment.html">List Assignment</a>
+                </li>
+				<li>
+                    <a href="tuples.html">Tuples</a>
+                </li>
+				<li>
+                    <a href="tuples-assignment.html">Tuples Assignment</a>
+                </li>
+                  	<li>
+                    <a href="dictionary.html">Dictionary</a>
+                </li>
+				<li>
+                    <a href="dictionary-assignment.html">Dictionary Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+				<li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="statementandsyntax.html">Statement and Syntax</a>
+                </li>
+				<li>
+                    <a href="statementandsyntax-assignment.html">Statement and Syntax Assignment</a>
+                </li>
+                <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+				<li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="functionsandpackages.html">Functions and Packages</a>
+                </li>
+				<li>
+                    <a href="functionsandpackages-assignment.html">Functions and Packages Assignment</a>
+                </li>
+                 <li>
+                    <a href="classes.html">Classes</a>
+                </li>
+				<li>
+                    <a href="classes-assignment.html">Classes Assignment</a>
+                </li>
+                 <li>
+                    <a href="filehandling.html">File Handling</a>
+                </li>
+				<li>
+                    <a href="filehandling-assignment.html">File Handling Assignment</a>
+                </li>
+                 <li>
+                    <a href="comprehensions.html">Comprehensions</a>
+                </li>
+				<li>
+                    <a href="comprehensions-assignment.html">Comprehensions Assignment</a>
+                </li>
+                <li>
+                    <a href="generatoranddecorator.html">Generator and Decorator</a>
+                </li>
+				<li>
+                    <a href="generatoranddecorator-assignment.html">Generator and Decorator Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+           
+<h2>List Comprehension</h2>
+<div>List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>
+    newlist = [expression for item in iterable if condition == True]
+</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Based on a list of fruits, you want a new list, containing only the fruits with the letter "a" in the name.Without list comprehension you will have to write a for statement with a conditional test inside:</div>
+<br>
+<div>
+    fruits = ["apple", "banana", "cherry", "kiwi", "mango"]<br>
+newlist = []<br>
+
+for x in fruits:<br>
+  if "a" in x:<br>
+    newlist.append(x)<br>
+
+print(newlist)<br>
+</div>
+<br>
+<div>With list comprehension you can do all that with only one line of code:</div>
+<br>
+<div>
+    fruits = ["apple", "banana", "cherry", "kiwi", "mango"]<br>
+
+newlist = [x for x in fruits if "a" in x]<br>
+
+print(newlist)
+</div>
+<div class="line"></div>
+
+
+<h2>Python Lambda</h2>
+<div>A lambda function is a small anonymous function.A lambda function can take any number of arguments, but can only have one expression.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>lambda arguments : expression</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>
+    x = lambda a : a + 10<br>
+print(x(5))
+</div>
+<div class="line"></div>
+
+<h2>Python map() function</h2>
+<div>map() function returns a map object(which is an iterator) of the results after applying the given function to each item of a given iterable (list, tuple etc.)</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>map(fun, iter)</div>
+<br>
+<div><b>Parameters:</b></div>
+<br>
+<div>
+    <ul>
+        <li><b>fun:</b> It is a function to which map passes each element of given iterable.</li>
+        <li><b>iter:</b> It is iterable which is to be mapped.</li>
+    </ul>
+</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>
+    def addition(n): <br>
+    return n + n <br>
+    <br>
+    numbers = (1, 2, 3, 4) <br>
+result = map(addition, numbers) <br>
+print(list(result))
+</div>
+<div class="line"></div>
+
+<h2>map() with Lambda Expressions</h2>
+<div>We can also use lambda expressions with map to achieve above result. In this example, we are using map() with lambda expression.</div>
+<br>
+<div>numbers = (1, 2, 3, 4)<br>
+result = map(lambda x: x + x, numbers)<br>
+print(list(result))</div>
+<div class="line"></div>
+
+
+<h2>Python filter() Function</h2>
+<div>The filter() function returns an iterator where the items are filtered through a function to test if the item is accepted or not.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>filter(function, iterable)</div>
+<br>
+<div><b>Parameter Values</b></div>
+<br>
+<div>
+    <ul>
+        <li><b>function</b>	A Function to be run for each item in the iterable</li>
+        <li><b>iterable</b>	The iterable to be filtered</li>
+    </ul>
+</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>
+    ages = [5, 12, 17, 18, 24, 32]<br>
+
+def myFunc(x):<br>
+  if x < 18:<br>
+    return False<br>
+  else:<br>
+    return True<br>
+<br>
+adults = filter(myFunc, ages)<br>
+<br>
+for x in adults:<br>
+  print(x)<br>
+</div>
+<div class="line"></div>
+
+<h2>reduce() in Python</h2>
+<div>In Python, reduce() is a built-in function that applies a given function to the elements of an iterable, reducing them to a single value.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>functools.reduce(function, iterable[, initializer])  </div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>
+    from functools import reduce  <br>
+    <br>
+    def add(a, b):  <br>
+    return a + b  <br>
+  <br>
+  num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] <br> 
+  <br>
+  sum = reduce(add, num_list)  <br>
+print(f"Sum of the integers of num_list : {sum}")  <br>
+<br>
+sum = reduce(add, num_list, 10)  <br>
+print(f"Sum of the integers of num_list with initial value 10 : {sum}")  
+</div>
+<br><br><a href="filehandling-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="comprehensions-assignment.html"><button class="btn btn-success">Next</button></a>
+
+
+
+
+			</div>
+			
+			
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

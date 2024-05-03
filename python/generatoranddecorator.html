@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Genarator and Decorator-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/python/.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>PYTHON</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of Python</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+				<li>
+                    <a href="list.html">List</a>
+                </li>
+				<li>
+                    <a href="list-assignment.html">List Assignment</a>
+                </li>
+				<li>
+                    <a href="tuples.html">Tuples</a>
+                </li>
+				<li>
+                    <a href="tuples-assignment.html">Tuples Assignment</a>
+                </li>
+                  	<li>
+                    <a href="dictionary.html">Dictionary</a>
+                </li>
+				<li>
+                    <a href="dictionary-assignment.html">Dictionary Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+				<li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="statementandsyntax.html">Statement and Syntax</a>
+                </li>
+				<li>
+                    <a href="statementandsyntax-assignment.html">Statement and Syntax Assignment</a>
+                </li>
+                <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+				<li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="functionsandpackages.html">Functions and Packages</a>
+                </li>
+				<li>
+                    <a href="functionsandpackages-assignment.html">Functions and Packages Assignment</a>
+                </li>
+                 <li>
+                    <a href="classes.html">Classes</a>
+                </li>
+				<li>
+                    <a href="classes-assignment.html">Classes Assignment</a>
+                </li>
+                 <li>
+                    <a href="filehandling.html">File Handling</a>
+                </li>
+				<li>
+                    <a href="filehandling-assignment.html">File Handling Assignment</a>
+                </li>
+                 <li>
+                    <a href="comprehensions.html">Comprehensions</a>
+                </li>
+				<li>
+                    <a href="comprehensions-assignment.html">Comprehensions Assignment</a>
+                </li>
+                <li>
+                    <a href="generatoranddecorator.html">Generator and Decorator</a>
+                </li>
+				<li>
+                    <a href="generatoranddecorator-assignment.html">Generator and Decorator Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+           <h1>Iterators</h1>
+           <p>An iterator is an object that contains a countable number of values.</p>
+           <p>For loop give all the output at once only</p>
+           <p>but what if i need the output one at a time used iterator</p>
+           <p>Iterator Class</p>
+           <ul>
+               <li>Iter ()-> to make any object iterable</li>
+               <li>next ()->Whenever we call next() it will give  output</li>
+           </ul>
+           <h3>step </h3>
+           <p>To make any Object Iterable </p>
+           <p>To call the next() to get the new element</p>
+           
+           <p>we will make the list iterable</p>
+         
+print("without iterable class")<br>
+st=[12,13,14,15,16]<br>
+for i in st:<br>
+    print(i)<br>
+print("Using iterable class")<br>
+result=iter(st)<br>
+print(next(result))<br>
+print(next(result))<br>
+print(next(result))<br>
+
+<!--Custom iterator-->
+<h2>Custom iterator </h2>
+class PowTwo:<br>
+    def __init__(self, max=0):<br>
+        self.max = max<br>
+    def __iter__(self):<br>
+        self.n = 0<br>
+        return self<br>
+    def __next__(self):<br>
+        if self.n <= self.max:<br>
+            result = 2 ** self.n<br>
+            self.n += 1<br>
+            return result<br>
+        else:<br>
+            raise StopIteration<br>
+# create an object numbers = PowTwo(3)<br>
+# create an iterable from the object<br>
+numbers = PowTwo(3)<br>
+i = iter(numbers)<br>
+# Using next to get to the next iterator element<br>
+print(next(i)) # prints 1<br>
+print(next(i)) # prints 2<br>
+print(next(i)) # prints 4<br>
+print(next(i)) # prints 8<br>
+print(next(i)) # raises StopIteration exception<br>
+
+<h2>Python - Generators</h2>
+<p>A generator in Python is a special type of function that returns an iterator object.A generator is a simpler way of defining iterators.  However, instead of return statement at the end, generator uses the yield keyword.</p>
+<h2>Syntax</h2>
+<p>def generator():<br>
+ . . .<br>
+ . . .<br>
+ yield obj<br>
+it = generator()<br>
+next(it)<br>
+. . .</p>
+<p>It is easy to create a Python generator,as a developer defines it as a standard function with <b>Yield</b> statement rather than the <b>return statement.</b> so if a function contains even one yield statement, it is a generator funcyion.It is true that yield and return both fetch some value from a function, however is a difference.while a return statement ends the function completely,a yield statement stop the function at that point,saves its state(context and continues to execute upon receiving successive calls.</p>
+
+<h3>Example</h3>
+def table(n): <br> 
+&nbsp;&nbsp;&nbsp;for i in range(1,11):  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield n*i  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = i+1  <br>
+for i in table(15):  <br>
+&nbsp;&nbsp;&nbsp;print(i)  <br>
+  <h3>Example-2(Fibonacci Numbers)</h3><br>
+def fibonacci(n):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a, b = 0, 1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;while True:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c=a+b<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if c>=n:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      yield c<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     a, b = b, c<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   return<br>
+   <br>
+f = fibonacci(10)<br>
+while True:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   try:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      print (next(f))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   except StopIteration:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      break <br>
+
+<br>
+<h2>Python - Decorators</h2>
+<p>A Decorator in Python is a function that receives another function as argument. The argument function is the one to be decorated by decorator. The behaviour of argument function is extended by the decorator without actually modifying it.</p>
+<H3>Syntax</H3>
+<p>
+    def decorator(arg_function): #arg_function to be decorated<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; def nested_function():<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #this wraps the arg_function and extends its behaviour<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   #call arg_function<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  arg_function()<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return nested_function<br>
+</p><br><br>
+<p>You can now decorate this function to extend its behaviour by passing it to decorator −</p>
+function=decorator(function)<br><br>
+<h4>simple example of decorator</h4><br>
+
+def my_function(x):<br>
+&nbsp;&nbsp;&nbsp;   print("The number is=",x)<br>
+
+def my_decorator(some_function,num):<br>
+&nbsp;&nbsp;&nbsp;   def wrapper(num):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      print("Inside wrapper to check odd/even")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      if num%2 == 0:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         ret= "Even"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      else:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         ret= "Odd!"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      some_function(num)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      return ret<br>
+&nbsp;&nbsp;&nbsp;   print ("wrapper function is called")<br>
+&nbsp;&nbsp;&nbsp;   return wrapper<br>
+
+no=10<br>
+my_function = my_decorator(my_function, no)<br>
+print ("It is ",my_function(no))<br><br>
+<h4>Decorator-using @ Symbol</h4><br>
+def my_decorator(some_function):<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    def wrapper(num):<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;      print("Inside wrapper to check odd/even")<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;       if num%2 == 0:<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;          ret= "Even"<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     else:<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;          ret= "Odd!"<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;      some_function(num)<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     return ret<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    print ("wrapper function is called")<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    return wrapper<br>
+<br>
+@my_decorator<br>
+def my_function(x):<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  print("The number is=",x)<br>
+no=10<br>
+print ("It is ",my_function(no))<br>
+<br><br><a href="comprehensions-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="generatoranddecorator-assignment.html"><button class="btn btn-success">Next</button></a>
+
+
+
+			</div>
+			
+			
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Functions and Packages-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/python/functionsandpackages.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>PYTHON</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of Python</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+				<li>
+                    <a href="list.html">List</a>
+                </li>
+				<li>
+                    <a href="list-assignment.html">List Assignment</a>
+                </li>
+				<li>
+                    <a href="tuples.html">Tuples</a>
+                </li>
+				<li>
+                    <a href="tuples-assignment.html">Tuples Assignment</a>
+                </li>
+                  	<li>
+                    <a href="dictionary.html">Dictionary</a>
+                </li>
+				<li>
+                    <a href="dictionary-assignment.html">Dictionary Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+				<li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="statementandsyntax.html">Statement and Syntax</a>
+                </li>
+				<li>
+                    <a href="statementandsyntax-assignment.html">Statement and Syntax Assignment</a>
+                </li>
+                <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+				<li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="functionsandpackages.html">Functions and Packages</a>
+                </li>
+				<li>
+                    <a href="functionsandpackages-assignment.html">Functions and Packages Assignment</a>
+                </li>
+                 <li>
+                    <a href="classes.html">Classes</a>
+                </li>
+				<li>
+                    <a href="classes-assignment.html">Classes Assignment</a>
+                </li>
+                 <li>
+                    <a href="filehandling.html">File Handling</a>
+                </li>
+				<li>
+                    <a href="filehandling-assignment.html">File Handling Assignment</a>
+                </li>
+                 <li>
+                    <a href="comprehensions.html">Comprehensions</a>
+                </li>
+				<li>
+                    <a href="comprehensions-assignment.html">Comprehensions Assignment</a>
+                </li>
+                <li>
+                    <a href="generatoranddecorator.html">Generator and Decorator</a>
+                </li>
+				<li>
+                    <a href="generatoranddecorator-assignment.html">Generator and Decorator Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+          
+<h2>Python Functions</h2>
+<div>A function is a block of code which only runs when it is called.You can pass data, known as parameters, into a function.A function can return data as a result.</div>
+<div class="line"></div>
+
+<h2>Creating a Function</h2>
+<div>In Python a function is defined using the def keyword:</div><br>
+<div><b>Example:-</b></div><br>
+<div>def my_function():<br>
+  print("Hello from a function")</div>
+  <div class="line"></div>
+  
+  <h2>Calling a Function</h2>
+  <div>To call a function, use the function name followed by parenthesis:</div><br>
+ <div><b>Example:-</b></div><br>
+ <div>
+     def my_function():<br>
+  print("Hello from a function")<br>
+<br>
+my_function()
+ </div>
+ <div class="line"></div>
+ 
+ <h2>Function types</h2>
+ <div>There are four types of functions in python</div>
+ <div>
+     <ul>
+         <li>with argument and with return</li>
+         <li>with argument and without return</li>
+         <li>without argument and with return</li>
+         <li>without argument and without return</li>
+     </ul>
+ </div>
+ <div class="line"></div>
+
+<h2>with argument and with return</h2> 
+<div>def sum(a,b):<br>
+    return a+b<br>
+<br>
+x=int(input("Enter first number="))<br>
+y=int(input("Enter second number="))<br>
+print(sum(x,y))
+</div>
+<div class="line"></div>
+
+<h2>with argument and without return</h2>
+<div>
+    def sum(a,b):<br>
+    print(a+b)<br>
+<br>
+x=int(input("Enter first number="))<br>
+y=int(input("Enter second number="))<br>
+sum(x,y)
+
+</div>
+<div class="line"></div>
+<h2>without argument and with return</h2>
+<div>
+    def sum():<br>
+    x=int(input("Enter first number="))<br>
+y=int(input("Enter second number="))<br>
+    return x+y
+<br>
+<br>
+print(sum())
+</div>
+<div class="line"></div>
+
+
+<h2>without argument and without return</h2>
+<div>
+    def sum():<br>
+    x=int(input("Enter first number="))<br>
+y=int(input("Enter second number="))<br>
+    print(x+y)
+<br>
+<br>
+sum()
+</div>
+<div class="line"></div>
+
+
+<h2>Argument types</h2>
+ <div>There are three types of Arguments in python</div>
+ <div>
+     <ul>
+         <li>Required (Positional) Arguments</li>
+         <li>Default Arguments</li>
+         <li>Arbitrary Keyword  Arguments</li>
+     </ul>
+ </div>
+ <div class="line"></div>
+ 
+ <h2>Required (Positional) Arguments</h2>
+ <div>Required arguments are the arguments passed to a function in correct positional order.The number of arguments in the function call should match exactly with the function definition.</div>
+  <div class="line"></div>
+  
+  <h2>Default Arguments</h2>
+  <div>A default parameter is defined with a fallback value as a default argument. Such parameters are optional during a function call. If no argument is provided, the default value is used, and if an argument is provided, it will overwrite the default value.</div><br>
+  <div>
+      def sum(a=2,b):<br>
+    print(a+b)<br>
+<br>
+x=int(input("Enter first number="))<br>
+sum(x)
+
+  </div>
+  <div class="line"></div>
+  
+  <h2>Arbitrary Keyword  Arguments</h2>
+  <div>In Python Arbitrary Keyword Arguments, *args, and **kwargs can pass a variable number of arguments to a function using special symbols. There are two special symbols:</div><br>
+  <div>
+      <ul>
+          <li>*args in Python (Non-Keyword Arguments)</li>
+          <li>**kwargs in Python (Keyword Arguments)</li>
+      </ul>
+  </div>
+  <div class="line"></div>
+  
+  <h2>*args in Python (Non-Keyword Arguments)</h2>
+  <div>def myFun(*argv):<br>
+    for arg in argv:<br>
+        print(arg)<br>
+ 
+ <br>
+myFun('Hello', 'Welcome', 'to', 'MKtutorial')</div>
+<div class="line"></div>
+
+<h2>**kwargs in Python (Keyword Arguments)</h2>
+<div>def myFun(**kwargs):<br>
+    for key, value in kwargs.items():<br>
+        print("%s == %s" % (key, value))<br>
+        <br>
+        myFun(first='m', mid='k', last='tutorial')</div>
+        <div class="line"></div>
+        
+        <h2>Anonymous Functions in Python</h2>
+        <div>In Python, an anonymous function means that a function is without a name. As we already know the def keyword is used to define the normal functions and the lambda keyword is used to create anonymous functions.</div>
+        <div>
+            def cube(x): return x*x*x<br>
+ <br>
+cube_v2 = lambda x : x*x*x<br>
+ <br>
+print(cube(7))<br>
+print(cube_v2(7))
+        </div>
+        <div class="line"></div>
+        
+        <h2>Python Variable Scope</h2>
+        <div>In Python, we can declare variables in three different scopes: local scope, global, and nonlocal scope.</div>
+        <div class="line"></div>
+        
+        <h2>Python Local Variables</h2>
+        <div>When we declare variables inside a function, these variables will have a local scope (within the function). We cannot access them outside the function.</div>
+        <div>
+            def greet():<br>
+    # local variable<br>
+    message = 'Hello'<br>
+    print('Local', message)<br>
+<br>
+greet()
+        </div>
+<div class="line"></div>
+
+<h2>Python Global Variables</h2>
+<div>In Python, a variable declared outside of the function or in global scope is known as a global variable. This means that a global variable can be accessed inside or outside of the function.</div>
+<div>
+    # declare global variable<br>
+message = 'Hello'<br>
+<br>
+def greet():<br>
+    # declare local variable<br>
+    print('Local', message)<br>
+<br>
+greet()<br>
+print('Global', message)
+</div>
+<div class="line"></div>
+
+<h2>Python Nonlocal Variables</h2>
+<div>In Python, nonlocal variables are used in nested functions whose local scope is not defined. This means that the variable can be neither in the local nor the global scope.</div>
+<div>
+    # outside function <br>
+def outer():<br>
+    message = 'local'<br>
+<br>
+    # nested function  <br>
+    def inner():<br>
+<br>
+        # declare nonlocal variable<br>
+        nonlocal message<br>
+<br>
+        message = 'nonlocal'<br>
+        print("inner:", message)<br>
+<br>
+    inner()<br>
+    print("outer:", message)<br>
+<br>
+outer()
+</div>
+<div class="line"></div>
+
+<h2>Python Packages</h2>
+<div>We usually organize our files in different folders and subfolders based on some criteria, so that they can be managed easily and efficiently. For example, we keep all our games in a Games folder and we can even subcategorize according to the genre of the game or something like this. The same analogy is followed by the packages in Python. </div>
+<div class="line"></div>
+
+<h2>What is a Python Package?</h2>
+<div>Python modules may contain several classes, functions, variables, etc. whereas Python packages contain several modules. In simpler terms, Package in Python is a folder that contains various modules as files.</div>
+<div class="line"></div>
+
+<h2>Creating Package</h2>
+<div>Let’s create a package in Python named mypckg that will contain two modules mod1 and mod2. To create this module follow the below steps:</div>
+<div>
+    <ul>
+        <li>Create a folder named mypckg.</li>
+        <li>Inside this folder create an empty Python file i.e. __init__.py</li>
+        <li>Then create two modules mod1 and mod2 in this folder.</li>
+    </ul>
+</div>
+<br>
+<h5>mod1.py</h5>
+<br>
+<div>def mk():<br>
+    print("Welcome to MK")</div>
+    <br>
+    <h5>mod2.py </h5>
+    <br>
+    <div>def sum(a, b):<br>
+    return a+b</div>
+    <div class="line"></div>
+    
+    <h2>Import Modules from a Package</h2>
+    <div>We can import these Python modules using the from…import statement and the dot(.) operator.</div>
+    <br>
+    <div><b>Syntax:</b></div>
+    <br>
+    <div>import package_name.module_name</div>
+    <div>Now We will import the modules from the above-created package and will use the functions inside those modules.</div>
+    <br>
+    <div>from mypckg import mod1<br>
+from mypckg import mod2<br>
+ <br>
+mod1.mk()<br>
+res = mod2.sum(1, 2)<br>
+print(res)</div>
+
+
+
+
+			
+<br><br><a href="loops-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="functionsandpackages-assignment.html"><button class="btn btn-success">Next</button></a>
+
+
+
+
+			</div>
+			
+			
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
