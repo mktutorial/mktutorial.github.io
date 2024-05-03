@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+
+    <title>form-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/html/form.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>HTML</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                
+                <li class="active">
+                    <a href="index.html" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">HTML Intro</a>
+                    </li>
+                <li>
+                    <a href="basic.html">Basic-tag</a>
+					<a href="color.html">Colors-tag</a>
+					<a href="style.html">Style-tag</a>
+					<a href="image.html">Image-tag</a>
+                    <a href="list.html">List-tag</a>
+                    <a href="marquee.html">Marquee</a>
+                      <a href="hyper-link.html">Hyper-Link</a>
+					<a href="table.html">Table-tag</a>
+					<a href="form.html">Form-tag</a>
+                </li>
+               
+            </ul>
+
+            
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="img/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>HTML FORM</h2>
+            
+            <div class="line">An HTML form is a section of a document which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc.</div>
+			<p>Html Forms are required if you want to collect data from the user </p>
+			<h4><u>Example</u> <br><br>
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter your name&lt;/label&gt;<br>
+		&lt;input type="text"&gt;<br>
+		
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>		<form>
+          <label>Enter your name</label> <input type="text">
+	<br>
+	<p><h4>Form  Tags</h4>
+			<table border="2" color="gray"  cellspacing="20px" cellpadding="10">
+			<tr>
+			<th>Tags</th>
+			<th>Description</th>
+			</tr>
+			<tr>
+			<td>&lt;form&gt;</td>
+			<td>It defines an HTML form to enter inputs by the used side.</td>
+			</tr>
+			<tr>
+			<td>&lt;input&gt;</td>
+			<td>It defines an input control.</td>
+			</tr>
+			<tr>
+			<td>&lt;textarea&gt;</td>
+			<td>It defines a multi-line input control.</td>
+			</tr>
+			<tr>
+			<td>&lt;label&gt;</td>
+			<td>It defines a label for an input element.</td>
+			</tr>
+			<tr>
+			<td>&lt;select&gt;</td>
+			<td>It defines a drop-down list.</td>
+			</tr>
+			<tr>
+			<td>&lt;option&gt;</td>
+			<td>It defines an option in a drop-down list..</td>
+			</tr>
+			<tr>
+			<td>&lt;radio&gt;</td>
+			<td>Displays a radio button (for selecting one of many choices)</td>
+			</tr>
+			<tr>
+			<td>&lt;checkbox&gt;</td>
+			<td>Displays a checkbox (for selecting zero or more of many choices)</td>
+			</tr>
+			
+			<tr>
+			<td>&lt;button&gt;</td>
+			<td>It defines a clickable button.</td>
+			</tr>
+			</table>
+	<br>
+	
+	<h4><u> Form Input Element</u></h4>
+	<p>Form Input element is used to take input from the user.We can apply different input filed to gather different information form user. Following is the example to show the simple text input.</p>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter First Name&lt;/label&gt;<br>
+		&lt;input type="text"&gt;<br>
+		&lt;label&gt;Enter Last Name&lt;/label&gt;<br>
+		&lt;input type="text"&gt;<br>
+		
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>		
+  <form>
+<label>Enter First Name</label>
+<input type="text"><br>
+<label>Enter Last Name</label>
+<input type="text">
+</form>
+	<br>
+		<br>
+	
+	<h4><u> Password Field Control</u></h4>
+	<p>Password control is used to take input from the user.The password is not visible to the user in password field control.</p>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter First Name&lt;/label&gt;<br>
+		&lt;input type="text"&gt;<br>
+		&lt;label&gt;Enter password&lt;/label&gt;<br>
+		&lt;input type="password"&gt;<br>
+		
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>			
+			<form>
+<label>Enter First Name</label>
+<input type="text"><br>
+<label>Enter password&nbsp;</label>
+<input type="password">
+</form>
+<br>
+<h4><u> Email Field</u></h4>
+	<p>Email Field is used to take input from the user.The email field in new in HTML 5. It validates the text for correct email address. You must use @ and . in this field..</p>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter  Name&lt;/label&gt;<br>
+		&lt;input type="text"&gt;<br>
+		&lt;label&gt;Enter E-mail&lt;/label&gt;<br>
+		&lt;input type="email"&gt;<br>
+		&lt;input type="submit" name="SUBMIT"&gt;<br>
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>			
+<form>
+<label>Enter Name</label>
+<input type="text"><br>
+<label>Enter E-mail</label>
+<input type="email"><br>
+<input type="submit" name="SUBMIT">
+</form>
+<br>
+<h4><u> Textarea</u></h4>
+	<p>The &lt;textarea&gt; tag in HTML is used to insert multiple-line text in a form. The size of &lt;textarea&gt; can be specify either using "rows" or "cols" attribute or by CSS.</p>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter your address:&lt;/label&gt;<br>
+		&lt;textarea rows="2" cols="20"&gt;<br>
+	&lt;/textarea&gt;<br>
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+<u>Output</u><br>
+<html>
+<head>
+<title>form</title>
+</head>
+<body>
+<form>
+<label>Enter your address:</label>
+<textarea rows="2" cols="20">
+</textarea>
+</form>
+</body>
+</html>
+
+<br>
+<h4><u>Radio Button</u></h4>
+	<p>Radio buttons are used when out of many options, just one option is required to be selected. They are also created using HTML &lt;input&gt; tag but type attribute is set to radio</p>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Select your fav subject&lt;/label&gt;<br>
+		&lt;input type="radio" name="r1"&gt;Math<br>
+		&lt;input type="radio" name="r1"&gt;English<br>
+		&lt;input type="radio" name="r1"&gt;science<br>
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>	
+  <form>
+<label>Select your fav subject</label>
+<input type="radio" name="r1">Math
+<input type="radio" name="r1">English
+<input type="radio" name="r1">science
+</form>
+
+<br>
+<h4><u>Checkbox</u></h4>
+	<p></p>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Select your fav subject&lt;/label&gt;<br>
+		&lt;input type="checkbox" name="c1"&gt;Math<br>
+		&lt;input type="checkbox" name="c2"&gt;English<br>
+		&lt;input type="checkbox" name="c3"&gt;science<br>
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>	
+
+<form>
+<label>Select your fav subject</label><br>
+<input type="checkbox" name="c1">Math
+<input type="checkbox" name="c2">English
+<input type="checkbox" name="c3">science
+</form>
+<br>
+<h4><u>Date</u></h4>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter your Date-Of-Birth&lt;/label&gt;<br>
+		&lt;input type="date" <br>
+		
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>	
+  <form>
+<label>Enter your Date-Of-Birth</label>
+<input type="date">
+</form>
+  <br>
+<h4><u>Number</u></h4>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter your age&lt;/label&gt;<br>
+		&lt;input type="number" min="18" max="60" &gt;<br>
+		
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>
+<form>
+<label>Enter your age</label>
+<input type="number" min="18" max="60">
+</form><br>  
+<h4><u>color</u></h4>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Select your fav color&lt;/label&gt;<br>
+		&lt;input type="color"&gt;<br>
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>	
+  <form>
+<label>Select your fav color</label>
+<input type="color">
+</form><br>
+<h4><u>Select</u></h4>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;select your payment method&lt;/label&gt;<br>
+		&lt;select&gt;
+		&lt;option&gt;Paytm&lt;/option&gt;<br>
+		&lt;option&gt;Cash&lt;/option&gt;<br>
+		&lt;option&gt;Credit-Card&lt;/option&gt;<br>
+		&lt;option&gt;Gpay&lt;/option&gt;<br>
+		&lt;/select&gt;
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>	
+  <form>
+<label>select your payment method</label>
+<select> <option>Paytm</option>
+<option>Cash</option>
+<option>Credit-Card</option>
+<option>Gpay</option>
+</select> </form>
+ <br>
+<h4><u>URL</u></h4>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter url&lt;/label&gt;<br>
+		&lt;input type="url"&gt;<br>
+		&lt;input type="submit" name="submit"&gt;<br>
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>	
+  <form>
+<label>Enter url</label>
+<input type="url" >
+<input type="submit" name="submit">
+</form>
+ <br>
+<h4><u>range</u></h4>
+		
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;show range&lt;/label&gt;<br>
+		&lt;input type="range"&gt;<br>
+		
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>	
+  <form>
+<label>show range</label>
+<input type="range" >
+</form>
+ <br>
+ <h3>Field-level-validation</h3>
+<h4><u>Reqired</u></h4>
+
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter your Name&lt;/label&gt;<br>
+		&lt;input type="text" required="true"&gt;<br>
+		&lt;input type="submit" name="submit"&gt;<br>
+		&lt;/form&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>	
+  <form>
+<label>Enter your Name</label>
+<input type="text" required="true">
+<input type="submit" name="submit">
+</form>
+<br>
+ 
+<h4><u>autofocus</u></h4>
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter your Name&lt;/label&gt;<br>
+		&lt;input type="text" autofocus="on"&gt;<br>
+		&lt;input type="submit" name="submit"&gt;<br>
+		&lt;/form&gt;<br>
+		&lt;/body&gt;  <br>
+		&lt;/html&gt;  <br> <br>
+		<u>Output</u><br>
+		</h4>	
+		<form>
+<label>Enter your Name</label>
+<input type="text" autofocus="on">
+<input type="submit" name="submit">
+</form>
+		<br>
+ 
+<h4><u>placeholder</u></h4>
+	
+	
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;form&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;form&gt;<br>
+		&lt;label&gt;Enter your Name&lt;/label&gt;<br>
+		&lt;input type="text" placeholder="Enter your name"&gt;<br>
+		&lt;input type="submit" name="submit"&gt;<br>
+		&lt;/form&gt;<br>
+		&lt;/body&gt;  <br>
+		&lt;/html&gt;  <br> <br>
+		<u>Output</u><br>
+		</h4>	
+		<form>
+<label>Enter your Name</label>
+<input type="text" placeholder="Enter your name">
+<input type="submit" name="submit">
+</form>
+		<h4><u>Form Using Table</u></h4>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;form&lt;/title&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;table&gt;<br>
+&lt;form&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;&lt;lab el&gt;Enter your Name&lt;/label&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type="text" placeholder="Enter your name"&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;
+&lt;td&gt;&lt;label&gt;Enter password&lt;/label&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type="password"&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;
+&lt;td&gt;&lt;label&gt;Enter e-mail address&lt;/label&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type="email"&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;
+&lt;td&gt;&lt;label&gt;Enter Address&lt;/label&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;textarea&gt;&lt;/textarea&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;
+&lt;td&gt;&lt;label&gt;Enter date-of-birth&lt;/label&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type="date"&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;
+&lt;td&gt;&lt;label&gt;Enter age&lt;/label&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type="number" min="18" max="60"&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;
+&lt;td&gt;&lt;label&gt;Enter mobile no.&lt;/label&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type="tel" maxlength="10"&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;
+&lt;td&gt;&lt;label&gt;Enter password&lt;/label&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type="password"&gt;&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;
+&lt;td&gt;&lt;label&gt;Select your fav subject&lt;/label&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type="radio" name="r1"&gt;Math<br>
+&lt;input type="radio" name="r1"&gt;English<br>
+&lt;input type="radio" name="r1"&gt;science&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;&lt;label&gt;Select your fav subject&lt;/label&gt;&lt;/td&gt;<br>
+&lt;td&gt;&lt;input type="checkbox" name="c1"&gt;Math<br>
+&lt;input type="checkbox" name="c2"&gt;English
+&lt;input type="checkbox" name="c3"&gt;science&lt;/td&gt;
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;&lt;label&gt;select your payment method&lt;/label&gt;<br>&lt;/td&gt;
+&lt;td&gt;&lt;select&gt;
+		&lt;option&gt;Paytm&lt;/option&gt;<br>
+		&lt;option&gt;Cash&lt;/option&gt;<br>
+		&lt;option&gt;Credit-Card&lt;/option&gt;<br>
+		&lt;option&gt;Gpay&lt;/option&gt;<br>&lt;/td&gt;
+		&lt;/select&gt;&lt;/tr&gt;
+		<br>
+&lt;tr&gt;<br>&lt;td&gt;&lt;input type="submit" name="SUBMIT"&gt;&lt;/td&gt;
+<br>&lt;td&gt;&lt;input type="reset" name="RESET"&gt;&lt;/td<br>&lt;/tr&gt;<br>
+&lt;/form&gt;<br>
+&lt;/table&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+<u>Output</u><br>
+</h4>	
+<table>
+<form>
+<tr>
+<td><lab el>Enter your Name</label></td>
+<td><input type="text" placeholder="Enter your name"></td>
+</tr>
+<tr> <td><label>Enter password</label></td>
+<td><input type="password"></td>
+</tr>
+<tr> <td><label>Enter e-mail address</label></td>
+<td><input type="email"></td>
+</tr>
+<tr> <td><label>Enter Address</label></td>
+<td><textarea></textarea></td>
+</tr>
+<tr> <td><label>Enter date-of-birth</label></td>
+<td><input type="date"></td>
+</tr>
+<tr> <td><label>Enter age</label></td>
+<td><input type="number" min="18" max="60"></td>
+</tr>
+<tr> <td><label>Enter mobile no.</label></td>
+<td><input type="tel" maxlength="10"></td>
+</tr>
+<tr> <td><label>Enter password</label></td>
+<td><input type="password"></td>
+</tr>
+<tr> <td><label>Select your fav subject</label></td>
+<td><input type="radio" name="r1">Math
+<input type="radio" name="r1">English
+<input type="radio" name="r1">science</td>
+</tr>
+<tr>
+<td><label>Select your fav subject</label></td>
+<td><input type="checkbox" name="c1">Math
+<input type="checkbox" name="c2">English <input type="checkbox" name="c3">science</td> </tr>
+<tr>
+<td><label>select your payment method</label>
+</td> <td><select> <option>Paytm</option>
+<option>Cash</option>
+<option>Credit-Card</option>
+<option>Gpay</option>
+</td> </select></tr> 
+<tr>
+<td><input type="submit" name="SUBMIT">
+<input type="reset" name="RESET"></td
+</tr>
+</form>
+</table>
+<h4>Assignment</h4>
+<br>
+1)Create form using css and table<br>
+		<img src="img/form1.jpg" alt="form1">
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

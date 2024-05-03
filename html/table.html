@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Table-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/html/table.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>HTML</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                <li class="active">
+                    <a href="index.html">HTML Intro</a>
+                    
+                </li>
+                <li>
+                    <a href="basic.html">Basic-tag</a>
+					<a href="color.html">Colors-tag</a>
+<a href="style.html">Style-tag</a>
+					<a href="image.html">Image-tag</a>
+                  
+  <a href="list.html">List-tag</a>
+                    <a href="marquee.html">Marquee</a>
+                       <a href="hyper-link.html">Hyper-Link</a>
+					<a href="table.html">Table-tag</a>
+					<a href="form.html">Form-tag</a>
+                </li>
+               
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="img/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>Table</h2>
+            <div class="line"><h4><u>Table Tag</u></h4>The table tag defines an HTML table.HTML table tag is used to display data in tabular format .Table tag also arrange the data in sequential manner.A table is made up of rows and columns.the intersection of each rows and columns is called as a cell</div>
+			<br><p>The user can represent the data in tabular format by using the &lt;table&gt; element in HTML.The &lt;tr&gt; element divides the table into rows and the &lt;td&gt; element specifies columns of each row.By default table does not have a border. <br>
+			<u><h4>syntax</h4></u>&lt;table&gt;<br>
+			&lt;tr&gt;<br>
+			&lt;td&gt;.........&lt;/td&gt;<br>&lt;td&gt;.........&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</p>
+			
+			<p><h4>Table  Tags</h4>
+			<table border="2" color="gray"  cellspacing="20px" cellpadding="10">
+			<tr>
+			<th>Tags</th>
+			<th>Description</th>
+			</tr>
+			<tr>
+			<td>&lt;table&gt;</td>
+			<td>It define a table</td>
+			</tr>
+			<tr>
+			<td>&lt;tr&gt;</td>
+			<td>It define a table row</td>
+			</tr>
+			<tr>
+			<td>&lt;th&gt;</td>
+			<td>It define a table heading</td>
+			</tr>
+			<tr>
+			<td>&lt;td&gt;</td>
+			<td>It define a table column</td>
+			</tr>
+			<tr>
+			<td>&lt;caption&gt;</td>
+			<td>It define a table caption</td>
+			</tr>
+			<tr>
+			<td>&lt;rowspan&gt;</td>
+			<td>The rowspan attribute allow the user to span(merge) the rows.</td>
+			</tr><tr>
+			<td>&lt;colspan&gt;</td>
+			<td>The colspan attribute allow the user to span(merge) the cols.</td>
+			</tr>
+			</table>
+			
+	<h4><u>Example</u> <br><br>
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;Table&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;table  border="2px"&gt;<br>
+			&lt;tr&gt;<br>
+			&lt;td&gt;Name&lt;/td&gt;
+			<br>&lt;td&gt;class&lt;/td&gt;
+			<br>&lt;td&gt;Marks&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+			&lt;td&gt;john&lt;/td&gt;
+			<br>&lt;td&gt;3&lt;/td&gt;
+			<br>&lt;td&gt;78&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+			&lt;td&gt;Riya&lt;/td&gt;
+			<br>&lt;td&gt;3&lt;/td&gt;
+			<br>&lt;td&gt;90&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+			
+			&lt;/table&gt;<br>
+		
+		&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>
+			
+<table border="2px">
+<tr>
+<td>Name</td>
+<td>class</td>
+<td>Marks</td>
+</tr>
+<tr>
+<td>john</td>
+<td>3</td>
+<td>78</td>
+</tr>
+<tr>
+<td>Riya</td>
+<td>3</td>
+<td>90</td>
+</tr>
+</table><br>
+
+
+				<h4><u>Example-Table Heading</u> <br><br>
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;Table&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;table  border="2px"&gt;<br>
+			&lt;tr&gt;<br>
+			&lt;th&gt;Name&lt;/th&gt;
+			<br>&lt;th&gt;class&lt;/th&gt;
+			<br>&lt;th&gt;Marks&lt;/th&gt;
+			<br>&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+			&lt;td&gt;john&lt;/td&gt;
+			<br>&lt;td&gt;3&lt;/td&gt;
+			<br>&lt;td&gt;78&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+			&lt;td&gt;Riya&lt;/td&gt;
+			<br>&lt;td&gt;3&lt;/td&gt;
+			<br>&lt;td&gt;90&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+			
+			&lt;/table&gt;<br>
+		
+		&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>
+			
+<table border="2px">
+<tr>
+<th>Name</th>
+<th>class</th>
+<th>Marks</th>
+</tr>
+<tr>
+<td>john</td>
+<td>3</td>
+<td>78</td>
+</tr>
+<tr>
+<td>Riya</td>
+<td>3</td>
+<td>90</td>
+</tr>
+</table><br>
+				<h4><u>Example-Colspan Attribute</u> <br><br>
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;Table&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;table  border="2px"&gt;<br>
+		&lt;tr&gt;<br>
+		&lt;td colspan="3"&gt;Records&lt;/td&gt;<br>
+		&lt;/tr&gt;<br>
+			&lt;tr&gt;<br>
+			&lt;th&gt;Name&lt;/th&gt;
+			<br>&lt;th&gt;class&lt;/th&gt;
+			<br>&lt;th&gt;Marks&lt;/th&gt;
+			<br>&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+			&lt;td&gt;john&lt;/td&gt;
+			<br>&lt;td&gt;3&lt;/td&gt;
+			<br>&lt;td&gt;78&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+			&lt;td&gt;Riya&lt;/td&gt;
+			<br>&lt;td&gt;3&lt;/td&gt;
+			<br>&lt;td&gt;90&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+			
+			&lt;/table&gt;<br>
+		
+		&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>
+  <table border="2px">
+<tr>
+<td colspan="3">Records</td>
+</tr>
+<tr>
+<th>Name</th>
+<th>class</th>
+<th>Marks</th>
+</tr>
+<tr>
+<td>john</td>
+<td>3</td>
+<td>78</td>
+</tr>
+<tr>
+<td>Riya</td>
+<td>3</td>
+<td>90</td>
+</tr>
+</table>
+  <br>
+  <h4><u>Example-rowspan Attribute</u> <br><br>
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;Table&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;table  border="2px"&gt;<br>
+		&lt;tr&gt;<br>
+		&lt;td rowspan="4"&gt;Records&lt;/td&gt;<br>
+		&lt;/tr&gt;<br>
+			&lt;tr&gt;<br>
+			&lt;th&gt;Name&lt;/th&gt;
+			<br>&lt;th&gt;class&lt;/th&gt;
+			<br>&lt;th&gt;Marks&lt;/th&gt;
+			<br>&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+			&lt;td&gt;john&lt;/td&gt;
+			<br>&lt;td&gt;3&lt;/td&gt;
+			<br>&lt;td&gt;78&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+			&lt;td&gt;Riya&lt;/td&gt;
+			<br>&lt;td&gt;3&lt;/td&gt;
+			<br>&lt;td&gt;90&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+			
+			&lt;/table&gt;<br>
+		
+		&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4>
+  
+  <table border="2px">
+<tr>
+<td rowspan="4">Records</td>
+</tr>
+<tr>
+<th>Name</th>
+<th>class</th>
+<th>Marks</th>
+</tr>
+<tr>
+<td>john</td>
+<td>3</td>
+<td>78</td>
+</tr>
+<tr>
+<td>Riya</td>
+<td>3</td>
+<td>90</td>
+</tr>
+</table>
+<br>
+<h4><u>Example-caption</u> <br><br>
+	&lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+ &lt;title&gt;Table&lt;/title&gt;  <br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 		&lt;caption&gt;Table-Demo&lt;/caption&gt;<br>
+ 		&lt;table  border="2px"&gt;<br>
+	
+			&lt;tr&gt;<br>
+			&lt;td&gt;Name&lt;/td&gt;
+			<br>&lt;td&gt;class&lt;/td&gt;
+			<br>&lt;td&gt;Marks&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+			&lt;td&gt;john&lt;/td&gt;
+			<br>&lt;td&gt;3&lt;/td&gt;
+			<br>&lt;td&gt;78&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+			&lt;td&gt;Riya&lt;/td&gt;
+			<br>&lt;td&gt;3&lt;/td&gt;
+			<br>&lt;td&gt;90&lt;/td&gt;
+			<br>&lt;/tr&gt;<br>
+			
+			&lt;/table&gt;<br>
+		
+		&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+  <u>Output</u><br>
+  </h4><caption>Table-Demo</caption>
+		<table border="2px"><tr>
+
+<td>Name</td>
+<td>class</td>
+<td>Marks</td>
+</tr>
+<tr>
+<td>john</td>
+<td>3</td>
+<td>78</td>
+</tr>
+<tr>
+<td>Riya</td>
+<td>3</td>
+<td>90</td>
+</tr>
+</table>	
+<br>
+	<h4><u>Example-Cellspacing,Cellpadding And Color</u> <br><br>
+	<h2>Cellspacing</h2>
+	<p>Cell spacing is the space between each cell.
+    By default the space is set to 2 pixels.
+    To change the space between table cells, use the CSS <span style="color:red">cellspacing property</span> on the table element</p>
+    <h2>CellPadding</h2>
+    <p>Cell padding is the space between the cell edges and the cell content.
+    By default the padding is set to 0.
+    To add padding on table cells, use the CSS <span style="color:red">cellpadding property:</span></p>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;Table&lt;/title&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;caption&gt;Table-Demo&lt;/caption&gt;<br>
+&lt;table  border="2px" cellspacing="20"  bgcolor="lightblue"&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;Name&lt;/td&gt;
+<br>&lt;td&gt;class&lt;/td&gt;
+<br>&lt;td&gt;Marks&lt;/td&gt;
+<br>&lt;/tr&gt;<br>
+&lt;tr bgcolor="pink"&gt;<br>
+&lt;td&gt;john&lt;/td&gt;
+<br>&lt;td&gt;3&lt;/td&gt;
+<br>&lt;td&gt;78&lt;/td&gt;
+<br>&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;Riya&lt;/td&gt;
+<br>&lt;td&gt;3&lt;/td&gt;
+<br>&lt;td&gt;90&lt;/td&gt;
+<br>&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;Parul&lt;/td&gt;
+<br>&lt;td&gt;3&lt;/td&gt;
+<br>&lt;td bgcolor="green"&gt;99&lt;/td&gt;
+<br>&lt;/tr&gt;<br>
+
+&lt;/table&gt;<br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>
+<u>Output</u><br>	
+<html>
+<head>
+<title>Table</title>
+</head>
+<body>
+<caption>Table-Demo</caption>
+<table border="2" cellspacing="20" cellpadding="10" bgcolor="lightblue">
+<tr>
+<td>Name</td>
+<td>class</td>
+<td>Marks</td>
+</tr>
+<tr bgcolor="pink">
+<td>john</td>
+<td>3</td>
+<td>78</td>
+</tr>
+<tr>
+<td>Riya</td>
+<td>3</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Parul</td>
+<td>3</td>
+<td bgcolor="green">99</td>
+</tr>
+</table>
+</body>
+</html>
+<br>
+<h2>Assignment</h2>
+1) <img src="img/table1.jpg">
+2) <img src="img/table2.gif">
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
