@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+
+    <title>javascript Array-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/javascript/arrays.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>JAVASCRIPT ARRAY</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+              
+                <li class="active">
+                    <a href="home.html" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Javascript Introduction</a>
+                    <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="variable.html">Javascript Syntax</a>
+                </li>
+                
+				<li>
+                    <a href="operators.html">Operators and Expressions</a>
+                </li>
+				<li>
+                    <a href="conditions.html">Conditions</a>
+                </li>
+				<li>
+                    <a href="loop.html">Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="nested-loop.html">Nested Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="arrays.html">Arrays</a>
+                </li>
+				<li>
+                    <a href="functions.html">Functions</a>
+                </li>
+				<li>
+                    <a href="object.html">Object</a>
+                </li>
+				<li>
+                    <a href="mobile.html">Building a mobile web application</a>
+                </li>
+				<li>
+                    <a href="canvas.html">Canvas</a>
+                </li>
+				<li>
+                    <a href="webstorage.html">Web-Storage</a>
+                </li>
+				<li>
+                    <a href="geo.html">HTML Geolocation and API</a>
+                </li>
+				
+            </ul>
+
+
+
+                
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="img/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>JavaScript Array</h2>
+            <p>An Array is a collection of values stored in adjacent memory locations.<br>JavaScript array is an object that represents a collection of similar type of elements.<br><br>Java script support two type of array<br>1) Single dimension array<br>2) Multi-dimension array<br>There are 3 ways to construct array in JavaScript<br>
+
+1) By array literal<br>
+2) By creating instance of Array directly (using new keyword)<br>
+3) By using an Array constructor (using new keyword)</p><br>
+           
+<b>JavaScript array literal</b><br>
+<p>Syntax of creating array using array literal</p>
+
+<p>var arrayname=[value1,value2.....valueN];  </p><br>
+
+<h2>Example-</h2>
+
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+   &lt;script&gt;<br>
+   var emp=["Gaurav","Ankita","Kanchan"];<br>  
+for (i=0;i< emp.length;i++)<br>{<br>  
+document.write(emp[i] + "&lt;br&gt;");  <br>
+}  <br>
+   
+   
+   &lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<u><h2>Output</h2></u>
+<html>
+<body>
+<script>
+var emp=["Gaurav","Ankita","Kanchan"];
+for (i=0;i< emp.length;i++)
+{
+document.write(emp[i] + "<br>");
+}
+</script>
+</body>
+</html>
+<br>
+<h2>JavaScript Array directly (new keyword)</h2>
+<p>The syntax of creating array directly is given below:<br>
+<br>var arrayname=new Array();  <br>
+<br>Here, new keyword is used to create instance of array.
+<br>Let's see the example of creating array directly.</p>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+  &lt;script&gt;<br>
+  var i;  <br>
+var emp = new Array();  <br>
+emp[0] = "Arun";  <br>
+emp[1] = "Varun";  <br>
+emp[2] = "John";  <br>
+  
+for (i=0;i< emp.length;i++)<br>{<br>  
+document.write(emp[i] + "&lt;br&gt;");  <br>
+      }<br>
+   &lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+
+<br>
+<u><h2>OUTPUT</h2></u>
+<html>
+<body>
+<script>
+var i;
+var emp = new Array();
+emp[0] = "Arun";
+emp[1] = "Varun";
+emp[2] = "John";
+for (i=0;i< emp.length;i++)
+{
+document.write(emp[i] + "<br>"); }
+</script>
+</body>
+</html>
+<br>
+<h2>Example-2</h2>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+  &lt;script&gt;<br>
+var marks=new Array(5);<br>
+var sum=0;<br>
+ for(i=0;i< marks.length;i++)<br>
+{<br>
+marks[i]=parseInt(prompt("Enter Marks:"));<br>
+ sum=sum+marks[i];<br>
+}<br>
+alert("sum="+sum);<br>
+alert("Averge of marks="+(sum/marks.length));<br>
+&lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<br>
+<h2>JavaScript array constructor (new keyword)</h2>
+<p>Here, you need to create instance of array by passing arguments in constructor so that we don't have to provide value explicitly.<br>
+
+The example of creating object by array constructor is given below.</p>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+  &lt;script&gt;<br>
+ var emp=new Array("Jai","Vijay","Smith");  <br>
+for (i=0;i< emp.length;i++)<br>{<br>  
+document.write(emp[i] + "&lt;br&gt;");  <br>
+      }<br>
+   &lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<u><h2>OUTPUT</h2></u>
+<html>
+<body>
+<script>
+var emp=new Array("Jai","Vijay","Smith");
+for (i=0;i< emp.length;i++)
+{
+document.write(emp[i] + "<br>");
+}
+</script>
+</body>
+</html>
+<br>
+   <h2>Multi- Dimensional Array</h2> 
+<p>The two-dimensional array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns.</p>
+<br>
+<h2>Syntax</h2>
+<p>var variable_name=new Array(size);//declaration<br>
+variable_name[index]=new Array(value1,value2,....)//initialization</p>
+
+<br>
+<h2>Example</h2>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+  &lt;script&gt;<br>
+  var i,j;<br>
+var arr=new Array(2);<br>
+arr[0]=new Array(1,23);<br>
+arr[1]=new Array(2,23);<br>
+for(i=0;i< arr.length;i++)<br>
+{<br>
+for(j=0;j< arr.length;j++)<br>
+{<br>
+alert(arr[i][j]);<br>
+}<br>
+}<br>
+  
+  &lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

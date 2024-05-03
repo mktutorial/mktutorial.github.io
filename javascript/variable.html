@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>javascript-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/javascript/variable.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>JAVASCRIPT</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+              
+                <li class="active">
+                    <a href="home.html" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Javascript Introduction</a>
+                    <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="variable.html">Javascript Syntax</a>
+                </li>
+                
+				<li>
+                    <a href="operators.html">Operators and Expressions</a>
+                </li>
+				<li>
+                    <a href="conditions.html">Conditions</a>
+                </li>
+				<li>
+                    <a href="loop.html">Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="nested-loop.html">Nested Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="arrays.html">Arrays</a>
+                </li>
+				<li>
+                    <a href="functions.html">Functions</a>
+                </li>
+				<li>
+                    <a href="object.html">Object</a>
+                </li>
+				<li>
+                    <a href="mobile.html">Building a mobile web application</a>
+                </li>
+				<li>
+                    <a href="canvas.html">Canvas</a>
+                </li>
+				<li>
+                    <a href="webstorage.html">Web-Storage</a>
+                </li>
+				<li>
+                    <a href="geo.html">HTML Geolocation and API</a>
+                </li>
+				
+            </ul>
+
+
+
+                
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="img/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>Variable</h2>
+            <p>A JavaScript variable is simply a name of storage location. There are two types of variables in JavaScript : local variable and global variable.  </p>
+            <p>There are some rules while declaring a JavaScript variable (also known as identifiers).</p>
+            <ul>
+                <li>Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.</li>
+                <li>After first letter we can use digits (0 to 9), for example value1.</li>
+                <li>JavaScript variables are case sensitive, for example x and X are different variables.</li>
+                </ul>
+                
+                <p>Before you use a variable in a JavaScript program, you must declare it. Variables are declared with the <strong style="font-size:30px;">var</strong> keyword as follows.</p>
+<h2>Syntax</h2>                
+&lt;script&gt;<br>
+ var  name;<br>
+ var x;<br>
+&lt;/script&gt;<br>
+<h2>Data Types in Javascript</h2>
+<p>javaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.<br>
+1) Primitive data type<br>2) Non-primitive (reference) data type<br>
+JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine. You need to use var here to specify the data type. It can hold any type of values such as numbers, strings etc. </p>
+<br>
+<p>Primitive data type</p>
+<ol>
+    <li>String    = represents sequence of characters e.g. "hello"</li>
+    <li>Number    = represents numeric values e.g. 100</li>
+    <li>Boolean   = represents boolean value either false or true</li>
+    <li>Undefined = represents undefined value</li>
+    <li>Null      = represents null i.e. no value at all</li>
+</ol>
+<p>Non-primitive data type</p>
+<ol>
+    <li>Object = represents instance through which we can access members</li>
+    <li>Array = represents group of similar values</li>
+    <li>RegExp = represents regular expression</li>
+    </ol>
+<h2>Example</h2>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;javascript&lt;/title&gt;  <br>
+&lt;script&gt;<br>
+var a;<br>
+var name="Riya";<br>
+a=10;<br>
+document.write("a=",a);<br>
+document.write("name=",name);<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+<h4><u>Output</u></h4>
+<html>
+<head>
+<title>javascript</title>
+<script>
+var a;
+var name="Riya";
+a=10;
+document.write("a=",a);
+document.write("<br>name=",name);
+</script>
+</head>
+<body>
+</body>
+</html>
+<h2>Built-in-function</h2>
+<p>A function is a piece of code that performs some operation to fullfill a specific task.</p>
+<table border="2">
+    <tr>
+    <th>function</th>
+    <th style="text-align:center">Description</th>
+    </tr>
+    <tr>
+        <td>alert()</td>
+        <td>Display a dialog box with some information and ok button</td>
+    </tr>
+    <tr>
+        <td>confirm()</td>
+        <td>Display a dialog box with some information and ok and cancel button</td>
+    </tr>
+    <tr>
+        <td>ParseInt()</td>
+        <td>Converts a string value into a numeric value</td>
+    </tr>
+    <tr>
+        <td>parseFloat()</td>
+        <td>Converts a string value into a numeric value and decimal value</td>
+    </tr>
+    <tr>
+        <td>prompt()</td>
+        <td>Display a dialog box that accepts an input value through a text box.</td>
+    </tr>
+</table><u>
+<h2>alert function</h2></u>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;javascript&lt;/title&gt;  <br>
+&lt;script&gt;<br>
+alert("Hi, i am alert function");<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+<u><h2>confirm function</h2></u>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;javascript&lt;/title&gt;  <br>
+&lt;script&gt;<br>
+confirm(" HI,I am confirm function with ok and cancel button");<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+
+<u><h2>prompt function</h2></u>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;javascript&lt;/title&gt;  <br>
+&lt;script&gt;<br>
+var name;<br>
+name=prompt("Enter your name");<br>
+alert(name);
+&lt;/script&gt;<br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+
+<u><h2>prompt with parseInt function</h2></u>
+<p>if you want to insert integer or float value with prompt function use parseInt or parseFloat function</p>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title&gt;javascript&lt;/title&gt;  <br>
+&lt;script&gt;<br>
+var a;<br>
+a=parseInt(prompt("Enter a no"));<br>
+alert(a);
+&lt;/script&gt;<br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;  <br> <br>  
+
+
+
+</div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+
+    <title>javascript if else statement-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/javascript/conditions.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>JAVASCRIPT IF-ELSE</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+              
+                <li class="active">
+                    <a href="home.html" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Javascript Introduction</a>
+                    <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="variable.html">Javascript Syntax</a>
+                </li>
+                
+				<li>
+                    <a href="operators.html">Operators and Expressions</a>
+                </li>
+				<li>
+                    <a href="conditions.html">Conditions</a>
+                </li>
+				<li>
+                    <a href="loop.html">Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="nested-loop.html">Nested Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="arrays.html">Arrays</a>
+                </li>
+				<li>
+                    <a href="functions.html">Functions</a>
+                </li>
+				<li>
+                    <a href="object.html">Object</a>
+                </li>
+				<li>
+                    <a href="mobile.html">Building a mobile web application</a>
+                </li>
+				<li>
+                    <a href="canvas.html">Canvas</a>
+                </li>
+				<li>
+                    <a href="webstorage.html">Web-Storage</a>
+                </li>
+				<li>
+                    <a href="geo.html">HTML Geolocation and API</a>
+                </li>
+				
+            </ul>
+
+
+
+                
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="img/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>Conditional statements</h2>
+            <p>JavaScript Conditional statements are used to perform different actions based on different conditions..</p>
+           <h4> In JavaScript we have the following conditional statements:</h4>
+1) Use <span style="color:red"> if</span> to specify a block of code to be executed, if a specified condition is true<br>
+2) Use <span style="color:red">else </span>to specify a block of code to be executed, if the same condition is false<br>
+3) Use <span style="color:red">else if </span>to specify a new condition to test, if the first condition is false<br>
+4) Use <span style="color:red">nested if</span>-if statements inside if statements<br>
+5) Use <span style="color:red">switch</span> to specify many alternative blocks of code to be executed<br>
+            
+            
+            
+            
+            <h2>IF-Statement</h2>
+             if check the condition -if condition is true then print something otherwise print nothing.<br><br>Syntax:-<br><br>if(condition)<br>{<br>statement<br>}<br>
+			
+           <h2>IF-Example</h2>
+    &lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+   &lt;title&gt;if-statement&lt;/title&gt;  <br>
+ 	&lt;script&gt;<br>
+ 	var a;<br>
+ 	a=10;<br>
+ 	if(a>10)<br>
+ 	{<br>
+ 	document.write("a is greater than 10");<br>
+ 	}<br>
+ 	&lt;/script&gt;<br>
+ 	 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 	&lt;/body&gt;  <br>
+    &lt;/html&gt;  <br> <br>  
+<h2>JavaScript If...else Statement</h2>
+
+If else statement check condition -if condition is true then print something(true statement) otherwise print something(false statement).<br><br>Syntax:-<br><br>if(condition)<br>{<br>statement<br>}<br>else<br>{<br>statement<br>}<br>
+        <h2>IF ELSE-Example</h2>
+    &lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+   &lt;title&gt;if else-statement&lt;/title&gt;  <br>
+ 	&lt;script&gt;<br>
+ 	var a;<br>
+ 	a=10;<br>
+ 	if(a>10)<br>
+ 	{<br>
+ 	document.write("a is greater than 10");<br>
+ 	}<br>
+ 	else<br>
+ 	{<br>
+ 	document.write("a is smaller than 10");<br>
+ 	}<br>
+ 	&lt;/script&gt;<br>
+ 	 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 	&lt;/body&gt;  <br>
+    &lt;/html&gt;  <br> <br>  
+
+<h2>JavaScript elseif Statement</h2>
+When you have a multiple conditions use it elseif statement.
+elseif statement check condition -if condition is true then print something(true statement) otherwise check next condition is it true or not.<br><br>Syntax:-<br><br>if(condition)<br>{<br>statement<br>}<br>elseif(condition)<br>{<br>statement<br>}<br>elseif(condition)<br>{<br>statement<br>}<br>else<br>{<br>statement<br>}<br>
+    <h2>ELSEIF-Example</h2>
+    &lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+   &lt;title&gt;elseif-statement&lt;/title&gt;  <br>
+ 	&lt;script&gt;<br>
+ 	var age;<br>
+ 	age=parseInt(prompt("Enter your age"));<br>
+ 	if(age>18)<br>
+ 	{<br>
+ 	document.write("You are elligible for vote");<br>
+ 	}<br>
+ 	else if(age==18)<br>
+ 	{<br>
+ 	document.write("You are also elligible for vote");<br>
+ 	}<br>
+ 	else<br>
+ 	{<br>
+ 	document.write("You are not elligible for vote");<br>
+ 	}<br>
+ 	&lt;/script&gt;<br>
+ 	 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 	&lt;/body&gt;  <br>
+    &lt;/html&gt;  <br> <br>  
+
+<h2>JavaScript Nested if statement</h2>
+When you have a multiple conditions use it nested if statement.
+Nested if means if inside another if.if first condition is true than check second condition is true or not.<br><br>Syntax:-<br><br>if(condition)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(condition)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;statement<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;statement<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>else<br>{<br>statement<br>}<br>
+    <h2>NESTED IF-Example</h2>
+    &lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+   &lt;title&gt;elseif-statement&lt;/title&gt;  <br>
+ 	&lt;script&gt;<br>
+ 	var age;<br>
+ 	var nat;<br>
+ 	nat=prompt("Enter your Nationality");<br>
+ 	age=parseInt(prompt("Enter your age"));<br>
+ 	if(nat=="indian")<br>
+ 	{<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(age>18)<br>
+ 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+ 	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write("You are elligible for vote");<br>
+ 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+ 	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>
+ 	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+ 	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write("You are not greater than 18");<br>
+ 	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+ 	}<br>
+ 	else<br>
+ 	{<br>
+ 	document.write("You are not an indian");<br>
+ 	}<br>
+ 	&lt;/script&gt;<br>
+ 	 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 	&lt;/body&gt;  <br>
+    &lt;/html&gt;  <br> <br>  
+<h2>IF WITH LOGICAL (&&) OPERATOR </h2>
+    &lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+    &lt;title&gt;if-statement&lt;/title&gt;  <br>
+ 	&lt;script&gt;<br>
+ 	var a,b,c;<br>
+ 	a=parseInt(prompt("Enter first number"));<br>
+ 	b=parseInt(prompt("Enter second number"));<br>
+    c=parseInt(prompt("Enter third number"));<br>
+    if(a>b  && a>c)<br>
+    {<br>
+    document.write("A is greater than b and c");<br>
+ 	}<br>
+ 	else if(b>a && b>c)<br>
+ 	{<br>
+ 	document.write("B is greater than a and c");<br>
+ 	}<br>
+ 	else<br>
+ 	{<br>
+ 	document.write("C is greater than a and b");<br>
+ 	}<br>
+ 	 	&lt;/script&gt;<br>
+ 	 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 	&lt;/body&gt;  <br>
+    &lt;/html&gt;  <br> <br>  
+    
+    
+<h2>IF WITH LOGICAL (||) OPERATOR </h2>
+    &lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+    &lt;title&gt;if-statement&lt;/title&gt;  <br>
+ 	&lt;script&gt;<br>
+ 	var ch;<br>
+ 	ch=(prompt("Enter a character"));<br>
+ 	if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')<br>
+    {<br>
+    document.write(ch," is a vowel");<br>
+ 	}<br>
+ 	else<br>
+ 	{<br>
+ 	document.write(ch," Not a vowel");<br>
+ 	}<br>
+ 	 	&lt;/script&gt;<br>
+ 	 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 	&lt;/body&gt;  <br>
+    &lt;/html&gt;  <br> <br>  
+ 
+<h2>Switch case</h2> 
+<p>A program becomes quite difficult to understand when there are multiple if statements.To simplify coding and to avoid using multiple if statements,switch case statement can be used as a different approach to code the same logic.The switch case statement allows comparing a variable or expression with multiple values.</p>
+<h2>Syntax</h2>
+<p>switch (expression)<br>
+{<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case condition 1: statement(s)<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case condition 2: statement(s)<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case condition n: statement(s)<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default: statement(s)<br>
+}
+</p>
+<p><h4>switch:</h4>Executes a specific case statement that holds the value of the expression or the variable.<br>
+<h4>case:</h4>A value and a colon follow the case keyword.The block of a specific case statement is executed when the value of switch expression and the case value are the same.Each case block must end with break keyword.<br>
+<h4>break:</h4>Passes the execution control to the statement existing immediately out of the switch-case statement.if there is no break statement,the next case statement is  executed.<br>
+<h4>default:</h4>The execution control passes to the default bloick when none of the case values matches the switch expression.the default block is same as the else block.
+</p>
+<h2>Switch-case Example</h2>
+    &lt;html&gt;  <br>
+ 	&lt;head&gt;  <br>
+    &lt;title&gt;switch cse&lt;/title&gt;  <br>
+ 	&lt;script&gt;<br>
+    var grade;<br>
+    grade=prompt("Enter a character");<br>
+    switch(grade)<br>
+    {<br>
+    case 'a':<br>
+       &nbsp;&nbsp;&nbsp;document.write("Excellent");<br>
+       break;<br>
+    case 'b':<br>
+    &nbsp;&nbsp;&nbsp;document.write("Very Good");<br>
+ break;<br>   
+    case 'c':<br>
+    &nbsp;&nbsp;&nbsp;document.write("passed");<br>
+     break;<br>
+     case 'D':<br>
+    &nbsp;&nbsp;&nbsp;document.write("Not so good");<br>
+     break;<br>
+     case 'F':<br>
+    &nbsp;&nbsp;&nbsp;document.write("Failed");<br>
+     break;<br>
+     default:<br>
+    &nbsp;&nbsp;&nbsp;document.write("Unknown grade")<br>
+    }<br>
+    
+ 	&lt;/script&gt;<br>
+ 	&lt;/head&gt;  <br>
+ 	&lt;body&gt;  <br>
+ 	&lt;/body&gt;  <br>
+    &lt;/html&gt;  <br> <br>  
+ <h2>Assignment</h2>
+  1. Write a JavaScript program that displays the largest integer among two integers.<br>
+  2. Write a JavaScript conditional statement to find the sign of the product of three numbers. Display an alert box with the specified sign.<br>
+    Sample numbers : 3, -7, 2<br>
+ 3. Write a JavaScript conditional statement to find the largest of five numbers. Display an alert box to show the results.<br>
+    Sample numbers : -5, -2, -6, 0, -1<br>
+ 4. Write a JavaScript program that computes the average marks of the following students. Then, this average is used to determine the corresponding grade.<br>
+<p><pre>
+Student Name	Marks
+David    	 80
+Vinoth	         77
+Divya	         88
+Ishitha	         95
+Thomas	         68
+The grades are computed as follows :
+
+Range	Grade
+<60	    F
+<70	    D
+<80	    C
+<90	    B
+<100	    A</pre></p>
+</div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

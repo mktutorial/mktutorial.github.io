@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>javascript operators-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/javascript/operators.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>JAVASCRIPT OPERATORS</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+              
+                <li class="active">
+                    <a href="home.html" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Javascript Introduction</a>
+                    <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="variable.html">Javascript Syntax</a>
+                </li>
+                
+				<li>
+                    <a href="operators.html">Operators and Expressions</a>
+                </li>
+				<li>
+                    <a href="conditions.html">Conditions</a>
+                </li>
+				<li>
+                    <a href="loop.html">Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="nested-loop.html">Nested Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="arrays.html">Arrays</a>
+                </li>
+				<li>
+                    <a href="functions.html">Functions</a>
+                </li>
+				<li>
+                    <a href="object.html">Object</a>
+                </li>
+				<li>
+                    <a href="mobile.html">Building a mobile web application</a>
+                </li>
+				<li>
+                    <a href="canvas.html">Canvas</a>
+                </li>
+				<li>
+                    <a href="webstorage.html">Web-Storage</a>
+                </li>
+				<li>
+                    <a href="geo.html">HTML Geolocation and API</a>
+                </li>
+				
+            </ul>
+
+
+
+                
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="img/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>Operators</h2>
+            <p>JavaScript operators are symbols that are used to perform operations on operands. For example:</p>
+            <p>Let us take a simple expression 4 + 5 is equal to 9. Here 4 and 5 are called operands and ‘+’ is called the operator. JavaScript supports the following types of operators.</p>
+            <h2>Types Of Operators</h2>
+            <ol>
+                <li>Arithmetic Operators</li>
+                <li>Comparison (Relational) Operators</li>
+                <li>Bitwise Operators</li>
+                <li>Logical Operators</li>
+                <li>Assignment Operators</li>
+                <li>Special Operators</li>
+            </ol>
+            
+           <h2>1) Arthmetic Operator</h2>
+           <h5>Two type of arithematic operator</h5>
+           1) Binary Operator<br>
+           	<table border="2" cellpadding="20" width=70%">
+			 <tr>
+			     <th>Operator</th>
+			     <th>Description</th>
+			     <th>Example</th>
+			     </tr>
+			     <tr>
+			     <td>+ (Plus)</td>
+			     <td>(a+b)</td>
+			     <td>10+10=20</td>
+			 </tr>
+			     <tr>
+			     <td>- (Minus)</td>
+			     <td>(a-b)</td>
+			     <td>20-10=10</td>
+			 </tr> <tr>
+			     <td>* (Multiply)</td>
+			     <td> (a*b)</td>
+			     <td>10*20=200</td>
+			 </tr> <tr>
+			     <td>/ (Divide)</td>
+			     <td> (a/b)</td>
+			     <td>10/2=5</td>
+			 </tr> <tr>
+			     <td>% (Mod)</td>
+			     <td>(a%b)</td>
+			     <td>10%2=0</td>
+			 </tr>
+			</table>
+			<br>
+		2) Unary Operator<br>
+			<table border="2" cellpadding="20" width=70%">
+			 <tr>
+			     <th>Operator</th>
+			     <th>Description</th>
+			     <th>Example</th>
+			     </tr>
+			     <tr>
+			     <td>++</td>
+			     <td>increment</td>
+			     <td>a=10;a++;Now a=11</td>
+			 </tr>
+			     <tr>
+			     <td>--</td>
+			     <td>Decrement</td>
+			     <td>a=10;a--;Now a=9</td>
+			 </tr> <tr>
+			     </table>
+			
+			<h2>2) Relational Operator</h2>
+			<table border="2" cellpadding="20" width="70%">
+			    <tr>
+			     <th>Operator</th>
+			     <th>Description</th>
+			     <th>Example</th>
+			     </tr>
+<tr>
+    <td> > </td>
+    <td>Greater then</td>
+    <td>20>10 = true</td>
+    </tr>
+    <tr>
+    <td> < </td>
+    <td>Less then</td>
+    <td>20<10 = false</td>
+    </tr>
+	<tr>
+	    <td>==</td>
+	    <td>Is equal to</td>
+	    <td>10==20 = false</td>
+	</tr>	
+	<tr>
+	    <td>===</td>
+	    <td>dentical (equal and of same type)</td>
+	    <td>10==20 = false</td>
+	</tr>
+	<tr>
+	    <td>!=</td>
+	    <td>Not equal to</td>
+	    <td>10!=20 = true</td>
+	  	</tr>
+<tr>
+    <td>>=</td>
+    <td>Greater than or equal to</td>
+    <td>20>=10 = true</td>
+</tr>
+<tr>
+    <td><=</td>
+    <td>Less than or equal to</td>
+    <td>20<=10 = false</td>
+</tr>
+</table>
+			<h2>3) Logical Operator</h2>
+			<table border="2" cellpadding="20" width="70%">
+			     <th>Operator</th>
+			     <th>Description</th>
+			     <th>Example</th>
+			     </tr>
+			     <tr>
+			         <td>&&</td>
+			         <td>Logical AND</td>
+			         <td>(10==20 && 20==33) = false</td>
+			     </tr>
+			     <tr>
+			         <td>||</td>
+			         <td>Logical OR</td>
+			         <td>(10==20 || 20==33) = false</td>
+			     </tr>
+			     <tr>
+			         <td>!</td>
+			         <td>Logical Not</td>
+			         <td>!(10==20) = true</td>
+			     </tr>
+			     
+			    </table>
+			
+			<h2>4) Assignment (Shorthand) Operator</h2>
+			<table border="2" cellpadding="20" width="70%">
+			     <th>Operator</th>
+			     <th>Description</th>
+			     <th>Example</th>
+			     </tr>
+			     <tr>
+			     <td>=</td>
+			     <td>Assign</td>
+			     <td>a=10</td>
+			     </tr>
+			     <tr>
+			     <td>+=</td>
+			     <td>Add and assign</td>
+			     <td>var a=10; a+=20; Now a = 30</td>
+			     </tr>
+			     <tr>
+			     <td>-=</td>
+			     <td>Subtract and assign</td>
+			     <td>var a=20; a-=10; Now a = 10</td>
+			     </tr>
+			     <tr>
+			     <td>*=</td>
+			     <td>Multiply and assign</td>
+			     <td>var a=10; a*=20; Now a = 200</td>
+			     </tr>
+			     <tr>
+			     <td>/=</td>
+			     <td>Divide and assign</td>
+			     <td>var a=10; a/=2; Now a = 5</td>
+			     </tr>
+			     <tr>
+			     <td>%=</td>
+			     <td>	Modulus and assign</td>
+			     <td>var a=10; a%=2; Now a = 0</td>
+			     </tr>
+			     </table>
+			
+			if we write a=a+b then we will also write this expression a+=b it means same
+		
+			
+			<h2>5) Bitwise Operator</h2>
+			<table border="2" cellpadding="20" width="70%">
+			 <tr>
+			     <th>Operator</th>
+			     <th>Description</th>
+			     <th>Example</th>
+			     </tr>
+		    <tr>
+		        <td>&</td>
+		        <td>Bitwise AND </td>
+		        <td>(10==20 & 20==33) = false</td>
+		    </tr>
+		<tr>
+		        <td>|</td>
+		        <td>Bitwise OR</td>
+		        <td>(10==20 | 20==33) = false</td>
+		    </tr>
+		    <tr>
+		        <td>^</td>
+		        <td>Bitwise XOR</td>
+		        <td>(10==20 ^ 20==33) = false</td>
+		    </tr>
+		    <tr>
+		        <td>~</td>
+		        <td>Bitwise NOT</td>
+		        <td>(~10) = -10</td>
+		    </tr>
+			</table><br> 
+            <h2>5) Special Operator</h2>
+			<table border="2" cellpadding="20" width="70%">
+                  <tr>
+			     <th>Operator</th>
+			     <th>Description</th>
+			     
+			     </tr>
+	 			  <tr>
+			      <td>(?:)</td>
+			      <td>Conditional Operator returns value based on the condition. It is like if-else.</td>
+			      </tr>
+			  <tr>
+			      <td>,</td>
+			      <td>Comma Operator allows multiple expressions to be evaluated as single statement.</td>
+			     
+			  </tr>
+			  <tr>
+			      <td>typeof</td>
+			      <td>checks the type of object.</td>
+			     
+			  </tr>
+			  
+			  
+			  
+			   </table>
+     <h2>Assignment</h2>   
+     <p>1) Write a JavaScript program to compute the sum of the three numbers.</p>
+     <p>2) Write a JavaScript program to compute the mul of the five numbers.</p>
+     <p>3) Write a JavaScript program to accept two numbers and display sum, mul, div and sub.</p>
+     <p>4) Write a JavaScript program to accept a student's marks in Physics,Chemistry, and Biology. The total of these marks as well as the average should be displayed.</p>
+     <p>5) Write a JavaScript program to accept 5 numbers from the user and display average.</p>
+     <p>6) Write a JavaScript program to accept two numbers from the user and swap their values with third variable.</p>
+     <p>7) Write a JavaScript program to accept one number from the user and display square.</p>
+     <p>8) Write a JavaScript program to accept one number from the user and display cube.</p>
+     <p>9) Write a JavaScript program to accept basic salary, hra,ta,da,esi,pf from the user and calculate net salary.<br> [Hint: (basic+hra+ta+da)-(esi+pf).</p>
+     <p>10) Write a JavaScript program to accept shopping price from the user and display net amount to pay after 10% discount.</p>
+     
+
+
+
+</div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
