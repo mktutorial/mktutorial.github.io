@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial,loop,for loop,while loop,do-while loop,go,return,jump statement html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Inheritance and Polymorphism-MK Tutorial</title>
+    <link rel="canonical" href="https://www.mktutorial.in/C++/constructor.html">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>C++ LANGUAGE</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of C++</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Of C++-Assignment</a>
+                </li>
+				<li>
+                    <a href="variables-and-data-types.html">Variables and Data Types</a>
+                </li>
+				<li>
+                    <a href="variables-and-data-types-assignment.html">Variables and Data Types-Assignment</a>
+                </li>
+				<li>
+                    <a href="operators-and-expressions.html">Operators and Expressions</a>
+                </li>
+				<li>
+                    <a href="operators-and-expressions-assignment.html">Operators and Expressions-Assignment</a>
+                </li>
+			
+				<li>
+                    <a href="conditions.html">Conditions</a>
+                </li>
+				<li>
+                    <a href="conditions-assignment.html">Conditions-Assignment</a>
+                </li>
+				<li>
+                    <a href="loop.html">Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="loop-assignment.html">Loop Concepts-Assignment</a>
+                </li>
+				<li>
+                    <a href="nested-loop.html">Nested Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="nested-loop-assignment.html">Nested Loop Concepts-Assignment</a>
+                </li>
+				<li>
+                    <a href="arrays.html">Arrays</a>
+                </li>
+				<li>
+                    <a href="arrays-assignment.html">Arrays-Assignment</a>
+                </li>
+				<li>
+                    <a href="functions.html">Functions</a>
+                </li>
+				<li>
+                    <a href="functions-assignment.html">Functions-Assignment</a>
+                </li>
+                  <li>
+                    <a href="methods.html">Methods</a>
+                </li>
+				<li>
+                    <a href="methods-assignment.html">Methods-Assignment</a>
+                </li>
+				<li>
+                    <a href="constructor.html">Constructor</a>
+                </li>
+				<li>
+                    <a href="constructor-assignment.html">Constructor-Assignment</a>
+                </li>
+				<li>
+                    <a href="functionandoperatoroverloading.html">Function and Operator Overloading</a>
+                </li>
+				<li>
+                    <a href="functionandoperatoroverloading-assignment.html">Function and Operator Overloading-Assignment</a>
+                </li>
+                <li>
+                    <a href="inheritanceandpolymorphism.html">Inheritance and Polymorphism</a>
+                </li>
+				<li>
+                    <a href="inheritanceandpolymorphism-assignment.html">Inheritance and Polymorphism-Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h2>C++ Inheritance</h2>
+            <div>In C++, inheritance is a process in which one object acquires all the properties and behaviors of its parent object automatically. In such way, you can reuse, extend or modify the attributes and behaviors which are defined in other class.
+<br>
+In C++, the class which inherits the members of another class is called derived class and the class whose members are inherited is called base class. The derived class is the specialized class for the base class.</div>
+<div class="line"></div>
+
+<h2>Advantage of C++ Inheritance</h2>
+<div><b>Code reusability:-</b>Now you can reuse the members of your parent class. So, there is no need to define the member again. So less code is required in the class.</div>
+<div class="line"></div>
+
+<h2>Types Of Inheritance</h2>
+<div><b>C++ supports five types of inheritance:-</b></div>
+<br>
+<div>
+    <ul>
+        <li>Single inheritance</li>
+        <li>Multiple inheritance</li>
+        <li>Hierarchical inheritance</li>
+        <li>Multilevel inheritance</li>
+        <li>Hybrid inheritance</li>
+    </ul>
+</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>
+    class derived_class_name :: visibility-mode base_class_name <br> 
+{  <br> 
+    // body of the derived class.  <br> 
+}  
+</div>
+<div class="line"></div>
+
+<h2>C++ Single Inheritance</h2>
+<div>Single inheritance is defined as the inheritance in which a derived class is inherited from the only one base class.</div>
+<div class="line"></div>
+
+<h2>C++ Multilevel Inheritance</h2>
+<div>Multilevel inheritance is a process of deriving a class from another derived class.</div>
+<div class="line"></div>
+
+<h2>C++ Multiple Inheritance</h2>
+<div>Multiple inheritance is the process of deriving a new class that inherits the attributes from two or more classes.</div>
+<div class="line"></div>
+
+
+<h2>C++ Hybrid Inheritance</h2>
+<div>Hybrid inheritance is a combination of more than one type of inheritance.</div>
+<div class="line"></div>
+
+<h2>C++ Hierarchical Inheritance</h2>
+<div>Hierarchical inheritance is defined as the process of deriving more than one class from a base class.</div>
+            
+        <br><br><a href="functionandoperatoroverloading-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="inheritanceandpolymorphism-assignment.html"><button class="btn btn-success">Next</button></a>   
+
+            
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

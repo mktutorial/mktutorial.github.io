@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial,loop,for loop,while loop,do-while loop,go,return,jump statement html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Constructor Assignment-MK Tutorial</title>
+    <link rel="canonical" href="https://www.mktutorial.in/C++/constructor-assignment.html">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>C++ LANGUAGE</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of C++</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Of C++-Assignment</a>
+                </li>
+				<li>
+                    <a href="variables-and-data-types.html">Variables and Data Types</a>
+                </li>
+				<li>
+                    <a href="variables-and-data-types-assignment.html">Variables and Data Types-Assignment</a>
+                </li>
+				<li>
+                    <a href="operators-and-expressions.html">Operators and Expressions</a>
+                </li>
+				<li>
+                    <a href="operators-and-expressions-assignment.html">Operators and Expressions-Assignment</a>
+                </li>
+				
+				<li>
+                    <a href="conditions.html">Conditions</a>
+                </li>
+				<li>
+                    <a href="conditions-assignment.html">Conditions-Assignment</a>
+                </li>
+				<li>
+                    <a href="loop.html">Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="loop-assignment.html">Loop Concepts-Assignment</a>
+                </li>
+				<li>
+                    <a href="nested-loop.html">Nested Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="nested-loop-assignment.html">Nested Loop Concepts-Assignment</a>
+                </li>
+				<li>
+                    <a href="arrays.html">Arrays</a>
+                </li>
+				<li>
+                    <a href="arrays-assignment.html">Arrays-Assignment</a>
+                </li>
+				<li>
+                    <a href="functions.html">Functions</a>
+                </li>
+				<li>
+                    <a href="functions-assignment.html">Functions-Assignment</a>
+                </li>
+                  <li>
+                    <a href="methods.html">Methods</a>
+                </li>
+				<li>
+                    <a href="methods-assignment.html">Methods-Assignment</a>
+                </li>
+				<li>
+                    <a href="constructor.html">Constructor</a>
+                </li>
+				<li>
+                    <a href="constructor-assignment.html">Constructor-Assignment</a>
+                </li>
+				<li>
+                    <a href="functionandoperatoroverloading.html">Function and Operator Overloading</a>
+                </li>
+				<li>
+                    <a href="functionandoperatoroverloading-assignment.html">Function and Operator Overloading-Assignment</a>
+                </li>
+                <li>
+                    <a href="inheritanceandpolymorphism.html">Inheritance and Polymorphism</a>
+                </li>
+				<li>
+                    <a href="inheritanceandpolymorphism-assignment.html">Inheritance and Polymorphism-Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h4>DO All questions with all types of Functions, Inline and Outline Methods and
+Inline Keywords.</h4>
+<br>
+<br>
+           <div><b>Q-1.Write a program to print the names of students by creating a Student class.
+If no name is passed while creating an object of the Student class, then the
+name should be "Unknown", otherwise the name should be equal to the
+String value passed while creating the object of the Student class.</b></div>
+       <div class="line"></div> 
+       
+       <div><b>Q-2.Create a class named 'Rectangle' with two data members- length and
+breadth and a function to calculate the area which is 'length*breadth'. The
+class has three constructors which are :<br>
+1 - having no parameter - values of both length and breadth are assigned
+zero.<br>
+2 - having two numbers as parameters - the two numbers are assigned as
+length and breadth respectively.<br>
+3 - having one number as parameter - both length and breadth are assigned
+that number.<br>
+Now, create objects of the 'Rectangle' class having none, one and two
+parameters and print their areas.</b></div>
+       <div class="line"></div>
+       
+        <div><b>Q-3.- Suppose you have a Piggie Bank with an initial amount of $50 and you have
+to add some more amount to it. Create a class 'AddAmount' with a data
+member named 'amount' with an initial value of $50. Now make two
+constructors of this class as follows:<br>
+1 - without any parameter - no amount will be added to the Piggie Bank<br>
+2 - having a parameter which is the amount that will be added to the Piggie
+Bank<br>
+Create an object of the 'AddAmount' class and display the final amount in
+the Piggie Bank.</b></div>
+       <div class="line"></div>
+       
+       <div><b>Q-4.Create a class named 'Programming'. While creating an object of the class,
+if nothing is passed to it, then the message "I love programming languages"
+should be printed. If some String is passed to it, then in place of
+"programming languages" the name of that String variable should be
+printed.<br>
+For example, while creating the object if we pass "cpp", then "I love cpp"
+should be printed.</b></div>
+       <div class="line"></div>
+       
+    <div><b>Q-5.Create a class named 'PrintNumber' to print various numbers of different
+datatypes by creating different functions with the same name 'printn'
+having a parameter for each datatype.</b></div>
+       <div class="line"></div>
+       
+        <div><b>Q-6.Create a class to print an integer and a character using two functions having
+the same name but different sequence of the integer and the character
+parameters.<br>
+For example, if the parameters of the first function are of the form (int n,
+char c), then that of the second function will be of the form (char c, int n).</b></div>
+       <div class="line"></div>
+        
+         <div><b>Q-7.Create a class to print the area of a square and a rectangle. The class has
+two functions with the same name but different number of parameters.
+The function for printing the area of rectangle has two parameters which
+are its length and breadth respectively while the other function for printing
+the area of square has one parameter which is the side of the square</b></div>
+       <div class="line"></div>
+       
+       <div><b>Q-8.Create a class 'Student' with three data members which are name, age and
+address. The constructor of the class assigns default values to name as
+"unknown", age as '0' and address as "not available". It has two functions
+with the same name 'setInfo'. First function has two parameters for name
+and age and assigns the same whereas the second function takes has three
+parameters which are assigned to name, age and address respectively. Print
+the name, age and address of 10 students.<br>
+Hint - Use array of objects</b></div>
+       <div class="line"></div>
+
+         <div><b>Q-9.Create a class 'Degree' having a function 'getDegree' that prints "I got a
+degree". It has two subclasses namely 'Undergraduate' and 'Postgraduate'
+each having a function with the same name that prints "I am an
+Undergraduate" and "I am a Postgraduate" respectively. Call the function
+by creating an object of each of the three classes</b></div>
+       <div class="line"></div>
+       
+       <div><b>Q-10.A boy has his money deposited $1000, $1500 and $2000 in banks-Bank A,
+Bank B and Bank C respectively. We have to print the money deposited by
+him in a particular bank.<br>
+Create a class 'Bank' with a function 'getBalance' which returns 0. Make its
+three subclasses named 'BankA', 'BankB' and 'BankC' with a function with
+the same name 'getBalance' which returns the amount deposited in that particular bank. Call the function 'getBalance' by the object of each of the
+three banks.</b></div>
+<div class="line"></div>
+
+  <div><b>Q-11- A class has an integer data member 'i' and a function named 'printNum' to
+print the value of 'i'. Its subclass also has an integer data member 'j' and a
+function named 'printNum' to print the value of 'j'. Make an object of the
+subclass and use it to assign a value to 'i' and to 'j'. Now call the function
+'printNum' by this object.</b></div>
+<div class="line"></div>
+
+  <div><b>Q-12- All the banks operating in India are controlled by RBI. RBI has set a welldefined guideline (e.g. minimum interest rate, minimum balance allowed,
+maximum withdrawal limit etc) which all banks must follow. For example,
+suppose RBI has set minimum interest rate applicable to a saving bank
+account to be 4% annually; however, banks are free to use 4% interest rate
+or to set any rates above it.</b></div>
+<div class="line"></div>
+
+ <div><b>Q-13- Write a program to implement bank functionality in the above scenario.
+Note: Create few classes namely Customer, Account, RBI (Base Class) and
+few derived classes (SBI, ICICI, PNB etc). Assume and implement required
+member variables and functions in each class.</b></div>
+           
+        <br><br><a href="constructor.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="functionandoperatoroverloading.html"><button class="btn btn-success">Next</button></a>
+		</div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

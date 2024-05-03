@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial,loop,for loop,while loop,do-while loop,go,return,jump statement html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Loops-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/C++/loop.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>C++ LANGUAGE</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of C++</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Of C++-Assignment</a>
+                </li>
+				<li>
+                    <a href="variables-and-data-types.html">Variables and Data Types</a>
+                </li>
+				<li>
+                    <a href="variables-and-data-types-assignment.html">Variables and Data Types-Assignment</a>
+                </li>
+				<li>
+                    <a href="operators-and-expressions.html">Operators and Expressions</a>
+                </li>
+				<li>
+                    <a href="operators-and-expressions-assignment.html">Operators and Expressions-Assignment</a>
+                </li>
+				<li>
+                    <a href="conditions.html">Conditions</a>
+                </li>
+				<li>
+                    <a href="conditions-assignment.html">Conditions-Assignment</a>
+                </li>
+				<li>
+                    <a href="loop.html">Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="loop-assignment.html">Loop Concepts-Assignment</a>
+                </li>
+				<li>
+                    <a href="nested-loop.html">Nested Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="nested-loop-assignment.html">Nested Loop Concepts-Assignment</a>
+                </li>
+				<li>
+                    <a href="arrays.html">Arrays</a>
+                </li>
+				<li>
+                    <a href="arrays-assignment.html">Arrays-Assignment</a>
+                </li>
+				<li>
+                    <a href="functions.html">Functions</a>
+                </li>
+				<li>
+                    <a href="functions-assignment.html">Functions-Assignment</a>
+                </li>
+                  <li>
+                    <a href="methods.html">Methods</a>
+                </li>
+				<li>
+                    <a href="methods-assignment.html">Methods-Assignment</a>
+                </li>
+				<li>
+                    <a href="constructor.html">Constructor</a>
+                </li>
+				<li>
+                    <a href="constructor-assignment.html">Constructor-Assignment</a>
+                </li>
+					<li>
+                    <a href="functionandoperatoroverloading.html">Function and Operator Overloading</a>
+                </li>
+				<li>
+                    <a href="functionandoperatoroverloading-assignment.html">Function and Operator Overloading-Assignment</a>
+                </li>
+                <li>
+                    <a href="inheritanceandpolymorphism.html">Inheritance and Polymorphism</a>
+                </li>
+				<li>
+                    <a href="inheritanceandpolymorphism-assignment.html">Inheritance and Polymorphism-Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+           
+            <h2>What is Loop</h2>
+            <div>Loop is used to reuse any code again and again there are three types of loop in C<br><br>
+			For loop<br>
+			While loop<br>
+			Do while loop
+            <div class="line"></div>
+
+            <h2>For loop</h2>
+            <div>For initialize the value a=2<br>
+			check the condition a<=10<br>
+			and inc/dec the value a++/a--<br><br>
+			Syntax:-<br><br>
+			For(initialization;condition;inc/dec)<br>
+			{<br>
+			statement<br>
+			}<br>
+			</div><br>
+			<b><div>Q-1.WAP which display 10 times "Hello"</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			hello()<br>
+			{<br>
+			int a;<br>
+			for(a=1;a<=10;a++)<br>
+			{<br>
+			cout<<"Hello"&lt;&lt;endl;<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			ap.hello();<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-2.WAP which display 1-10</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int a;<br>
+			for(a=1;a<=10;a++)<br>
+			{<br>
+			cout&lt;&lt;a&lt;&lt;endl;<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			ap.series();<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-3.WAP which accept end limit from the user and display 1 to n</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int a,n;<br>
+			cout<<"Enter limit=";<br>
+			cin>>n;<br>
+			for(a=1;a<=n;a++)<br>
+			{<br>
+			cout&lt;&lt;a&lt;&lt;endl;<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			ap.series()<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-4.WAP which accept start and end limit from the user and display n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			for(;n1<=n2;n1++)<br>
+			{<br>
+			cout&lt;&lt;n1;<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-5.WAP which accept start and end limit from the user and display even number between n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			for(;n1<=n2;n1++)<br>
+			{<br>
+			if(n1%2==0)<br>
+			{<br>
+			cout&lt;&lt;n1;<br>
+			}<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-6.WAP which accept start and end limit from the user and display odd number between n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+		    class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			for(;n1<=n2;n1++)<br>
+			{<br>
+			if(n1%2!=0)<br>
+			{<br>
+			cout<<&lt;&lt;n1;<br>
+			}<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-7.WAP which accept start and end limit from the user and display total sum of n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,sum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			for(;n1<=n2;n1++)<br>
+			{<br>
+			sum=sum+n1;<br>
+			}<br>
+			cout&lt;&lt;sum;<br>
+			 }<br>
+			 };<br>
+			 void main()<br>
+			 {<br>
+			 aptech ap;<br>
+			 clrscr();<br>
+			 ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-8.WAP which accept start and end limit from the user and display even sum of n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,esum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			for(;n1<=n2;n1++)<br>
+			{<br>
+			if(n1%2==0)<br>
+			{<br>
+			esum=esum+n1;<br>
+			}<br>
+			}<br>
+			cout&lt;&lt;esum;<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-9.WAP which accept start and end limit from the user and display odd sum of n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,osum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			for(;n1<=n2;n1++)<br>
+			{<br>
+			if(n1%2!=0)<br>
+			{<br>
+			osum=osum+n1;<br>
+			}<br>
+			}<br>
+			cout&lt;&lt;osum;<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-10.WAP which accept start and end limit from the user and display total,even and odd sum of n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,sum=0,esum=0,osum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			for(;n1<=n2;n1++)<br>
+			{<br>
+			if(n1%2==0)<br>
+			{<br>
+			esum=esum+n1;<br>
+			}<br>
+			else<br>
+			{<br>
+			osum=osum+n1;<br>
+			}<br>
+			}<br>
+			sum=esum+osum;<br>
+			cout&lt;&lt;sum&lt;&lt;esum&lt;&lt;osum;<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+            <div class="line"></div>
+			
+			
+			<h2>While loop</h2>
+            <div>while check the condition and then execute.<br><br>
+			Syntax:-<br><br>
+			while(condition)<br>
+			{<br>
+			statement<br>
+			}<br><br>
+			</div>
+			<b><div>Q-1.WAP which display 10 times "Hello"</div></b><br>
+		<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			hello()<br>
+			{<br>
+			int a=1;<br>
+			while(a<=10)<br>
+			{<br>
+			cout<<"Hello"&lt;&lt;endl;<br>
+			a++;<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			ap.hello();<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-2.WAP which display 1-10</div></b><br>
+		       <div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int a=1;<br>
+			while(a<=10)<br>
+			{<br>
+			cout&lt;&lt;a&lt;&lt;endl;<br>
+			a++;<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			ap.series();<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-3.WAP which accept end limit from the user and display 1 to n</div></b><br>
+				<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int a=1,n;<br>
+			cout<<"Enter limit=";<br>
+			cin>>n;<br>
+			while(a<=n)<br>
+			{<br>
+			cout&lt;&lt;a&lt;&lt;endl;<br>
+			a++;<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			ap.series()<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-4.WAP which accept start and end limit from the user and display n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			while(n1<=n2)<br>
+			{<br>
+			cout&lt;&lt;n1;<br>
+			n1++;<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-5.WAP which accept start and end limit from the user and display even number between n1 to n2</div></b><br>
+				<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			while(n1<=n2)<br>
+			{<br>
+			if(n1%2==0)<br>
+			{<br>
+			cout&lt;&lt;n1;<br>
+			}<br>
+			n1++;<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-6.WAP which accept start and end limit from the user and display odd number between n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+		    class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			while(n1<=n2)<br>
+			{<br>
+			if(n1%2!=0)<br>
+			{<br>
+			cout<<&lt;&lt;n1;<br>
+			}<br>
+			n1++;<br>
+			}<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-7.WAP which accept start and end limit from the user and display total sum of n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,sum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			while(n1<=n2)<br>
+			{<br>
+			sum=sum+n1;<br>
+			n1++;<br>
+			}<br>
+			cout&lt;&lt;sum;<br>
+			 }<br>
+			 };<br>
+			 void main()<br>
+			 {<br>
+			 aptech ap;<br>
+			 clrscr();<br>
+			 ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-8.WAP which accept start and end limit from the user and display even sum of n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,esum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			while(n1<=n2)<br>
+			{<br>
+			if(n1%2==0)<br>
+			{<br>
+			esum=esum+n1;<br>
+			}<br>
+			n1++;<br>
+			}<br>
+			cout&lt;&lt;esum;<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-9.WAP which accept start and end limit from the user and display odd sum of n1 to n2</div></b><br>
+				<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,osum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			while(n1<=n2)<br>
+			{<br>
+			if(n1%2!=0)<br>
+			{<br>
+			osum=osum+n1;<br>
+			}<br>
+			n1++;<br>
+			}<br>
+			cout&lt;&lt;osum;<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-10.WAP which accept start and end limit from the user and display total,even and odd sum of n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,sum=0,esum=0,osum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			while(n1<=n2)<br>
+			{<br>
+			if(n1%2==0)<br>
+			{<br>
+			esum=esum+n1;<br>
+			}<br>
+			else<br>
+			{<br>
+			osum=osum+n1;<br>
+			}<br>
+			n1++;<br>
+			}<br>
+			sum=esum+osum;<br>
+			cout&lt;&lt;sum&lt;&lt;esum&lt;&lt;osum;<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+            <div class="line"></div>
+			
+			
+			
+			<h2>Do While loop</h2><br>
+            <div>Do while execute first and then check the condition.<br><br>
+			Syntax:-<br><br>
+			do<br>
+			{<br>
+			statement<br>
+			}<br>
+			while(condition);
+			</div><br>
+			<b><div>Q-1.WAP which display 10 times "Hello"</div></b><br>
+		<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			hello()<br>
+			{<br>
+			int a=1;<br>
+			do<br>
+			{<br>
+			cout<<"Hello"&lt;&lt;endl;<br>
+			a++;<br>
+			}<br>
+			while(a<=10);<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			ap.hello();<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-2.WAP which display 1-10</div></b><br>
+		       <div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int a=1;<br>
+			do<br>
+			{<br>
+			cout&lt;&lt;a&lt;&lt;endl;<br>
+			a++;<br>
+			}<br>
+			while(a<=10);<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			ap.series();<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-3.WAP which accept end limit from the user and display 1 to n</div></b><br>
+				<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int a=1,n;<br>
+			cout<<"Enter limit=";<br>
+			cin>>n;<br>
+		    do<br>
+			{<br>
+			cout&lt;&lt;a&lt;&lt;endl;<br>
+			a++;<br>
+			}<br>
+			while(a<=n);<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			ap.series()<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-4.WAP which accept start and end limit from the user and display n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			do<br>
+			{<br>
+			cout&lt;&lt;n1;<br>
+			n1++;<br>
+			}<br>
+			while(n1<=n2);<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}<br>
+			</div><br>
+			<b><div>Q-5.WAP which accept start and end limit from the user and display even number between n1 to n2</div></b><br>
+				<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			do<br>
+			{<br>
+			if(n1%2==0)<br>
+			{<br>
+			cout&lt;&lt;n1;<br>
+			}<br>
+			n1++;<br>
+			}<br>
+			while(n1<=n2);<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-6.WAP which accept start and end limit from the user and display odd number between n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+		    class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			do<br>
+			{<br>
+			if(n1%2!=0)<br>
+			{<br>
+			cout<<&lt;&lt;n1;<br>
+			}<br>
+			n1++;<br>
+			}<br>
+			while(n1<=n2);<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-7.WAP which accept start and end limit from the user and display total sum of n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,sum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			do<br>
+			{<br>
+			sum=sum+n1;<br>
+			n1++;<br>
+			}<br>
+			while(n1<=n2);<br>
+			cout&lt;&lt;sum;<br>
+			 }<br>
+			 };<br>
+			 void main()<br>
+			 {<br>
+			 aptech ap;<br>
+			 clrscr();<br>
+			 ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-8.WAP which accept start and end limit from the user and display even sum of n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,esum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			do<br>
+			{<br>
+			if(n1%2==0)<br>
+			{<br>
+			esum=esum+n1;<br>
+			}<br>
+			n1++;<br>
+			}<br>
+			while(n1<=n2);<br>
+			cout&lt;&lt;esum;<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-9.WAP which accept start and end limit from the user and display odd sum of n1 to n2</div></b><br>
+				<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,osum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			do<br>
+			{<br>
+			if(n1%2!=0)<br>
+			{<br>
+			osum=osum+n1;<br>
+			}<br>
+			n1++;<br>
+			}<br>
+			while(n1<=n2);<br>
+			cout&lt;&lt;osum;<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+			<b><div>Q-10.WAP which accept start and end limit from the user and display total,even and odd sum of n1 to n2</div></b><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			series()<br>
+			{<br>
+			int n1,n2,sum=0,esum=0,osum=0;<br>
+			cout<<"Enter start and end limit=";<br>
+			cin>>n1>>n2;<br>
+			do<br>
+			{<br>
+			if(n1%2==0)<br>
+			{<br>
+			esum=esum+n1;<br>
+			}<br>
+			else<br>
+			{<br>
+			osum=osum+n1;<br>
+			}<br>
+			n1++;<br>
+			}<br>
+			while(n1<=n2);<br>
+			sum=esum+osum;<br>
+			cout&lt;&lt;sum&lt;&lt;esum&lt;&lt;osum;<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.series();<br>
+			getch();<br>
+			}</div><br><br>
+            
+
+<br><br><a href="conditions-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="loop-assignment.html"><button class="btn btn-success">Next</button></a>
+            
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

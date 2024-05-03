@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial,loop,for loop,while loop,do-while loop,go,return,jump statement html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Operators and Expressions-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/C++/operators-and-expressions.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>C++ LANGUAGE</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of C++</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Of C++-Assignment</a>
+                </li>
+				<li>
+                    <a href="variables-and-data-types.html">Variables and Data Types</a>
+                </li>
+				<li>
+                    <a href="variables-and-data-types-assignment.html">Variables and Data Types-Assignment</a>
+                </li>
+				<li>
+                    <a href="operators-and-expressions.html">Operators and Expressions</a>
+                </li>
+				<li>
+                    <a href="operators-and-expressions-assignment.html">Operators and Expressions-Assignment</a>
+                </li>
+				<li>
+                    <a href="conditions.html">Conditions</a>
+                </li>
+				<li>
+                    <a href="conditions-assignment.html">Conditions-Assignment</a>
+                </li>
+				<li>
+                    <a href="loop.html">Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="loop-assignment.html">Loop Concepts-Assignment</a>
+                </li>
+				<li>
+                    <a href="nested-loop.html">Nested Loop Concepts</a>
+                </li>
+				<li>
+                    <a href="nested-loop-assignment.html">Nested Loop Concepts-Assignment</a>
+                </li>
+				<li>
+                    <a href="arrays.html">Arrays</a>
+                </li>
+				<li>
+                    <a href="arrays-assignment.html">Arrays-Assignment</a>
+                </li>
+				<li>
+                    <a href="functions.html">Functions</a>
+                </li>
+				<li>
+                    <a href="functions-assignment.html">Functions-Assignment</a>
+                </li>
+				<li>
+                    <a href="pointers.html">Pointers</a>
+                </li>
+                  <li>
+                    <a href="methods.html">Methods</a>
+                </li>
+				<li>
+                    <a href="methods-assignment.html">Methods-Assignment</a>
+                </li>
+				<li>
+                    <a href="constructor.html">Constructor</a>
+                </li>
+				<li>
+                    <a href="constructor-assignment.html">Constructor-Assignment</a>
+                </li>
+                	<li>
+                    <a href="functionandoperatoroverloading.html">Function and Operator Overloading</a>
+                </li>
+				<li>
+                    <a href="functionandoperatoroverloading-assignment.html">Function and Operator Overloading-Assignment</a>
+                </li>
+                <li>
+                    <a href="inheritanceandpolymorphism.html">Inheritance and Polymorphism</a>
+                </li>
+				<li>
+                    <a href="inheritanceandpolymorphism-assignment.html">Inheritance and Polymorphism-Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>What is Operators and Operands</h2>
+           <div>a+b in this expression a and b is operands and + is an operator</div>
+		   <div class="line"></div>
+
+            <h2>Types of Operands</h2>
+			<div>
+			<ul>
+			<ul>
+            <li>Unary (a):-Unary operators are the operators that perform operations on a single operand to produce a new value</li>
+		   <li>Binary (a+b):-A binary operator is an operator that operates on two operands and manipulates them to return a result</li>
+		   <li>Ternary (a+b+c+d):-A Ternary operator is an operator that operates on three or more operands and manipulates them to return a result</li>
+		   </ul>
+		   </div>				
+            <div class="line"></div>
+
+            <h2>Types of Operators</h2>
+			<div class="line"></div>
+			
+			<h2>Arthmetic Operator</h2>
+			<div>
+			<ul>
+			<li>+ (Plus)</li>
+			<li>- (Minus)</li>
+			<li>* (Multiply)</li>
+			<li>/ (Divide)</li>
+			<li>% (Mod)</li>
+			</ul>
+			</div>
+			<div class="line"></div>
+			
+			<h2>Relational Operator</h2>
+			<div>
+			<ul>
+			<li>>	(Greater then)</li>
+			<li><	(Less then)</li>
+			<li>>=	(Greater then equal to)</li>
+			<li><=	(Less then equal to)</li>
+			<li>= 	(Equal to)</li>
+			<li>==	(Equal equals)</li>
+			</ul>
+			</div>
+			<div class="line"></div>
+			
+			<h2>Logical Operator</h2>
+			<div>
+			<ul>
+			<li>&& (And):-The logical AND operator is an operator that performs a logical conjunction on two statements. It only yields a value of “true” when both statements are true. If one of the two statements is false, then the logical AND operator yields a “false” value.</li>
+			<li>|| (Or):-The OR operator is a Boolean operator which would return the value TRUE if one or more conditions is true</li>
+			<li>! (Not):-An operation on logical values that changes true to false, and false to true</li>
+			</ul>
+			</div>
+			<div class="line"></div>
+			
+			<h2>Assignment (Shorthand) Operator</h2>
+			<div>
+			<ul>
+			<li>+= (Plus equal)</li>
+			<li>-= (Minus equal)</li>
+			<li>*= (Multiply equal)</li>
+			<li>/= (Divide equal)</li>
+			<li>%= (Mod equal)</li>
+			</ul>
+			if we write a=a+b then we will also write this expression a+=b it means same
+			</div>
+			<div class="line"></div>
+			
+			<h2>Bitwise Operator</h2>
+			<div>
+			<ul>
+			<li>>> (Right Shift)</li>
+			<li><< (Left Shift)</li>
+			<li>^ (Power)</li>
+			<li>~ (Destructor)</li>
+			</ul>
+			</div>
+			<div class="line"></div>
+			
+			<h2>Sizeof Operator</h2>
+			<div>
+			<ul>
+			<li>sizeof:-Sizeof is a much-used operator in the C. It is a compile-time unary operator which can be used to compute the size of its operand</li>
+			</ul>
+			</div><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+			class aptech<br>
+			{<br>
+			public:<br>
+			sizeofexample()<br>
+			{<br>
+			int a;<br>
+			cout&lt;&lt;sizeof(a);<br>
+			}<br>
+			};<br>
+			void main()<br>
+			{<br>
+			aptech ap;<br>
+			clrscr();<br>
+			ap.sizeofexample();<br>
+			getch();<br>
+			}
+			</div>
+			<div class="line"></div>
+			
+			<h2>Conditional Operator</h2>
+			<div>
+			<ul>
+			<li>? (If)and(else):-The conditional operator is also known as a ternary operator. The conditional statements are the decision-making statements which depends upon the output of the expression. It is represented by two symbols, i.e., '?' and ':'.</li>
+			</ul>
+			</div><br>
+			<div>
+			#include&lt;iostream.h&gt;<br>
+			#include&lt;conio.h&gt;<br>
+		    class aptech<br>
+		    {<br>
+		    public:<br>
+		    conditionalexample()<br>
+		    {<br>
+		    int age;<br>
+		    cout&lt;&lt;"Enter age=";<br>
+		    cin&gt;&gt;age;<br>
+		    cout&lt;&lt;age&gt;=18?"Eligible":"Not Eligible";<br>
+		    //cout&lt;&lt;age&gt;=18?1:0;<br>
+		    }<br>
+		    }<br>
+		    void main()<br>
+		    {<br>
+		    aptech ap;<br>
+		    clrscr();<br>
+		    ap.conditionalexample();<br>
+		    getch();<br>
+		    }
+			</div>
+			<div class="line"></div>
+			
+			<h2>Increment/Decrement Operator</h2>
+			<div>
+			<ul>
+			<li>++ (Increment)and -- (Decrement):-Increment Operator is used to increase the value of the operand by 1 whereas the Decrement Operator is used to decrease the value of the operand by 1.</li>
+			</ul>
+			</div>
+			<div>Increment and Decrement operators is basically two of types
+			<ul>
+			<li>Prefix (++a):-The prefix increment operator (++) adds one to its operand before print</li>
+			<li>Postfix (a++):-The prefix increment operator (++) adds one to its operand after print</li>
+			</ul>
+			</div>
+			
+<br><br><a href="variables-and-data-types-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="operators-and-expressions-assignment.html"><button class="btn btn-success">Next</button></a>
+
+
+      </div>      
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
