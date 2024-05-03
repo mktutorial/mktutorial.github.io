@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Joins Assignment-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/SQL/joins-assignment.html"
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>My SQL</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+               <li>
+                    <a href="basics.html">Basics Of MySQL</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+				  <li>
+                    <a href="usingmysql.html">Using MySQL</a>
+                </li>
+                <li>
+                    <a href="usingmysql-assignment.html">Using MySQL Assignment</a>
+                </li>
+                 <li>
+                    <a href="usingmysql-2.html">Commit and Rollback</a>
+                </li>
+                <li>
+                    <a href="usingmysql-assignment-2.html">Commit and Rollback Assignment</a>
+                </li>
+                 <li>
+                    <a href="implementingsqlqueries.html">Implementing SQL queries</a>
+                </li>
+                <li>
+                    <a href="implementingsqlqueries-assignment.html">Implementing SQL queries Assignment</a>
+                </li>
+                 <li>
+                    <a href="joins.html">Joins</a>
+                </li>
+                <li>
+                    <a href="joins-assignment.html">Joins Assignment</a>
+                </li>
+                <li>
+                    <a href="functions.html">Functions</a>
+                </li>
+                <li>
+                    <a href="functions-assignment.html">Functions Assignment</a>
+                </li>
+                <li>
+                    <a href="controllingandmanaging.html">Controlling and Managing</a>
+                </li>
+                <li>
+                    <a href="controllingandmanaging-assignment.html">Controlling and Managing Assignment</a>
+                </li>
+                   <li>
+                    <a href="transactionmanagement.html">Transaction Management</a>
+                </li>
+                <li>
+                    <a href="transactionmanagement-assignment.html">Transaction Management Assignment</a>
+                </li>
+                 <li>
+                    <a href="backup.html">SQL Backup and Restore</a>
+                </li>
+                <li>
+                    <a href="backup-assignment.html">SQL Backup and Restore Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+           
+			
+			<h2>Create this tables and execute the query:-</h2>
+            <div><b>Author Table:-</b></div><br>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>birth_year</th>
+                        <th>death_year</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Marcella Cole</td>
+                        <td>1983</td>
+                        <td>NULL</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Lisa Mullins</td>
+                        <td>1891</td>
+                        <td>1950</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Dennis Stokes</td>
+                        <td>1935</td>
+                        <td>1994</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Randolph Vasquez</td>
+                        <td>1957</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Daniel Branson</td>
+                        <td>1965</td>
+                        <td>1990</td>
+                    </tr>
+                </table>
+            </div><br>
+            <br>
+            
+             <div><b>Book Table:-</b></div><br>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th>id</th>
+                        <th>author_id</th>
+                        <th>title</th>
+                        <th>publish_year</th>
+                        <th>publishing_house</th>
+                        <th>rating</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>NULL</td>
+                        <td>Soulless girl</td>
+                        <td>2008</td>
+                        <td>Golden Albatros</td>
+                        <td>4.3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>NULL</td>
+                        <td>Weak Heart</td>
+                        <td>1980</td>
+                        <td>Diarmud Inc.</td>
+                        <td>3.8</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>Faith Of Light</td>
+                        <td>1995</td>
+                        <td>White Cloud Press</td>
+                        <td>4.3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>NULL</td>
+                        <td>Memory Of Hope</td>
+                        <td>2000</td>
+                        <td>Rutis Enterprises</td>
+                        <td>2.7</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>Warrior Of Wind</td>
+                        <td>2005</td>
+                        <td>Maverick</td>
+                        <td>4.6</td>
+                    </tr>
+                </table>
+            </div><br>
+            <br>
+            
+            
+             <div><b>Adaptation Table:-</b></div><br>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th>book_id</th>
+                        <th>type</th>
+                        <th>title</th>
+                        <th>release_year</th>
+                        <th>rating</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>movie</td>
+                        <td>Gone With The Wolves: The Beginning</td>
+                        <td>2008</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>movie</td>
+                        <td>Companions Of Tomorrow</td>
+                        <td>2001</td>
+                        <td>4.2</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>movie</td>
+                        <td>Homeless Warrior</td>
+                        <td>2008</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>movie</td>
+                        <td>Blacksmith With Silver</td>
+                        <td>2014</td>
+                        <td>4.3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>movie</td>
+                        <td>Patrons And Bearers</td>
+                        <td>2004</td>
+                        <td>3.2</td>
+                    </tr>
+                </table>
+            </div><br>
+            <br>
+            
+            <div><b>book_review Table:-</b></div><br>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th>book_id</th>
+                        <th>review</th>
+                        <th>author</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>An incredible book</td>
+                        <td>Sylvia Jones</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Great, although it has some flaws</td>
+                        <td>Jessica Parker</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Dennis Stokes takes the reader for a ride full of emotions</td>
+                        <td>Thomas Green</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Incredible craftsmanship of the author</td>
+                        <td>Martin Freeman</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Not the best book by this author</td>
+                        <td>Jude Falth</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Claudia Johnson at her best!</td>
+                        <td>Joe Marqiz</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>I cannot recall more captivating plot</td>
+                        <td>Alexander Durham</td>
+                    </tr>
+                </table>
+            </div><br>
+            <br>
+            
+            <div>
+                <ul>
+                    <li>List All Books and Their Authors.</li>
+                    <li>List Authors and Books Published After 2005.</li>
+                    <li>Show Books Adapted Within 4 Years and Rated Lower Than the Adaptation.</li>
+                    <li>Show All Books and Their Adaptations (If Any).</li>
+                    <li>Show All Books with Their Reviews (If Any).</li>
+                    <li>List All the Books and All the Authors.</li>
+                    
+                </ul>
+            </div>
+            
+			<br><br><a href="joins.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="functions.html"><button class="btn btn-success">Next</button></a>
+			
+       
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

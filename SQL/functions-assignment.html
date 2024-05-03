@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Joins Assignment-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/SQL/functions-assignment.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>My SQL</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+               <li>
+                    <a href="basics.html">Basics Of MySQL</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+				  <li>
+                    <a href="usingmysql.html">Using MySQL</a>
+                </li>
+                <li>
+                    <a href="usingmysql-assignment.html">Using MySQL Assignment</a>
+                </li>
+                 <li>
+                    <a href="usingmysql-2.html">Commit and Rollback</a>
+                </li>
+                <li>
+                    <a href="usingmysql-assignment-2.html">Commit and Rollback Assignment</a>
+                </li>
+                 <li>
+                    <a href="implementingsqlqueries.html">Implementing SQL queries</a>
+                </li>
+                <li>
+                    <a href="implementingsqlqueries-assignment.html">Implementing SQL queries Assignment</a>
+                </li>
+                 <li>
+                    <a href="joins.html">Joins</a>
+                </li>
+                <li>
+                    <a href="joins-assignment.html">Joins Assignment</a>
+                </li>
+                <li>
+                    <a href="functions.html">Functions</a>
+                </li>
+                <li>
+                    <a href="functions-assignment.html">Functions Assignment</a>
+                </li>
+                 <li>
+                    <a href="controllingandmanaging.html">Controlling and Managing</a>
+                </li>
+                <li>
+                    <a href="controllingandmanaging-assignment.html">Controlling and Managing Assignment</a>
+                </li>
+                   <li>
+                    <a href="transactionmanagement.html">Transaction Management</a>
+                </li>
+                <li>
+                    <a href="transactionmanagement-assignment.html">Transaction Management Assignment</a>
+                </li>
+                 <li>
+                    <a href="backup.html">SQL Backup and Restore</a>
+                </li>
+                <li>
+                    <a href="backup-assignment.html">SQL Backup and Restore Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+           <H2>Create these tables and execute the query:-</H2>
+           <br>
+           <div><b>INVENTORY:-</b></div>
+           <br>
+           <div>
+               <table border="1">
+                   <tr>
+                       <th> CarId</th>
+                       <th>CarName</th>
+                       <th>Price</th>
+                       <th>Model</th>
+                       <th> YearManufacture</th>
+                       <th>Fueltype</th>
+                   </tr>
+                   <tr>
+                       <td> D001 </td>
+                       <td> Car1 </td>
+                       <td>582613.00</td>
+                       <td>LXI</td>
+                       <td>2017</td>
+                       <td>Petrol</td>
+                   </tr>
+                   <tr>
+                       <td>D002 </td>
+                       <td>Car1</td>
+                       <td>586321.00</td>
+                       <td>VXI</td>
+                       <td>2018 </td>
+                       <td> Petrol </td>
+                   </tr>
+                   <tr>
+                       <td> B001</td>
+                       <td>Car2</td>
+                       <td>567031.00</td>
+                       <td> Sigma1.2 </td>
+                       <td>2019</td>
+                       <td> Petrol </td>
+                   </tr>
+                   <tr>
+                       <td> B002 </td>
+                       <td>Car2</td>
+                       <td> 647858.00</td>
+                       <td>Delta1.2 </td>
+                       <td>2018</td>
+                       <td>Petrol</td>
+                   </tr>
+                   <tr>
+                       <td>E001</td>
+                       <td>Car3</td>
+                       <td>355205.00 </td>
+                       <td>5 STR STD</td>
+                       <td>2017</td>
+                       <td>CNG </td>
+                   </tr>
+                     <tr>
+                       <td>E002</td>
+                       <td>Car3</td>
+                       <td>654914.00  </td>
+                       <td>CARE</td>
+                       <td>2018</td>
+                       <td>CNG </td>
+                   </tr>
+                    <tr>
+                       <td>S001 </td>
+                       <td> Car4</td>
+                       <td> 514000.00  </td>
+                       <td> LXI</td>
+                       <td>2017</td>
+                       <td>PETROL </td>
+                   </tr>
+                   <tr>
+                       <td> S002 </td>
+                       <td> Car4</td>
+                       <td> 614000.00   </td>
+                       <td> VXI </td>
+                       <td>2018 </td>
+                       <td>PETROL </td>
+                   </tr>
+               </table>
+           </div>
+           <br>
+           <div><b>CUSTOMER:-</b></div>
+           <br>
+           <div>
+               <table border="1">
+                   <tr>
+                       <th>CustId</th>
+                       <th>CustName</th>
+                       <th>CustAdd</th>
+                       <th>Phone</th>
+                       <th> Email </th>
+                   </tr>
+                   <tr>
+                       <td> C0001 </td>
+                       <td>AmitSaha</td>
+                       <td>L-10, Pitampura</td>
+                       <td>4564587852</td>
+                       <td>amitsaha2@gmail.com</td>
+                   </tr>
+                   
+                    <tr>
+                       <td>  C0002  </td>
+                       <td>Rehnuma </td>
+                       <td> J-12, SAKET</td>
+                       <td>5527688761</td>
+                       <td>Rehnuma@hotmail.com</td>
+                   </tr>
+                    <tr>
+                       <td>   C0003   </td>
+                       <td>CharviNayyar </td>
+                       <td>  10/9, FF, Rohini</td>
+                       <td>6811635425</td>
+                       <td>CharviNayyar@hotmail.com</td>
+                   </tr>
+                   <tr>
+                       <td>   C0004    </td>
+                       <td>Gurpreet </td>
+                       <td>  Gurpreet</td>
+                       <td> 3511056125</td>
+                       <td>Gurpreet23@hotmail.com</td>
+                   </tr>
+               </table>
+           </div>
+           <br>
+           <div><b>SALE:-</b></div>
+           <br>
+           <div>
+               <table border="1">
+                   <tr>
+                       <th>InvoiceNo</th>
+                       <th>CarId </th>
+                       <th>CustId</th>
+                       <th>SaleDate</th>
+                       <th> PaymentMode </th>
+                       <th>EmpID</th>
+                       <th>SalePrice</th>
+                   </tr>
+                         <tr>
+                       <td> I00001 </td>
+                       <td> D001 </td>
+                       <td> C0001</td>
+                       <td> 2019-01-24</td>
+                       <td>Credit Card </td>
+                       <td>E004</td>
+                       <td>613247.00 </td>
+                   </tr>
+                    <tr>
+                       <td> I00002 </td>
+                       <td> S001 </td>
+                       <td> C0002</td>
+                       <td> 2018-12-12</td>
+                       <td>Online </td>
+                       <td>E001</td>
+                       <td>590321.00 </td>
+                   </tr>
+                    <tr>
+                       <td> I00003 </td>
+                       <td> S002 </td>
+                       <td> C0004</td>
+                       <td> 2019-01-25</td>
+                       <td>Cheque </td>
+                       <td>E010</td>
+                       <td>604000.00 </td>
+                   </tr>
+                    <tr>
+                       <td> I00004 </td>
+                       <td> D002 </td>
+                       <td> C0001</td>
+                       <td> 2018-10-15</td>
+                       <td>Bank Finance </td>
+                       <td>E007</td>
+                       <td>659982.00 </td>
+                   </tr>
+                   <tr>
+                       <td> I00005 </td>
+                       <td> E001 </td>
+                       <td> C0003</td>
+                       <td> 2018-12-20</td>
+                       <td>Credit Card </td>
+                       <td>E002</td>
+                       <td>369310.00 </td>
+                   </tr>
+                   <tr>
+                       <td> I00006 </td>
+                       <td> S002 </td>
+                       <td> C0002</td>
+                       <td> 2019-01-30</td>
+                       <td>Bank Finance </td>
+                       <td>E007</td>
+                       <td>620214.00 </td>
+                   </tr>
+               </table>
+           </div>
+			<br>
+			<div><b>EMPLOYEE:-</b></div>
+			<br>
+			<div>
+			    <table border="1">
+			        <tr>
+			            <th> EmpID</th>
+			            <th> EmpName</th>
+			            <th>DOB</th>
+			            <th> DOJ</th>
+			            <th>Designation</th>
+			            <th> Salary</th>
+			        </tr>
+			        <tr>
+			            <td>E001</td>
+			            <td>Rushil</td>
+			            <td>1994-07-10</td>
+			            <td>2017-12-12</td>
+			            <td>Salesman</td>
+			            <td>25550</td>
+			        </tr>
+			         <tr>
+			            <td>E002</td>
+			            <td>Sanjay</td>
+			            <td> 1990-03-12</td>
+			            <td>2016-06-05</td>
+			            <td>Salesman</td>
+			            <td>33100</td>
+			        </tr>
+			         <tr>
+			            <td>E003</td>
+			            <td>Zohar</td>
+			            <td>  1975-08-30</td>
+			            <td> 1999-01-08</td>
+			            <td>Peon</td>
+			            <td>20000</td>
+			        </tr>
+			         <tr>
+			            <td>E004</td>
+			            <td>Arpit</td>
+			            <td> 1989-06-06</td>
+			            <td>  2010-12-02</td>
+			            <td>Salesman</td>
+			            <td>39100</td>
+			        </tr>
+			         <tr>
+			            <td>E006</td>
+			            <td>Sanjucta</td>
+			            <td> 1985-11-03</td>
+			            <td>  2012-07-01</td>
+			            <td> Receptionist</td>
+			            <td>27350</td>
+			        </tr>
+			        <tr>
+			            <td>E007</td>
+			            <td>Mayank</td>
+			            <td> 1993-04-03</td>
+			            <td>  2017-01-01</td>
+			            <td> Salesman</td>
+			            <td>27352</td>
+			        </tr>
+			         <tr>
+			            <td>E010</td>
+			            <td>Rajkumar</td>
+			            <td> 1987-02-26</td>
+			            <td>  2013-10-23</td>
+			            <td> Salesman</td>
+			            <td>31111</td>
+			        </tr>
+			    </table>
+			</div>
+		    <br>
+		    <div>
+		        <ul>
+		            <li>In order to increase sales, suppose the car dealer decides
+to offer his customers to pay the total amount in 10
+easy EMIs (equal monthly installments). Assume that
+EMIs are required to be in multiples of 10,000. For that,
+the dealer wants to list the CarID and Price along with
+the following data from the Inventory table:</li>
+<ul>
+    <li>Calculate GST as 12% of Price and display the result
+after rounding it off to one decimal place.</li>
+<li>Add a new column FinalPrice to the table inventory,
+which will have the value as sum of Price and 12%
+of the GST.
+</li>
+<li>Calculate and display the amount to be paid
+each month (in multiples of 10000) which is to be
+calculated after dividing the FinalPrice of the car
+into 10 instalments.</li>
+<li>After dividing the amount into EMIs, find out the
+remaining amount to be paid immediately, by
+performing modular division.</li>
+</ul>
+<li>Let us now add a new column Commission to the
+SALE table. The column Commission should have
+a total length of 7 in which 2 decimal places to
+be there.</li>
+<li>Let us now calculate commission for sales agents
+as 12 per cent of the SalePrice, insert the values
+to the newly added column Commission and then
+display records of the table SALE where commission
+> 73000.</li>
+<li>Display InvoiceNo, SalePrice and Commission such
+that commission value is rounded off to 0.</li>
+<li>Display customer name in lower case and customer
+email in upper case from table CUSTOMER</li>
+<li>
+    Display the length of the email and part of the email
+from the email ID before the character ‘@’. Note - Do
+not print ‘@’.
+</li>
+<li>
+    Let us assume that four digit area code is reflected
+in the mobile number starting from position number
+3. For example, 2630 is the area code of mobile
+number 4726309212. Now, write the SQL query to
+display the area code of the customer living in Rohini.
+</li>
+<li>Display emails after removing the domain name
+extension “.com” from emails of the customers</li>
+<li>Display details of all the customers having yahoo
+emails only.</li>
+<li>Select the day, month number and year of joining of
+all employees.</li>
+<li>If the date of joining is not a Sunday, then display it
+in the following format "Wednesday, 26, November,
+1979."</li>
+<li>Display the total number of records from table
+INVENTORY having a model as VXI.</li>
+<li>Display the total number of different types of Models
+available from table INVENTORY.</li>
+<li>Display the average price of all the cars with Model
+LXI from table INVENTORY.</li>
+<li>Display the number of cars purchased by each
+customer from the SALE table.</li>
+<li>Display the customer Id and number of cars
+purchased if the customer purchased more than 1
+car from SALE table.</li>
+<li>Display the number of people in each category of
+payment mode from the table SALE.</li>
+<li>Display the PaymentMode and number of payments
+made using that mode more than once.</li>
+		        </ul>
+		    </div>
+            
+			<br><br><a href="functions.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="controllingandmanaging.html"><button class="btn btn-success">Next</button></a>
+			
+       
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

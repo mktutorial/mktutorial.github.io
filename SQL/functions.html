@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Functions-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/SQL/functions.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>My SQL</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of MySQL</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+				  <li>
+                    <a href="usingmysql.html">Using MySQL</a>
+                </li>
+                <li>
+                    <a href="usingmysql-assignment.html">Using MySQL Assignment</a>
+                </li>
+                 <li>
+                    <a href="usingmysql-2.html">Commit and Rollback</a>
+                </li>
+                <li>
+                    <a href="usingmysql-assignment-2.html">Commit and Rollback Assignment</a>
+                </li>
+                  <li>
+                    <a href="implementingsqlqueries.html">Implementing SQL queries</a>
+                </li>
+                <li>
+                    <a href="implementingsqlqueries-assignment.html">Implementing SQL queries Assignment</a>
+                </li>
+                 <li>
+                    <a href="joins.html">Joins</a>
+                </li>
+                <li>
+                    <a href="joins-assignment.html">Joins Assignment</a>
+                </li>
+                 <li>
+                    <a href="functions.html">Functions</a>
+                </li>
+                <li>
+                    <a href="functions-assignment.html">Functions Assignment</a>
+                </li>
+                 <li>
+                    <a href="controllingandmanaging.html">Controlling and Managing</a>
+                </li>
+                <li>
+                    <a href="controllingandmanaging-assignment.html">Controlling and Managing Assignment</a>
+                </li>
+                   <li>
+                    <a href="transactionmanagement.html">Transaction Management</a>
+                </li>
+                <li>
+                    <a href="transactionmanagement-assignment.html">Transaction Management Assignment</a>
+                </li>
+                 <li>
+                    <a href="backup.html">SQL Backup and Restore</a>
+                </li>
+                <li>
+                    <a href="backup-assignment.html">SQL Backup and Restore Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                               <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>SQL AVG() Function</h2><br>
+            <div>The AVG() function returns the average value of a numeric column.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT AVG(column_name)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+
+ <h2>SQL COUNT() Function</h2><br>
+            <div>The COUNT() function returns the number of rows that matches a specified criterion.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT COUNT(column_name)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+
+ <h2>SQL Count Distinct Function</h2><br>
+            <div>By using the DISTINCT keyword in a function called COUNT, we can return the number of different countries.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT COUNT(DISTINCT column_name)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+
+ <h2>SQL GROUP_CONCAT() function</h2><br>
+            <div> It is used to concatenate and aggregate values from multiple rows within a specific column into a single string.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT GROUP_CONCAT(expressions)<br>
+FROM table_name;</div>
+<div class="line"></div>
+
+ <h2>SQL MAX() Function</h2><br>
+            <div> The MAX() function returns the largest value of the selected column.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT MAX(column_name)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+ <h2>SQL STD() Function</h2><br>
+            <div> MySQL STD() function returns the population standard deviation of expression. The standard deviation is a statistical measure that quantifies the amount of variation or dispersion in a dataset.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT STD(expressions)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+
+ <h2>SQL SUM() Function</h2><br>
+            <div> The SUM() function returns the total sum of a numeric column.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT SUM(column_name)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+
+ <h2>SQL VARIANCE() Function</h2><br>
+            <div> The VARIANCE() function returns the population standard variance of an expression. It considers the entire dataset rather than just a sample. Variance is a statistical measure that indicates the spread or dispersion of a dataset.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT VARIANCE(column_name)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+ <h2>SQL MIN() Function</h2><br>
+            <div> The MIN() function returns the smallest value of the selected column.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT MIN(column_name)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+ <h2>SQL STDDEV() Function</h2><br>
+            <div> MySQL STDDEV() function returns the population standard deviation of expression. The standard deviation is a statistical measure that quantifies the amount of variation or dispersion in a dataset.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT STDDEV(expressions)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+ <h2>SQL STDDEV_POP() Function</h2><br>
+            <div> MySQL STDDEV_POP() function calculate the population standard deviation of expression and return square root of the expressions.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT STDDEV_POP(expressions)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+ <h2>SQL STDDEV_SAMP() Function</h2><br>
+            <div> MySQL STDDEV_SAMP() function calculate the population sample standard deviation of expression.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT STDDEV_SAMP(expressions)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+ <h2>SQL VAR_POP() Function</h2><br>
+            <div> MySQL VAR_POP() function returns the standard variance of expression.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT VAR_POP(expressions)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+ <h2>SQL VAR_SAMP() Function</h2><br>
+            <div> MySQL VAR_SAMP() function returns the sample standard variance of expression.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT VAR_SAMP(expressions)<br>
+FROM table_name<br>
+WHERE condition;</div>
+<div class="line"></div>
+
+ <h2>SQL ABS() Function</h2><br>
+            <div> Return the absolute value of a number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT ABS(number)</div>
+<div class="line"></div>
+
+ <h2>SQL ACOS() Function</h2><br>
+            <div> Return the arc cosine of a number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT ACOS(number)</div>
+<div class="line"></div>
+
+ <h2>SQL CEILING() Function</h2><br>
+        <div> Return the smallest integer value that is greater than or equal to any number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT CEILING(number)</div>
+<div class="line"></div>
+
+ <h2>SQL CONV() Function</h2><br>
+            <div> Convert a number from numeric base system.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT CONV(number, from_base, to_base)</div>
+<div class="line"></div>
+
+ <h2>SQL COS() Function</h2><br>
+            <div> Return the cosine of a number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT COS(number)</div>
+<div class="line"></div>
+
+ <h2>SQL CRC32() function</h2><br>
+            <div> Return  the cyclic redundancy check value of a given string as a 32-bit unsigned value.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT CRC32(expression)</div>
+<div class="line"></div>
+
+ <h2>SQL COT() Function</h2><br>
+            <div>Return the cotangent of a number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT COT(number)</div>
+<div class="line"></div>
+
+ <h2>SQL DEGREES() Function</h2><br>
+            <div>Convert the radian value into degrees.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DEGREES(number)</div>
+<div class="line"></div>
+
+
+ <h2>SQL EXP() Function</h2><br>
+            <div>Return e raised to the power of 1.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT EXP(number)</div>
+<div class="line"></div>
+
+
+ <h2>SQL FLOOR() Function</h2><br>
+            <div>Return the largest integer value.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT FLOOR(number)</div>
+<div class="line"></div>
+
+ <h2>SQL LOG() Function</h2><br>
+            <div>Return the natural logarithm.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT LOG(number)</div>
+<div class="line"></div>
+
+ <h2>SQL MOD() Function</h2><br>
+            <div>Return the remainder.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT MOD(x, y)</div>
+<div class="line"></div>
+
+ <h2>SQL OCT() FUNCTION</h2><br>
+            <div>OCT function is used to get the octal value of the specified number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT OCT(number)</div>
+<div class="line"></div>
+
+ <h2>SQL PI() Function</h2><br>
+            <div>Return the value of PI.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT PI()</div>
+<div class="line"></div>
+
+ <h2>SQL POWER() Function</h2><br>
+            <div> returns the value of a number raised to the power of another number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT POWER(x, y)</div>
+<div class="line"></div>
+
+
+ <h2>SQL RADIANS() Function</h2><br>
+            <div> converts a degree value into radians.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT RADIANS(number)</div>
+<div class="line"></div>
+
+ <h2>SQL SIGN() function</h2><br>
+            <div>Returns the sign of the specified number. It returns 1 if the number is positive, -1 if the number is negative and 0 for zero number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT SIGN(number)</div>
+<div class="line"></div>
+
+ <h2>SQL SQRT() Function</h2><br>
+            <div>Return the square root of a number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT SQRT(number)</div>
+<div class="line"></div>
+
+ <h2>SQL TRUNCATE() Function</h2><br>
+            <div>truncates a number to the specified number of decimal places.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT TRUNCATE(number, decimals)</div>
+<div class="line"></div>
+
+
+ <h2>SQL ASIN() Function</h2><br>
+            <div> calculates the arc sine of a numeric value.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT ASIN(number)</div>
+<div class="line"></div>
+
+ <h2>SQL LOG10() Function</h2><br>
+            <div>Returns the logarithm of the specified number to base 10.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT LOG10(number)</div>
+<div class="line"></div>
+
+ <h2>SQL LOG2() Function</h2><br>
+            <div>Returns the natural logarithm of a number to base-2.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT LOG10(number)</div>
+<div class="line"></div>
+
+ <h2>SQL SIN() Function</h2><br>
+            <div>Return the sine of a number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT SIN(number)</div>
+<div class="line"></div>
+
+
+ <h2>SQL TAN() Function</h2><br>
+            <div>Return the tangent of a number.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT TAN(number)</div>
+<div class="line"></div>
+
+ <h2>SQL ADDDATE() Function</h2><br>
+            <div>The ADDDATE() function adds a time/date interval to a date and then returns the date.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT ADDDATE(date, INTERVAL value addunit)</div>
+<div class="line"></div>
+
+ <h2>SQL ADDTIME() Function</h2><br>
+            <div>The ADDTIME() function adds a time interval to a time/datetime and then returns the time/datetime.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT ADDTIME(datetime, addtime)</div>
+<div class="line"></div>
+
+ <h2>SQL CURDATE() Function</h2><br>
+            <div>The CURDATE() function returns the current date.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT CURDATE();</div>
+<div class="line"></div>
+
+ <h2>SQL CURTIME() Function</h2><br>
+            <div>The CURTIME() function returns the current time.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT CURTIME();</div>
+<div class="line"></div>
+
+ <h2>SQL DATE_ADD() Function</h2><br>
+            <div>The DATE_ADD() function adds a time/date interval to a date and then returns the date.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DATE_ADD(date, INTERVAL value addunit);</div>
+<div class="line"></div>
+
+
+ <h2>SQL DATE() Function</h2><br>
+            <div>The DATE() function extracts the date part from a datetime expression.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DATE(expression);</div>
+<div class="line"></div>
+
+ <h2>SQL DATEDIFF() Function</h2><br>
+            <div>The DATEDIFF() function returns the number of days between two date values.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DATEDIFF(date1, date2);</div>
+<div class="line"></div>
+
+ <h2>SQL DATE_FORMAT() Function</h2><br>
+            <div>The DATE_FORMAT() function formats a date as specified.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DATE_FORMAT(date, format);</div>
+            <div><img src="images/image9.png" alt="image9"></div>
+<div class="line"></div>
+
+ <h2>SQL DAY() Function</h2><br>
+            <div>The DAY() function returns the day of the month for a given date (a number from 1 to 31).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DAY(date);</div>
+<div class="line"></div>
+
+ <h2>SQL DAYNAME() Function</h2><br>
+            <div>The DAYNAME() function returns the weekday name for a given date.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DAYNAME(date);</div>
+<div class="line"></div>
+
+ <h2>SQL HOUR() Function</h2><br>
+            <div>The HOUR() function returns the hour part for a given date (from 0 to 838).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT HOUR(datetime);</div>
+<div class="line"></div>
+
+ <h2>SQL MINUTE() Function</h2><br>
+            <div>The MINUTE() function returns the minute part of a time/datetime (from 0 to 59).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT MINUTE(datetime);</div>
+<div class="line"></div>
+
+ <h2>SQL MONTH() Function</h2><br>
+            <div>The MONTH() function returns the month part for a given date (a number from 1 to 12).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT MONTH(date);</div>
+<div class="line"></div>
+	
+ <h2>SQL MONTHNAME() Function</h2><br>
+            <div>The MONTHNAME() function returns the name of the month for a given date.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT MONTHNAME(date);</div>
+<div class="line"></div>
+
+ <h2>SQL NOW() Function</h2><br>
+            <div>The NOW() function returns the current date and time.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT NOW();</div>
+            <div>SELECT CURRENT_TIMESTAMP();</div>
+            <div>SELECT LOCALTIME();</div>
+            <div>SELECT LOCALTIMESTAMP();</div>
+<div class="line"></div>
+
+ <h2>SQL SECOND() Function</h2><br>
+            <div>The SECOND() function returns the seconds part of a time/datetime (from 0 to 59).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT SECOND(datetime);</div>
+<div class="line"></div>
+
+ <h2>SQL SEC_TO_TIME() Function</h2><br>
+            <div>The SEC_TO_TIME() function returns a time value (in format HH:MM:SS) based on the specified seconds.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT SEC_TO_TIME(seconds);</div>
+<div class="line"></div>
+
+ <h2>SQL SYSDATE() Function</h2><br>
+            <div>The SYSDATE() function returns the current date and time.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT SYSDATE();</div>
+<div class="line"></div>
+
+ <h2>SQL TIME() Function</h2><br>
+            <div>The TIME() function extracts the time part from a given time/datetime.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT TIME(expression);</div>
+<div class="line"></div>
+
+ <h2>SQL TIMEDIFF() Function</h2><br>
+            <div>The TIMEDIFF() function returns the difference between two time/datetime expressions.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT TIMEDIFF(time1, time2);</div>
+<div class="line"></div>
+
+ <h2>SQL WEEK() Function</h2><br>
+            <div>The WEEK() function returns the week number for a given date (a number from 0 to 53).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT WEEK(date, firstdayofweek);</div>
+<div class="line"></div>
+
+ <h2>SQL WEEKOFYEAR() Function</h2><br>
+            <div>The WEEKOFYEAR() function returns the week number for a given date (a number from 1 to 53).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT WEEKOFYEAR(date);</div>
+<div class="line"></div>
+
+ <h2>SQL YEAR() Function</h2><br>
+            <div>The YEAR() function returns the year part for a given date (a number from 1000 to 9999).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT YEAR(date);</div>
+<div class="line"></div>
+
+ <h2>SQL CONVERT_TZ() Function</h2><br>
+            <div>CONVERT_TZ() function in MySQL is used to convert the given DateTime from One time zone to another time zone. If the arguments are invalid, the function will return NULL. </div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT CONVERT_TZ (dt, from_tz,to_tz);</div>
+<div class="line"></div>
+
+ <h2>SQL DATE_SUB() Function</h2><br>
+            <div>The DATE_SUB() function subtracts a time/date interval from a date and then returns the date.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DATE_SUB(date, INTERVAL value interval);</div>
+<div class="line"></div>
+
+ <h2>SQL DAYOFMONTH() Function</h2><br>
+            <div>The DAYOFMONTH() function returns the day of the month for a given date (a number from 1 to 31).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DAYOFMONTH(date);</div>
+<div class="line"></div>
+
+ <h2>SQL DAYOFWEEK() Function</h2><br>
+            <div>The DAYOFWEEK() function returns the weekday index for a given date (a number from 1 to 7).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DAYOFWEEK(date);</div>
+<div class="line"></div>
+
+ <h2>SQL DAYOFYEAR() Function</h2><br>
+            <div>The DAYOFYEAR() function returns the day of the year for a given date (a number from 1 to 366).</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT DAYOFYEAR(date);</div>
+<div class="line"></div>
+
+ <h2>SQL EXTRACT() Function</h2><br>
+            <div>The EXTRACT() function extracts a part from a given date.</div><br>
+            <div><b>Syntax:-</b></div><br>
+            <div>SELECT EXTRACT(part FROM date);</div>
+
+
+
+		<br><br><a href="joins-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="functions-assignment.html"><button class="btn btn-success">Next</button></a>
+			
+
+           
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
