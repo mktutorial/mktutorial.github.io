@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Arrays-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/vba/Arrays.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>VBA</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of VBA</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+                   <li>
+                    <a href="excel-terms.html">Excel Terms</a>
+                </li>
+                <li>
+                    <a href="excel-terms-assignment.html">Excel Terms Assignment</a>
+                </li>
+                 <li>
+                    <a href="messageandinputbox.html">Message and Input Box</a>
+                </li>
+                <li>
+                    <a href="messageandinputbox-assignment.html">Message and Input Box Assignment</a>
+                </li>
+                  <li>
+                    <a href="variablesandconstant.html">Variable and Constant</a>
+                </li>
+                <li>
+                    <a href="variablesandconstant-assignment.html">Variable and Constant Assignment</a>
+                </li>
+                 <li>
+                    <a href="operatoranddecision.html">Operator and Decision</a>
+                </li>
+                <li>
+                    <a href="operatoranddecision-assignment.html">Operator and Decision Assignment</a>
+                </li>
+                 <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+                <li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+                <li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="dateandtime.html">Date and Time</a>
+                </li>
+                <li>
+                    <a href="dateandtime-assignment.html">Date and Time Assignment</a>
+                </li>
+                 <li>
+                    <a href="Arrays.html">Arrays</a>
+                </li>
+                <li>
+                    <a href="Arrays-assignment.html">Arrays Assignment</a>
+                </li>
+                 <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="events-assignment.html">Events Assignment</a>
+                </li>
+                <li>
+                    <a href="errorhandling.html">Error Handling</a>
+                </li>
+                <li>
+                    <a href="errorhandling-assignment.html">Error Handling Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h2>Arrays</h2>
+            <div>We know very well that a variable is a container to store a value. Sometimes, developers are in a position to hold more than one value in a single variable at a time. When a series of values are stored in a single variable, then it is known as an array variable.</div>
+            <div class="line"></div>
+            
+            <h2>Array Declaration</h2>
+            <div>Arrays are declared the same way a variable has been declared except that the declaration of an array variable uses parenthesis. In the following example, the size of the array is mentioned in the brackets.</div>
+            <br>
+            <div><b>Method 1 : Using Dim</b></div>
+            <div>Dim arr1()	'Without Size</div>
+              <br>
+            <div><b>Method 2 : Mentioning the Size</b></div>
+            <div>Dim arr2(5)  'Declared with size of 5</div>
+            <br>
+            <div><b>Method 3 : using 'Array' Parameter</b></div>
+            <div>Dim arr3<br>
+arr3 = Array("apple","Orange","Grapes")</div>
+            <div class="line"></div>
+            
+            <h2>Assigning Values to an Array</h2>
+            <div>The values are assigned to the array by specifying an array index value against each one of the values to be assigned. It can be a string.</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+                Private Sub Constant_demo_Click()<br>
+   Dim arr(5)<br>
+   arr(0) = "1"           'Number as String<br>
+   arr(1) = "VBScript"    'String<br>
+   arr(2) = 100 		     'Number<br>
+   arr(3) = 2.45 		     'Decimal Number<br>
+   arr(4) = #10/07/2013#  'Date<br>
+   arr(5) = #12.45 PM#    'Time<br>
+  
+   msgbox("Value stored in Array index 0 : " & arr(0))<br>
+   msgbox("Value stored in Array index 1 : " & arr(1))<br>
+   msgbox("Value stored in Array index 2 : " & arr(2))<br>
+   msgbox("Value stored in Array index 3 : " & arr(3))<br>
+   msgbox("Value stored in Array index 4 : " & arr(4))<br>
+   msgbox("Value stored in Array index 5 : " & arr(5))<br>
+End Sub
+            </div>
+            <div class="line"></div>
+            
+            
+            <h2>Multi-Dimensional Arrays</h2>
+            <div>Arrays are not just limited to a single dimension, however, they can have a maximum of 60 dimensions. Two-dimensional arrays are the most commonly used ones.</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+                Private Sub Constant_demo_Click()<br>
+   Dim arr(2,3) as Variant	' Which has 3 rows and 4 columns<br>
+   arr(0,0) = "Apple" <br>
+   arr(0,1) = "Orange"<br>
+   arr(0,2) = "Grapes"    <br>       
+   arr(0,3) = "pineapple" <br>
+   arr(1,0) = "cucumber" <br>          
+   arr(1,1) = "beans"    <br>       
+   arr(1,2) = "carrot"    <br>       
+   arr(1,3) = "tomato"   <br>        
+   arr(2,0) = "potato"    <br>         
+   arr(2,1) = "sandwitch"  <br>          
+   arr(2,2) = "coffee"   <br>          
+   arr(2,3) = "nuts"   <br>         
+           
+   msgbox("Value in Array index 0,1 : " &  arr(0,1))<br>
+   msgbox("Value in Array index 2,2 : " &  arr(2,2))<br>
+End Sub
+            </div>
+            <div class="line"></div>
+            
+            <h2>ReDim Statement</h2>
+            <div>ReDim statement is used to declare dynamic-array variables and allocate or reallocate storage space.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>ReDim [Preserve] varname(subscripts) [, varname(subscripts)]</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+                Private Sub Constant_demo_Click()<br>
+   Dim a() as variant<br>
+   i = 0<br>
+   redim a(5)<br>
+   a(0) = "XYZ"<br>
+   a(1) = 41.25<br>
+   a(2) = 22<br>
+  
+   REDIM PRESERVE a(7)<br>
+   For i = 3 to 7<br>
+   a(i) = i<br>
+   Next<br>
+  
+   'to Fetch the output<br>
+   For i = 0 to ubound(a)<br>
+      Msgbox a(i)<br>
+   Next<br>
+End Sub
+            </div>
+            <div class="line"></div>
+            
+            <h2>Arrays Method</h2>
+            <h2>VBA - LBound Function</h2>
+            <div>The LBound Function returns the smallest subscript of the specified array. Hence, LBound of an array is ZERO.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>LBound(ArrayName[,dimension])</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+                Private Sub Constant_demo_Click()<br>
+   Dim arr(5) as Variant<br>
+   arr(0) = "1"           'Number as String<br>
+   arr(1) = "VBScript     'String<br>
+   arr(2) = 100           'Number<br>
+   arr(3) = 2.45          'Decimal Number<br>
+   arr(4) = #10/07/2013#  'Date<br>
+   arr(5) = #12.45 PM#    'Time<br>
+   msgbox("The smallest Subscript value of  the given array is : " & LBound(arr))<br>
+<br>
+   ' For MultiDimension Arrays :<br>
+   Dim arr2(3,2) as Variant<br>
+   msgbox("The smallest Subscript of the first dimension of arr2 is : " & LBound(arr2,1))<br>
+   msgbox("The smallest Subscript of the Second dimension of arr2 is : " & LBound(arr2,2))<br>
+End Sub
+            </div>
+            <div class="line"></div>
+            
+             <h2>VBA - UBound Function</h2>
+            <div>The UBound Function returns the largest subscript of the specified array. Hence, this value corresponds to the size of the array.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>UBound(ArrayName[,dimension])</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+               Private Sub Constant_demo_Click()<br>
+   Dim arr(5) as Variant<br>
+   arr(0) = "1"           'Number as String<br>
+   arr(1) = "VBScript     'String<br>
+   arr(2) = 100           'Number<br>
+   arr(3) = 2.45          'Decimal Number<br>
+   arr(4) = #10/07/2013#  'Date<br>
+   arr(5) = #12.45 PM#    'Time<br>
+   msgbox("The smallest Subscript value of  the given array is : " & UBound(arr))<br>
+<br>
+   ' For MultiDimension Arrays :<br>
+   Dim arr2(3,2) as Variant<br>
+   msgbox("The smallest Subscript of the first dimension of arr2 is : " & UBound(arr2,1))<br>
+   msgbox("The smallest Subscript of the Second dimension of arr2 is : " & UBound(arr2,2))<br>
+End Sub
+            </div>
+            <div class="line"></div>
+            
+            
+            <h2>VBA - Split Function</h2>
+            <div>A Split Function returns an array that contains a specific number of values split based on a delimiter.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Split(expression[,delimiter[,count[,compare]]]) </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+               Private Sub Constant_demo_Click()<br>
+   ' Splitting based on delimiter comma '$'<br>
+   Dim a as Variant<br>
+   Dim b as Variant<br>
+   
+   a = Split("Red $ Blue $ Yellow","$")<br>
+   b = ubound(a)<br>
+   
+   For i = 0 to b<br>
+      msgbox("The value of array in " & i & " is :"  & a(i))<br>
+   Next<br>
+End Sub
+            </div>
+            <div class="line"></div>
+            
+            
+             <h2>VBA - Join Function</h2>
+            <div>A Function, which returns a string that contains a specified number of substrings in an array. This is an exact opposite function of Split Method.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Join(List[,delimiter])  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+              Private Sub Constant_demo_Click()<br>
+   ' Join using spaces<br>
+   a = array("Red","Blue","Yellow")<br>
+   b = join(a)<br>
+   msgbox("The value of b " & " is :"  & b)<br>
+  
+   ' Join using $<br>
+   b = join(a,"$")<br>
+   msgbox("The Join result after using delimiter is : " & b)<br>
+End Sub
+            </div>
+            <div class="line"></div>
+            
+            
+              <h2>VBA - Filter Function</h2>
+            <div>A Filter Function, which returns a zero-based array that contains a subset of a string array based on a specific filter criteria.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Filter(inputstrings,value[,include[,compare]])  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+             Private Sub Constant_demo_Click()<br>
+   Dim a,b,c,d as Variant<br>
+   a = array("Red","Blue","Yellow")<br>
+   b = Filter(a,"B")<br>
+   c = Filter(a,"e")<br>
+   d = Filter(a,"Y")<br>
+  
+   For each x in b<br>
+      msgbox("The Filter result 1: " & x)<br>
+   Next<br>
+  
+   For each y in c<br>
+      msgbox("The Filter result 2: " & y)<br>
+   Next<br>
+  
+   For each z in d<br>
+      msgbox("The Filter result 3: " & z)<br>
+   Next<br>
+End Sub
+            </div>
+            <div class="line"></div>
+            
+            <h2>VBA - IsArray Function</h2>
+            <div>The IsArray Function returns a boolean value that indicates whether or NOT the specified input variable is an array variable.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>IsArray(variablename)  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+             Private Sub Constant_demo_Click()<br>
+   Dim a,b as Variant<br>
+   a = array("Red","Blue","Yellow")<br>
+   b = "12345"<br>
+  
+   msgbox("The IsArray result 1 : " & IsArray(a))<br>
+   msgbox("The IsArray result 2 : " & IsArray(b))<br>
+End Sub
+            </div>
+            <div class="line"></div>
+            
+             <h2>VBA - Erase Function</h2>
+            <div>The Erase Function is used to reset the values of fixed size arrays and free the memory of the dynamic arrays. It behaves depending upon the type of the arrays.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Erase ArrayName  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>
+             Private Sub Constant_demo_Click()<br>
+   Dim NumArray(3)<br>
+   NumArray(0) = "VBScript"<br>
+   NumArray(1) = 1.05<br>
+   NumArray(2) = 25<br>
+   NumArray(3) = #23/04/2013#<br>
+  
+   Dim DynamicArray()<br>
+   ReDim DynamicArray(9)   ' Allocate storage space.<br>
+  
+   Erase NumArray          ' Each element is reinitialized.<br>
+   Erase DynamicArray      ' Free memory used by array.<br>
+  
+   ' All values would be erased.<br>
+   msgbox("The value at Zeroth index of NumArray is " & NumArray(0))<br>
+   msgbox("The value at First index of NumArray is " & NumArray(1))<br>
+   msgbox("The value at Second index of NumArray is " & NumArray(2))<br>
+   msgbox("The value at Third index of NumArray is " & NumArray(3))<br>
+End Sub
+            </div>
+           
+            
+            
+		<br><br><a href="dateandtime-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="Arrays-assignment.html"><button class="btn btn-success">Next</button></a>
+
+           
+  
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

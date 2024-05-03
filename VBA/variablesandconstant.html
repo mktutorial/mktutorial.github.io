@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Variables and Constant-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/vba/variablesandconstant.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>VBA</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of VBA</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+                   <li>
+                    <a href="excel-terms.html">Excel Terms</a>
+                </li>
+                <li>
+                    <a href="excel-terms-assignment.html">Excel Terms Assignment</a>
+                </li>
+                 <li>
+                    <a href="messageandinputbox.html">Message and Input Box</a>
+                </li>
+                <li>
+                    <a href="messageandinputbox-assignment.html">Message and Input Box Assignment</a>
+                </li>
+                  <li>
+                    <a href="variablesandconstant.html">Variable and Constant</a>
+                </li>
+                <li>
+                    <a href="variablesandconstant-assignment.html">Variable and Constant Assignment</a>
+                </li>
+                 <li>
+                    <a href="operatoranddecision.html">Operator and Decision</a>
+                </li>
+                <li>
+                    <a href="operatoranddecision-assignment.html">Operator and Decision Assignment</a>
+                </li>
+                 <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+                <li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+                <li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="dateandtime.html">Date and Time</a>
+                </li>
+                <li>
+                    <a href="dateandtime-assignment.html">Date and Time Assignment</a>
+                </li>
+                 <li>
+                    <a href="Arrays.html">Arrays</a>
+                </li>
+                <li>
+                    <a href="Arrays-assignment.html">Arrays Assignment</a>
+                </li>
+                 <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="events-assignment.html">Events Assignment</a>
+                </li>
+                <li>
+                    <a href="errorhandling.html">Error Handling</a>
+                </li>
+                <li>
+                    <a href="errorhandling-assignment.html">Error Handling Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+          <h2>VBA - Variables</h2><br>
+          <div>Variable is a named memory location used to hold a value that can be changed during the script execution. Following are the basic rules for naming a variable.</div><br>
+          <h2>Variable Naming Rules</h2><br>
+          <div>
+              <ul>
+                  <li>You must use a letter as the first character.</li>
+                  <li>You can't use a space, period (.), exclamation mark (!), or the characters @, &, $, # in the name.</li>
+                  <li>Name can't exceed 255 characters in length.</li>
+                  <li>You cannot use Visual Basic reserved keywords as variable name.</li>
+              </ul>
+          </div>
+          <div><b>Syntax:-</b></div><br>
+          <div>Dim variable_name As variable_type</div>
+          <div class="line"></div>
+          
+          
+          <h2>Data Types</h2>
+          <div>There are many VBA data types, which can be divided into two main categories, namely numeric and non-numeric data types.</div><br>
+          <h2>Numeric Data Types</h2><br>
+          <table border="1">
+              <tr>
+                  <th>Type</th>
+                  <th>Range of Values</th>
+              </tr>
+                <tr>
+                    <td>Byte</td>
+                    <td>0 to 255</td>
+                </tr>
+                 <tr>
+                    <td>Integer</td>
+                    <td>-32,768 to 32,767</td>
+                </tr>
+                 <tr>
+                    <td>Long</td>
+                    <td>-2,147,483,648 to 2,147,483,648</td>
+                </tr>
+                 <tr>
+                    <td>Single</td>
+                    <td>-3.402823E+38 to -1.401298E-45 for negative values<br>
+
+1.401298E-45 to 3.402823E+38 for positive values.</td>
+                </tr>
+                 <tr>
+                    <td>Double</td>
+                    <td>-1.79769313486232e+308 to<br> -4.94065645841247E-324 for negative values<br>
+
+4.94065645841247E-324 to<br> 1.79769313486232e+308 for positive values.</td>
+                </tr>
+                 <tr>
+                    <td>Currency</td>
+                    <td>-922,337,203,685,477.5808 to<br> 922,337,203,685,477.5807</td>
+                </tr>
+                 <tr>
+                    <td>Decimal</td>
+                    <td>+/- 79,228,162,514,264,337,593,543,950,335 if no decimal is use<br>
+
++/- 7.9228162514264337593543950335 (28 decimal places).</td>
+                </tr>
+              
+          </table><br>
+          
+          <h2>Non-Numeric Data Types</h2><br>
+          <div>
+              <table border="1">
+                  <tr>
+                      <th>Type</th>
+                      <th>Range of Values</th>
+                  </tr>
+                   <tr>
+                    <td>String (fixed length)</td>
+                    <td>1 to 65,400 characters</td>
+                </tr>
+                 <tr>
+                    <td>String (variable length)</td>
+                    <td>0 to 2 billion characters</td>
+                </tr>
+                 <tr>
+                    <td>Date</td>
+                    <td>January 1, 100 to December 31, 9999</td>
+                </tr>
+                 <tr>
+                    <td>Boolean</td>
+                    <td>True or False</td>
+                </tr>
+                 <tr>
+                    <td>Object</td>
+                    <td>Any embedded object</td>
+                </tr>
+                 <tr>
+                    <td>Variant (numeric)</td>
+                    <td>Any value as large as double</td>
+                </tr>
+                 <tr>
+                    <td>Variant (text)</td>
+                    <td>Same as variable-length string</td>
+                </tr>
+              </table>
+          </div>
+          <div class="line"></div>
+          
+          <h2>VBA - Constants</h2><br>
+          <div>Constant is a named memory location used to hold a value that CANNOT be changed during the script execution. If a user tries to change a Constant value, the script execution ends up with an error. Constants are declared the same way the variables are declared.</div><br>
+          <h2>Constant Naming Rules</h2><br>
+          <div>
+              <ul>
+                  <li>You must use a letter as the first character.</li>
+                  <li>You can't use a space, period (.), exclamation mark (!), or the characters @, &, $, # in the name.</li>
+                  <li>Name can't exceed 255 characters in length.</li>
+                  <li>You cannot use Visual Basic reserved keywords as variable name.</li>
+              </ul>
+          </div><br>
+          <div><b>Syntax:-</b></div><br>
+          <div>Const constant_name As constant_type = constant_value</div>
+          <div class="line"></div>
+          
+          <h2>How to make operation in cells using VBA Buttons</h2><br>
+          <div>
+              <b>Example:-</b><br><br>
+                Private Sub Sum()<br>
+                Range("A3").Value = Range("A1").Value + Range("A2").Value<br>
+                End Sub
+
+          </div>
+          <div class="line"></div>
+          
+          <h2>How to make operation in cells using VBA Buttons and variables</h2><br>
+          <div>
+              <b>Example:-</b><br><br>
+                Private Sub Sum()<br>
+                a=Range("A1").Value<br>
+                b=Range("A2").Value<br>
+                c=a+b<br>
+                Range("A3").value=c<br>
+                End Sub
+
+          </div>
+         
+          
+          
+		<br><br><a href="messageandinputbox-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="variablesandconstant-assignment.html"><button class="btn btn-success">Next</button></a>
+
+           
+  
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

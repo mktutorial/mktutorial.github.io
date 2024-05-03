@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Date and Time-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/vba/dateandtime.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>VBA</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of VBA</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+                   <li>
+                    <a href="excel-terms.html">Excel Terms</a>
+                </li>
+                <li>
+                    <a href="excel-terms-assignment.html">Excel Terms Assignment</a>
+                </li>
+                 <li>
+                    <a href="messageandinputbox.html">Message and Input Box</a>
+                </li>
+                <li>
+                    <a href="messageandinputbox-assignment.html">Message and Input Box Assignment</a>
+                </li>
+                  <li>
+                    <a href="variablesandconstant.html">Variable and Constant</a>
+                </li>
+                <li>
+                    <a href="variablesandconstant-assignment.html">Variable and Constant Assignment</a>
+                </li>
+                 <li>
+                    <a href="operatoranddecision.html">Operator and Decision</a>
+                </li>
+                <li>
+                    <a href="operatoranddecision-assignment.html">Operator and Decision Assignment</a>
+                </li>
+                 <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+                <li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+                <li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="dateandtime.html">Date and Time</a>
+                </li>
+                <li>
+                    <a href="dateandtime-assignment.html">Date and Time Assignment</a>
+                </li>
+                 <li>
+                    <a href="Arrays.html">Arrays</a>
+                </li>
+                <li>
+                    <a href="Arrays-assignment.html">Arrays Assignment</a>
+                </li>
+                 <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="events-assignment.html">Events Assignment</a>
+                </li>
+                <li>
+                    <a href="errorhandling.html">Error Handling</a>
+                </li>
+                <li>
+                    <a href="errorhandling-assignment.html">Error Handling Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h2>VBA Date and Time Function</h2>
+            <div>VBScript Date and Time Functions help the developers to convert date and time from one format to another or to express the date or time value in the format that suits a specific condition.</div>
+            <div class="line"></div>
+            
+            <h2>Date Function</h2>
+            <div>The Function returns the current system date.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>date()</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   Dim a as Variant<br>
+   a = date()<br>
+   msgbox "The Value of a : " & a<br>
+End Sub</div>
+<div class="line"></div>
+
+ <h2>CDate Function</h2>
+            <div>The Function converts a valid date and time expression to type date.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>cdate(date)</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   Dim a as Variant<br>
+   Dim b as Variant<br>
+   a = cdate("Jan 01 2020")<br>
+   msgbox("The Value of a : " & a)<br>
+   b = cdate("31 Dec 2050")<br>
+   msgbox("The Value of b : " & b)<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>DateAdd Function</h2>
+            <div>A Function, which returns a date to which a specified time interval has been added.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>DateAdd(interval,number,date) </div>
+            <br>
+            <div><b>Parameter Description</b></div>
+            <br>
+            <div>
+                <ul>
+                    <li><b>Interval:-</b> A required parameter. It can take the following values.</li>
+                    <ul>
+                        <li>d - day of the year</li>
+                        <li>m - month of the year</li>
+                        <li>y - year of the year</li>
+                        <li>yyyy - year</li>
+                        <li>w - weekday</li>
+                        <li>ww - week</li>
+                        <li>q - quarter</li>
+                        <li>h - hour</li>
+                        <li>m - minute</li>
+                        <li>s - second</li>
+                    </ul>
+                    <li><b>Number:-</b>A required parameter. It can take both positive and negative parameters.</li>
+                    <li><b>Date:-</b>A required parameter. A variant or literal representing the date to which an interval is added.</li>
+                </ul>
+            </div>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>msgbox("Line 1 : " &DateAdd("yyyy",-1,date1))</div>
+<div class="line"></div>
+
+
+<h2>DateDiff Function</h2>
+            <div>A Function, which returns the difference between two specified time intervals.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>DateDiff(interval, date1, date2)</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   Dim fromDate as Variant<br>
+   fromDate = "01-Jan-09 00:00:00"<br>
+   
+   Dim toDate as Variant<br>
+   toDate = "01-Jan-10 23:59:00"<br>
+   
+   msgbox("Line 1 : " &DateDiff("yyyy",fromDate,toDate))<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>DatePart Function</h2>
+            <div>A Function, which returns the specific part of the given date.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>DatePart(interval,date)</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   Dim Quarter as Variant<br>
+   Dim DayOfYear as Variant<br>
+   Dim WeekOfYear as Variant<br>
+  
+   Date1 = "2013-01-15"<br>
+   Quarter    = DatePart("q", Date1)<br>
+   
+   msgbox("Line 1 : " & Quarter)<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>DateSerial Function</h2>
+            <div>A Function, which returns a date for the specified day, month, and year parameters.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>DateSerial(year,month,day)</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   msgbox(DateSerial(2013,5,10))<br>
+End Sub</div>
+<div class="line"></div>  
+            
+            
+<h2>Format DateTime Function</h2>
+            <div>A Function, which helps the developers to format and return a valid date and time expression.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>FormatDateTime(date,format) </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   msgbox("Line 2 : " & FormatDateTime(d,1))<br>
+End Sub</div>
+<div class="line"></div>  
+
+<h2>IsDate Function</h2>
+            <div>A Function, which returns a Boolean value whether or not the given input is a date.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>IsDate(expression) </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   msgbox("Line 1 : " & IsDate("Nov 03, 1950"))<br>
+End Sub</div>
+<div class="line"></div>  
+
+<h2>Day Function</h2>
+            <div>The Day function returns a number between 1 and 31 that represents the day of the specified date.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Day(date)  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   msgbox(Day("2013-06-30"))<br>
+End Sub</div>
+<div class="line"></div>  
+            
+            
+<h2>Month Function</h2>
+            <div>The Month function returns a number between 1 and 12 that represents the month of the specified date.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Month(date) </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   msgbox(Month("2013-06-30"))<br>
+End Sub</div>
+<div class="line"></div>  
+
+<h2>Year Function</h2>
+            <div>The Year function returns an integer that represents a year of the specified date.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Year(date)  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   msgbox(Year("2013-06-30"))<br>
+End Sub</div>
+<div class="line"></div>  
+
+
+<h2>Month Name</h2>
+            <div>The MonthName function returns the name of the month for the specified date.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>MonthName(month)  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   msgbox("Line 1 : " & MonthName(01,True))<br>
+End Sub</div>
+<div class="line"></div> 
+
+
+<h2>WeekDay</h2>
+            <div>The WeekDay function returns an integer from 1 to 7 that represents the day of the week for the specified date.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Weekday(date)  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+   msgbox("Line 1: " & Weekday("2013-05-16",1))<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>WeekDay Name</h2>
+            <div>The WeekDayName function returns the name of the weekday for the specified day.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>WeekdayName(weekday)  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+    msgbox("Line 1 : " &WeekdayName(3))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Time Function</h2>
+<h2>Now Function</h2>
+            <div>The Function Now returns the current system date and time.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Now() </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+    Dim a as Variant<br>
+   a = Now()<br>
+   msgbox("The Value of a : " & a)<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Hour Function</h2>
+            <div>The Hour Function returns a number between 0 and 23 that represents the hour of the day for the specified time stamp.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Hour(time)  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+    msgbox("Line 1: " & Hour("3:13:45 PM"))<br>
+   msgbox("Line 2: " & Hour("23:13:45"))<br>
+   msgbox("Line 3: " & Hour("2:20 PM"))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Minute Function</h2>
+            <div>The Minute Function returns a number between 0 and 59 that represents the minute of the hour for the specified time stamp.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Minute(time)  </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+    msgbox("Line 1: " & Minute("3:13:45 PM"))<br>
+   msgbox("Line 2: " & Minute("23:43:45"))<br>
+   msgbox("Line 3: " & Minute("2:20 PM"))<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>Second Function</h2>
+            <div>The Second Function returns a number between 0 and 59 that represents the second of the hour for the specified time stamp.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Second(time)   </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+     msgbox("Line 1: " & Second("3:13:25 PM"))<br>
+   msgbox("Line 2: " & Second("23:13:45"))<br>
+   msgbox("Line 3: " & Second("2:20 PM"))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Time Function</h2>
+            <div>The Time Function returns the current system time.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Time()    </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+     msgbox("Line 1: " & Time())<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Timer Function</h2>
+            <div>The Timer Function returns the number of seconds and milliseconds since 12:00 AM.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>Timer()   </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+     msgbox("Time is : " & Now())<br>
+   msgbox("Timer is: " & Timer())<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Time Serial Function</h2>
+            <div>The TimeSerial function returns the time for the specified hour, minute, and second values.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>TimeSerial(hour,minute,second)   </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+     msgbox(TimeSerial(20,1,2))<br>
+   msgbox(TimeSerial(0,59,59))<br>
+   msgbox(TimeSerial(7*2,60/3,15+3))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Time Value Function</h2>
+            <div>The TimeValue Function converts the given input string to a valid time.</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>TimeValue(StringTime)    </div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>Private Sub Constant_demo_Click()<br>
+    msgbox(TimeValue("20:30"))<br>
+   msgbox(TimeValue("5:15"))<br>
+   msgbox(TimeValue("2:30:58"))<br>
+End Sub</div>
+
+
+		<br><br><a href="strings-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="dateandtime-assignment.html"><button class="btn btn-success">Next</button></a>
+
+           
+  
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

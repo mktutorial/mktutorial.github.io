@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+<link rel="canonical" href="https://www.mktutorial.in/vba/strings.html">
+    <title>Strings-MK Tutorial</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>VBA</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of VBA</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+                   <li>
+                    <a href="excel-terms.html">Excel Terms</a>
+                </li>
+                <li>
+                    <a href="excel-terms-assignment.html">Excel Terms Assignment</a>
+                </li>
+                 <li>
+                    <a href="messageandinputbox.html">Message and Input Box</a>
+                </li>
+                <li>
+                    <a href="messageandinputbox-assignment.html">Message and Input Box Assignment</a>
+                </li>
+                  <li>
+                    <a href="variablesandconstant.html">Variable and Constant</a>
+                </li>
+                <li>
+                    <a href="variablesandconstant-assignment.html">Variable and Constant Assignment</a>
+                </li>
+                 <li>
+                    <a href="operatoranddecision.html">Operator and Decision</a>
+                </li>
+                <li>
+                    <a href="operatoranddecision-assignment.html">Operator and Decision Assignment</a>
+                </li>
+                 <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+                <li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+                <li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="dateandtime.html">Date and Time</a>
+                </li>
+                <li>
+                    <a href="dateandtime-assignment.html">Date and Time Assignment</a>
+                </li>
+                 <li>
+                    <a href="Arrays.html">Arrays</a>
+                </li>
+                <li>
+                    <a href="Arrays-assignment.html">Arrays Assignment</a>
+                </li>
+                 <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="events-assignment.html">Events Assignment</a>
+                </li>
+                <li>
+                    <a href="errorhandling.html">Error Handling</a>
+                </li>
+                <li>
+                    <a href="errorhandling-assignment.html">Error Handling Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <h2>VBA Strings</h2>
+            <div>Strings are a sequence of characters, which can consist of either alphabets, numbers, special characters, or all of them. A variable is said to be a string if it is enclosed within double quotes " ".</div>
+            <br>
+            <div><b>Syntax:-</b></div>
+            <br>
+            <div>variablename = "string"</div>
+            <br>
+            <div><b>Example:-</b></div>
+            <br>
+            <div>str1 = "string"   ' Only Alphabets<br>
+str2 = "132.45"   ' Only Numbers<br>
+str3 = "!@#$;*"  ' Only Special Characters<br>
+Str4 = "Asc23@#"  ' Has all the above</div>
+<div class="line"></div>
+
+<h2>String Functions</h2>
+<div>There are predefined VBA String functions, which help the developers to work with the strings very effectively. Following are String methods that are supported in VBA. Please click on each one of the methods to know in detail.</div>
+<div class="line"></div>
+
+<h2>InStr Function</h2>
+<div>The InStr Function returns the first occurrence of one string within another string. The search happens from the left to the right.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>InStr([start,]string1,string2[,compare])</div>
+<br>
+<div>Example:-</div>
+<br>
+<div>Private Sub Constant_demo_Click() <br>
+   Dim Var As Variant <br>
+   Var = "Microsoft VBScript" <br>
+   MsgBox ("Line 1 : " & InStr(1, Var, "s")) <br>
+   MsgBox ("Line 2 : " & InStr(7, Var, "s"))<br>
+   MsgBox ("Line 3 : " & InStr(1, Var, "f", 1)) <br>
+   MsgBox ("Line 4 : " & InStr(1, Var, "t", 0)) <br>
+   MsgBox ("Line 5 : " & InStr(1, Var, "i")) <br>
+   MsgBox ("Line 6 : " & InStr(7, Var, "i")) <br>
+   MsgBox ("Line 7 : " & InStr(Var, "VB")) <br>
+End Sub </div>
+<div class="line"></div>
+
+<h2>InstrRev Function</h2>
+<div>The InStrRev function returns the first occurrence of one string within another string. The Search happens from the right to the left.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>InStrRev(string1,string2[,start,[compare]])</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   var = "Microsoft VBScript"<br>
+   msgbox("Line 1 : " & InStrRev(var,"s",10))<br>
+   msgbox("Line 2 : " & InStrRev(var,"s",7))<br>
+   msgbox("Line 3 : " & InStrRev(var,"f",-1,1))<br>
+   msgbox("Line 4 : " & InStrRev(var,"t",5))<br>
+   msgbox("Line 5 : " & InStrRev(var,"i",7))<br>
+   msgbox("Line 6 : " & InStrRev(var,"i",7))<br>
+   msgbox("Line 7 : " & InStrRev(var,"VB",1))<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>Lcase Function</h2>
+<div>The LCase function returns the string after converting the entered string into lower case letters.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>Lcase(String)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   var = "Microsoft VBScript"<br>
+   msgbox("Line 1 : " & LCase(var))<br>
+   
+   var = "MS VBSCRIPT"<br>
+   msgbox("Line 2 : " & LCase(var))<br>
+   
+   var = "microsoft"<br>
+   msgbox("Line 3 : " & LCase(var))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>UCase Function</h2>
+<div>The UCase function returns the string after converting the entered string into UPPER case letters.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>UCase(String)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   var = "Microsoft VBScript"<br>
+   msgbox("Line 1 : " & UCase(var))<br>
+   
+   var = "MS VBSCRIPT"<br>
+   msgbox("Line 2 : " & UCase(var))<br>
+   
+   var = "microsoft"<br>
+   msgbox("Line 3 : " & UCase(var))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Left Function</h2>
+<div>The Left function returns a specified number of characters from the left side of the given input string.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>Left(String, Length)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim var as Variant<br>
+   
+   var = "Microsoft VBScript"<br>
+   msgbox("Line 1 : " & Left(var,2))<br>
+   
+   var = "MS VBSCRIPT"<br>
+   msgbox("Line 2 : " & Left(var,5))<br>
+   
+   var = "microsoft"<br>
+   msgbox("Line 3 : " & Left(var,9))<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>Right Function</h2>
+<div>The Right function returns a specified number of characters from the right side of the given input string.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>Right(String, Length)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   var = "Microsoft VBScript"<br>
+   msgbox("Line 1 : " & Right(var,2))<br>
+   
+   var = "MS VBSCRIPT"<br>
+   msgbox("Line 2 : " & Right(var,5))<br>
+   
+   var = "microsoft"<br>
+   msgbox("Line 3 : " & Right(var,9))<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>Mid Function</h2>
+<div>The Mid Function returns a specified number of characters from a given input string.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>Mid(String,start[,Length])</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim var as Variant<br>
+   var = "Microsoft VBScript"<br>
+   msgbox("Line 1 : " & Mid(var,2))<br>
+   msgbox("Line 2 : " & Mid(var,2,5))<br>
+   msgbox("Line 3 : " & Mid(var,5,7))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Ltrim Function</h2>
+<div>The Ltrim function removes the blank spaces from the left side of the string.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>LTrim(String)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim var as Variant<br>
+   var =       "             Microsoft VBScript"<br>
+   msgbox "After Ltrim : " & LTrim(var)<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Rtrim Function</h2>
+<div>The Rtrim function removes the blank spaces from the right side of the string.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>RTrim(String)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim var as Variant<br>
+   var =       "Microsoft VBScript   <br>        "
+   msgbox("After Rtrim : " & RTrim(var))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Trim Function</h2>
+<div>The Trim function removes both the leading and the trailing blank spaces of the given input string.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>Trim(String)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   var = "Microsoft VBScript"<br>
+   var =       "            Microsoft VBScript   <br>        "
+   msgbox ("After Trim : " & Trim(var))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Len Function</h2>
+<div>The Len function returns the length of the given input string including the blank spaces.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>Len(String)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim var1 as Variant<br>
+   Dim var2 as Variant<br>
+   
+   var1 ="Microsoft VBScript"<br>
+   msgbox("Length of var1 is : " & Len(var1))<br>
+  
+   var2 =       "       Microsoft VBScript     <br>      "
+   msgbox ("Length of var2 is : " & Len(var2))<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>Replace Function</h2>
+<div>The Replace function replaces a specified part of a string with a specific string, a specified number of times..</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>Replace(string,find,replacewith[,start[,count[,compare]]]) </div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim var as Variant<br>
+   var = "This is VBScript Programming"<br>
+  
+   'VBScript to be replaced by MS VBScript<br>
+   msgbox("Line 1: " & Replace(var,"VBScript","MS VBScript"))<br>
+  
+   'VB to be replaced by vb<br>
+   msgbox("Line 2: " & Replace(var,"VB","vb"))<br>
+  
+   ''is' replaced by ##<br>
+   msgbox("Line 3: " & Replace(var,"is","##"))<br>
+   
+   ''is' replaced by ## ignores the characters before the first occurence<br>
+   msgbox("Line 4: " & Replace(var,"is","##",5))<br>
+   
+   ''s' is replaced by ## for the next 2 occurences.<br>
+   msgbox("Line 5: " & Replace(var,"s","##",1,2))<br>
+  
+   ''r' is replaced by ## for all occurences textual comparison.<br>
+   msgbox("Line 6: " & Replace(var,"r","##",1,-1,1))<br>
+  
+   ''t' is replaced by ## for all occurences Binary comparison<br>
+   msgbox("Line 7: " & Replace(var,"t","##",1,-1,0))<br>
+  
+End Sub</div>
+<div class="line"></div>
+
+<h2>Space Function</h2>
+<div>The Space function fills a string with a specific number of spaces.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>space(number)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim var1 as Variant<br>
+   
+   var1 = "Microsoft"<br>
+   Dim var2 as Variant<br>
+   
+   var2 = "VBScript"<br>
+   msgbox(var1 & Space(2)& var2)<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>strComp Function</h2>
+<div>The StrComp function returns an integer value after comparing the two given strings. It can return any of the three values -1, 0, or 1 based on the input strings to be compared.</div>
+<div>
+    <ul>
+        <li>If String 1 < String 2, then StrComp returns -1</li>
+        <li>If String 1 = String 2, then StrComp returns 0</li>
+        <li>If String 1 > String 2, then StrComp returns 1</li>
+    </ul>
+</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>StrComp(string1,string2[,compare]) </div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim var1 as Variant<br>
+   msgbox("Line 1 :" & StrComp("Microsoft","Microsoft"))<br>
+   msgbox("Line 2 :" &StrComp("Microsoft","MICROSOFT"))<br>
+   msgbox("Line 3 :" &StrComp("Microsoft","MiCrOsOfT"))<br>
+   msgbox("Line 4 :" &StrComp("Microsoft","MiCrOsOfT",1))<br>
+   msgbox("Line 5 :" &StrComp("Microsoft","MiCrOsOfT",0))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>String Function</h2>
+<div>The String function fills a string with the specified character for specified number of times.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>String(number,character)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   msgbox("Line 1 :" & String(3,"$"))<br>
+   msgbox("Line 2 :" & String(4,"*"))<br>
+   msgbox("Line 3 :" & String(5,100))<br>
+   msgbox("Line 4 :" & String(6,"ABCDE"))<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>String Reverse Function</h2>
+<div>The StrReverse function reverses the specified string.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>StrReverse(string)</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   msgbox("Line 1 : " & StrReverse("VBSCRIPT"))<br>
+   msgbox("Line 2 : " & StrReverse("My First VBScript"))<br>
+   msgbox("Line 3 : " & StrReverse("123.45"))
+End Sub</div>
+
+
+		<br><br><a href="loops-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="strings-assignment.html"><button class="btn btn-success">Next</button></a>
+
+           
+  
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

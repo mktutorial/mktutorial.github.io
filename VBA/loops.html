@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+
+    <title>Loops-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/vba/loops.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>VBA</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of VBA</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+                   <li>
+                    <a href="excel-terms.html">Excel Terms</a>
+                </li>
+                <li>
+                    <a href="excel-terms-assignment.html">Excel Terms Assignment</a>
+                </li>
+                 <li>
+                    <a href="messageandinputbox.html">Message and Input Box</a>
+                </li>
+                <li>
+                    <a href="messageandinputbox-assignment.html">Message and Input Box Assignment</a>
+                </li>
+                  <li>
+                    <a href="variablesandconstant.html">Variable and Constant</a>
+                </li>
+                <li>
+                    <a href="variablesandconstant-assignment.html">Variable and Constant Assignment</a>
+                </li>
+                 <li>
+                    <a href="operatoranddecision.html">Operator and Decision</a>
+                </li>
+                <li>
+                    <a href="operatoranddecision-assignment.html">Operator and Decision Assignment</a>
+                </li>
+                 <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+                <li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+                <li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="dateandtime.html">Date and Time</a>
+                </li>
+                <li>
+                    <a href="dateandtime-assignment.html">Date and Time Assignment</a>
+                </li>
+                 <li>
+                    <a href="Arrays.html">Arrays</a>
+                </li>
+                <li>
+                    <a href="Arrays-assignment.html">Arrays Assignment</a>
+                </li>
+                 <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="events-assignment.html">Events Assignment</a>
+                </li>
+                <li>
+                    <a href="errorhandling.html">Error Handling</a>
+                </li>
+                <li>
+                    <a href="errorhandling-assignment.html">Error Handling Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+           <h2>VBA - Loops</h2>
+           <div>A loop statement allows us to execute a statement or group of statements multiple times.VBA provides the following types of loops to handle looping requirements.</div>
+           <div class="line"></div>
+           
+           <h2>VBA For loop</h2>
+           <div>Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</div>
+           <br>
+           <div><b>Syntax:-</b></div>
+           <br>
+           <div>For counter = start To end [Step stepcount]<br>
+   [statement 1]<br>
+   [statement 2]<br>
+   ....<br>
+   [statement n]<br>
+   [Exit For]<br>
+   [statement 11]<br>
+   [statement 22]<br>
+   ....<br>
+   [statement n]<br>
+Next</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim a As Integer<br>
+   a = 10<br>
+   
+   For i = 0 To a Step 2<br>
+      MsgBox "The value is i is : " & i<br>
+   Next<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2> VBA For ..each loop</h2>
+<div>This is executed if there is at least one element in the group and reiterated for each element in a group.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>For Each element In Group<br>
+   [statement 1]<br>
+   [statement 2]<br>
+   ....<br>
+   [statement n]<br>
+   [Exit For]<br>
+   [statement 11]<br>
+   [statement 22]<br>
+Next</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click() <br> 
+   'fruits is an array<br>
+   fruits = Array("apple", "orange", "cherries")<br>
+   Dim fruitnames As Variant<br>
+ 
+   'iterating using For each loop.<br>
+   For Each Item In fruits<br>
+      fruitnames = fruitnames & Item & Chr(10)<br>
+   Next<br>
+   
+   MsgBox fruitnames<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>VBA while..wend loop</h2></h2>
+<div>This tests the condition before executing the loop body.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>While condition(s)<br>
+   [statements 1]<br>
+   [statements 2]<br>
+   ...<br>
+   [statements n]<br>
+Wend</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim Counter :  Counter = 10  <br> 
+   
+   While Counter < 15     ' Test value of Counter.<br>
+      Counter = Counter + 1   ' Increment Counter.<br>
+      msgbox "The Current Value of the Counter is : " & Counter<br>
+   Wend   ' While loop exits if Counter Value becomes 15.<br>
+End Sub </div>
+<div class="line"></div>
+
+
+<h2>VBA do..while loops</h2>
+<div>The do..While statements will be executed as long as the condition is True.(i.e.,) The Loop should be repeated till the condition is False.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>Do While condition<br>
+   [statement 1]<br>
+   [statement 2]<br>
+   ...<br>
+   [statement n]<br>
+   [Exit Do]<br>
+   [statement 1]<br>
+   [statement 2]<br>
+   ...<br>
+   [statement n]<br>
+Loop         </div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Do While i < 5<br>
+      i = i + 1<br>
+      msgbox "The value of i is : " & i<br>
+   Loop<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>VBA do..until loops</h2>
+<div>The do..Until statements will be executed as long as the condition is False.(i.e.,) The Loop should be repeated till the condition is True.</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div>Do Until condition<br>
+   [statement 1]<br>
+   [statement 2]<br>
+   ...<br>
+   [statement n]<br>
+   [Exit Do]<br>
+   [statement 1]<br>
+   [statement 2]<br>
+   ...<br>
+   [statement n]<br>
+Loop      </div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click() <br>
+   i = 10<br>
+   Do Until i>15  'Condition is False.Hence loop will be executed<br>
+      i = i + 1<br>
+      msgbox ("The value of i is : " & i)<br>
+   Loop <br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Loop Control Statements</h2>
+<div>Loop control statements change execution from its normal sequence. When execution leaves a scope, all the remaining statements in the loop are NOT executed.VBA supports the following control statements.</div>
+<div class="line"></div>
+
+<h2>Exit For statement</h2>
+<div>Terminates the For loop statement and transfers the execution to the statement immediately following the loop</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div> Exit For</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   Dim a As Integer<br>
+   a = 10<br>
+   
+   For i = 0 To a Step 2 'i is the counter variable and it is incremented by 2<br>
+      MsgBox ("The value is i is : " & i)<br>
+      If i = 4 Then<br>
+         i = i * 10 'This is executed only if i=4<br>
+         MsgBox ("The value is i is : " & i)<br>
+         Exit For 'Exited when i=4<br>
+      End If<br>
+   Next<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>Exit Do statement</h2>
+<div>Terminates the Do While statement and transfers the execution to the statement immediately following the loop</div>
+<br>
+<div><b>Syntax:-</b></div>
+<br>
+<div> Exit Do</div>
+<br>
+<div><b>Example:-</b></div>
+<br>
+<div>Private Sub Constant_demo_Click()<br>
+   i = 0<br>
+   Do While i <= 100<br>
+      If i > 10 Then<br>
+         Exit Do   ' Loop Exits if i>10<br>
+      End If<br>
+      MsgBox ("The Value of i is : " & i)<br>
+      i = i + 2<br>
+   Loop<br>
+End Sub</div>
+		<br><br><a href="operatoranddecision-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="loops-assignment.html"><button class="btn btn-success">Next</button></a>
+
+           
+  
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

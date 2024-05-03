@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,">
+		<meta name="keyword" content="mktutorial, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Operator and Decision-MK Tutorial</title>
+<link rel="canonical" href="https://www.mktutorial.in/vba/operatoranddecision.html">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>VBA</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="basics.html">Basics Of VBA</a>
+                </li>
+                <li>
+                    <a href="basics-assignment.html">Basics Assignment</a>
+                </li>
+                   <li>
+                    <a href="excel-terms.html">Excel Terms</a>
+                </li>
+                <li>
+                    <a href="excel-terms-assignment.html">Excel Terms Assignment</a>
+                </li>
+                 <li>
+                    <a href="messageandinputbox.html">Message and Input Box</a>
+                </li>
+                <li>
+                    <a href="messageandinputbox-assignment.html">Message and Input Box Assignment</a>
+                </li>
+                  <li>
+                    <a href="variablesandconstant.html">Variable and Constant</a>
+                </li>
+                <li>
+                    <a href="variablesandconstant-assignment.html">Variable and Constant Assignment</a>
+                </li>
+                 <li>
+                    <a href="operatoranddecision.html">Operator and Decision</a>
+                </li>
+                <li>
+                    <a href="operatoranddecision-assignment.html">Operator and Decision Assignment</a>
+                </li>
+                 <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+                <li>
+                    <a href="loops-assignment.html">Loops Assignment</a>
+                </li>
+                <li>
+                    <a href="strings.html">Strings</a>
+                </li>
+                <li>
+                    <a href="strings-assignment.html">Strings Assignment</a>
+                </li>
+                 <li>
+                    <a href="dateandtime.html">Date and Time</a>
+                </li>
+                <li>
+                    <a href="dateandtime-assignment.html">Date and Time Assignment</a>
+                </li>
+                 <li>
+                    <a href="Arrays.html">Arrays</a>
+                </li>
+                <li>
+                    <a href="Arrays-assignment.html">Arrays Assignment</a>
+                </li>
+                 <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="events-assignment.html">Events Assignment</a>
+                </li>
+                <li>
+                    <a href="errorhandling.html">Error Handling</a>
+                </li>
+                <li>
+                    <a href="errorhandling-assignment.html">Error Handling Assignment</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                 <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+           <h2>VBA - Operators</h2>
+           <div>An Operator can be defined using a simple expression - 4 + 5 is equal to 9. Here, 4 and 5 are called operands and + is called operator. VBA supports following types of operators −</div><br>
+           <div>
+               <ul>
+                   <li>Arithmetic Operators</li>
+                   <li>Comparison Operators</li>
+                   <li>Logical (or Relational) Operators</li>
+                   <li>Concatenation Operators</li>
+               </ul>
+           </div>
+           <div class="line"></div>
+           
+           <h2>The Arithmatic Operators</h2>
+           <div>Following arithmetic operators are supported by VBA.Assume variable A holds 5 and variable B holds 10, then −</div><br>
+           <div>
+               <table border="1">
+                   <tr>
+                       <th>Operator</th>
+                       <th>Description</th>
+                       <th>Example</th>
+                   </tr>
+                   <tr>
+                       <td>+</td>
+                       <td>Adds the two operands</td>
+                       <td>A + B will give 15</td>
+                   </tr>
+                   <tr>
+                       <td>-</td>
+                       <td>Subtracts the second operand from the first</td>
+                       <td>A - B will give -5</td>
+                   </tr>
+                   <tr>
+                       <td>*</td>
+                       <td>Multiplies both the operands</td>
+                       <td>A * B will give 50</td>
+                   </tr>
+                   <tr>
+                       <td>/</td>
+                       <td>Divides the numerator by the denominator</td>
+                       <td>B / A will give 2</td>
+                   </tr>
+                   <tr>
+                       <td>%</td>
+                       <td>Modulus operator and the remainder after an integer division</td>
+                       <td>B % A will give 0</td>
+                   </tr>
+                   <tr>
+                       <td>^</td>
+                       <td>Exponentiation operator</td>
+                       <td>B ^ A will give 100000</td>
+                   </tr>
+               </table>
+           </div>
+           <div class="line"></div>
+           
+           <h2>The Comparison Operators</h2>
+           <div>There are following comparison operators supported by VBA.Assume variable A holds 10 and variable B holds 20, then −</div><br>
+           <div>
+               <table border="1">
+                   <tr>
+                       <th>Operator</th>
+                       <th>Description</th>
+                       <th>Example</th>
+                   </tr>
+                   <tr>
+                       <td>=</td>
+                       <td>Checks if the value of the two operands are equal or not. If yes, then the condition is true.</td>
+                       <td>(A = B) is False.</td>
+                   </tr>
+                   <tr>
+                       <td><></td>
+                       <td>Checks if the value of the two operands are equal or not. If the values are not equal, then the condition is true.</td>
+                       <td>(A <> B) is True.</td>
+                   </tr>
+                   <tr>
+                       <td>&gt;</td>
+                       <td>Checks if the value of the left operand is greater than the value of the right operand. If yes, then the condition is true.</td>
+                       <td>(A &gt; B) is False.</td>
+                   </tr>
+                   <tr>
+                       <td>&lt;</td>
+                       <td>Checks if the value of the left operand is less than the value of the right operand. If yes, then the condition is true.</td>
+                       <td>(A &lt; B) is True.</td>
+                   </tr>
+                   <tr>
+                       <td>&gt;=</td>
+                       <td>Checks if the value of the left operand is greater than or equal to the value of the right operand. If yes, then the condition is true.</td>
+                       <td>(A &gt;= B) is False.</td>
+                   </tr>
+                   <tr>
+                       <td>&lt;=</td>
+                       <td>Checks if the value of the left operand is less than or equal to the value of the right operand. If yes, then the condition is true.</td>
+                       <td>(A &lt;= B) is True.</td>
+                   </tr>
+               </table>
+           </div>
+           <div class="line"></div>
+           
+           <h2>The Logical Operators</h2>
+           <div>Following logical operators are supported by VBA.Assume variable A holds 10 and variable B holds 0, then −</div><br>
+           <div>
+               <table border="1">
+                   <tr>
+                       <th>Operator</th>
+                       <th>Description</th>
+                       <th>Example</th>
+                   </tr>
+                   <tr>
+                       <td>AND</td>
+                       <td>Called Logical AND operator. If both the conditions are True, then the Expression is true.</td>
+                       <td>a&lt;&gt;0 AND b&lt;&gt;0 is False</td>
+                   </tr>
+                   <tr>
+                       <td>OR</td>
+                       <td>Called Logical OR Operator. If any of the two conditions are True, then the condition is true.</td>
+                       <td>a&lt;&gt;0 OR b&lt;&gt;0 is true.</td>
+                   </tr>
+                   <tr>
+                       <td>NOT</td>
+                       <td>Called Logical NOT Operator. Used to reverse the logical state of its operand. If a condition is true, then Logical NOT operator will make false.</td>
+                       <td>NOT(a&lt;&gt;0 OR b&lt;&gt;0) is false.</td>
+                   </tr>
+                   <tr>
+                       <td>XOR</td>
+                       <td>Called Logical Exclusion. It is the combination of NOT and OR Operator. If one, and only one, of the expressions evaluates to be True, the result is True.</td>
+                       <td>(a&lt;&gt;0 XOR b&lt;&gt;0) is true.</td>
+                   </tr>
+               </table>
+           </div>
+           <div class="line"></div>
+           
+           <h2>The Concatenation Operators</h2>
+           <div>Following Concatenation operators are supported by VBA.Assume variable A holds 5 and variable B holds 10 then −</div><br>
+           <div>
+               <table border="1">
+                   <tr>
+                      <th>Operator</th>
+                       <th>Description</th>
+                       <th>Example</th>
+                   </tr>
+                   <tr>
+                       <td>+</td>
+                       <td>Adds two Values as Variable. Values are Numeric</td>
+                       <td>A + B will give 15</td>
+                   </tr>
+                   <tr>
+                       <td>&</td>
+                       <td>Concatenates two Values</td>
+                       <td>A & B will give 510</td>
+                   </tr>
+               </table>
+           </div><br><br>
+           <div>Assume variable A = "Microsoft" and variable B = "VBScript", then −</div><br>
+           <div>
+               <table border="1">
+                   <tr>
+                       <th>Operator</th>
+                       <th>Description</th>
+                       <th>Example</th>
+                   </tr>
+                   <tr>
+                       <td>+</td>
+                       <td>Concatenates two Values</td>
+                       <td>A + B will give MicrosoftVBScript</td>
+                   </tr>
+                   <tr>
+                       <td>&</td>
+                       <td>Concatenates two Values</td>
+                       <td>A & B will give MicrosoftVBScript</td>
+                   </tr>
+               </table>
+           </div><br>
+           <div><b>Note − </b>Concatenation Operators can be used for both numbers and strings. The output depends on the context, if the variables hold numeric value or string value.</div>
+           <div class="line"></div>
+           
+           
+           <h2>VBA - Decisions</h2>
+           <div>Decision making allows the programmers to control the execution flow of a script or one of its sections. The execution is governed by one or more conditional statements.VBA provides the following types of decision making statements.</div>
+           <div class="line"></div>
+           
+           <h2>VBA - If Statement</h2>
+           <div>If check the condition if condition is true then do something otherwise do nothing.</div><br>
+           <div><b>Syntax:-</b></div><br>
+           <div>If(boolean_expression) Then<br>
+   Statement 1<br>
+   .....<br>
+   .....<br>
+   Statement n<br>
+End If</div><br>
+<div><b>Example:-</b></div><br>
+<div>Private Sub if_demo_Click()<br>
+   Dim x As Integer<br>
+   Dim y As Integer<br>
+    
+   x = 234<br>
+   y = 32<br>
+    
+   If x > y Then<br>
+      MsgBox "X is Greater than Y"<br>
+   End If<br>
+End Sub</div>
+<div class="line"></div>
+
+<h2>VBA - If-Else Statement</h2>
+           <div>If check the condition if condition is true then do something otherwise do something else.</div><br>
+           <div><b>Syntax:-</b></div><br>
+           <div>If(boolean_expression) Then<br>
+   Statement 1<br>
+   .....<br>
+   .....<br>
+   Statement n<br>
+Else<br>
+   Statement 1<br>
+   .....<br>
+   ....<br>
+   Statement n<br>
+End If</div><br>
+<div><b>Example:-</b></div><br>
+<div>Private Sub if_demo_Click()<br>
+   Dim x As Integer<br>
+   Dim y As Integer<br>
+    
+   x = 234<br>
+   y = 324<br>
+    
+   If x > y Then<br>
+      MsgBox "X is Greater than Y"<br>
+   Else<br>
+      Msgbox "Y is Greater than X"<br>
+   End If<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>VBA - If Elseif - Else statement</h2>
+           <div>If check the condition if condition is true then do something otherwise check the next condition.</div><br>
+           <div><b>Syntax:-</b></div><br>
+           <div>If(boolean_expression) Then<br>
+   Statement 1<br>
+   .....<br>
+   .....<br>
+   Statement n<br>
+ElseIf (boolean_expression) Then<br>
+   Statement 1<br>
+   .....<br>
+   ....<br>
+   Statement n<br>
+ElseIf (boolean_expression) Then<br>
+   Statement 1<br>
+   .....<br>
+   ....<br>
+   Statement n<br>
+Else<br>
+   Statement 1<br>
+   .....<br>
+   ....<br>
+   Statement n<br>
+End If</div><br>
+<div><b>Example:-</b></div><br>
+<div>Private Sub if_demo_Click()<br>
+   Dim x As Integer<br>
+   Dim y As Integer<br>
+    
+   x = 234<br>
+   y = 234<br>
+    
+   If x > y Then<br>
+      MsgBox "X is Greater than Y"<br>
+   ElseIf y > x Then<br>
+      Msgbox "Y is Greater than X"<br>
+   Else<br>
+      Msgbox "X and Y are EQUAL"<br>
+   End If<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>VBA - Nested If Statement</h2>
+           <div>If check the condition if condition is true then do something otherwise check the next condition.</div><br>
+           <div><b>Syntax:-</b></div><br>
+           <div>If(boolean_expression) Then<br>
+   Statement 1<br>
+   .....<br>
+   .....<br>
+   Statement n<br>
+   
+   If(boolean_expression) Then<br>
+      Statement 1<br>
+      .....<br>
+      .....<br>
+      Statement n<br>
+   ElseIf (boolean_expression) Then<br>
+      Statement 1<br>
+      .....<br>
+      ....<br>
+      Statement n<br>
+   Else<br>
+      Statement 1<br>
+      .....<br>
+      ....<br>
+      Statement n<br>
+   End If<br>
+Else<br>
+   Statement 1<br>
+	.....<br>
+	....<br>
+   Statement n<br>
+End If</div><br>
+<div><b>Example:-</b></div><br>
+<div>Private Sub nested_if_demo_Click()<br>
+   Dim a As Integer<br>
+   a = 23<br>
+  
+   If a > 0 Then<br>
+      MsgBox "The Number is a POSITIVE Number"<br>
+      
+      If a = 1 Then<br>
+         MsgBox "The Number is Neither Prime NOR Composite"<br>
+      ElseIf a = 2 Then<br>
+         MsgBox "The Number is the Only Even Prime Number"<br>
+      ElseIf a = 3 Then<br>
+         MsgBox "The Number is the Least Odd Prime Number"<br>
+      Else<br>
+         MsgBox "The Number is NOT 0,1,2 or 3"<br>
+      End If<br>
+   ElseIf a < 0 Then<br>
+      MsgBox "The Number is a NEGATIVE Number"<br>
+   Else<br>
+      MsgBox "The Number is ZERO"<br>
+   End If<br>
+End Sub</div>
+<div class="line"></div>
+
+
+<h2>VBA - Switch Statement</h2>
+           <div>It checks the condition choice wise.</div><br>
+           <div><b>Syntax:-</b></div><br>
+           <div>Select Case expression<br>
+   Case expressionlist1<br>
+      statement1<br>
+      statement2<br>
+      ....<br>
+      ....<br>
+      statement1n<br>
+   Case expressionlist2<br>
+      statement1<br>
+      statement2<br>
+      ....<br>
+      ....<br>
+   Case expressionlistn<br>
+      statement1<br>
+      statement2<br>
+      ....<br>
+      ....   <br>
+   Case Else<br>
+      elsestatement1<br>
+      elsestatement2<br>
+      ....<br>
+      ....<br>
+End Select</div><br>
+<div><b>Example:-</b></div><br>
+<div>Private Sub switch_demo_Click()<br>
+   Dim MyVar As Integer<br>
+   MyVar = 1<br>
+  
+   Select Case MyVar<br>
+      Case 1<br>
+         MsgBox "The Number is the Least Composite Number"<br>
+      Case 2<br>
+         MsgBox "The Number is the only Even Prime Number"<br>
+      Case 3<br>
+         MsgBox "The Number is the Least Odd Prime Number"<br>
+      Case Else<br>
+         MsgBox "Unknown Number"<br>
+   End Select<br>
+End Sub</div>
+
+           
+		<br><br><a href="variablesandconstant-assignment.html"><button class="btn btn-success">Previous</button></a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="operatoranddecision-assignment.html"><button class="btn btn-success">Next</button></a>
+
+           
+  
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
