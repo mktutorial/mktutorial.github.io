@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Well organized and easy to understand Web building tutorial with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java">
+		<meta name="keyword" content="mktutorial,bootstrap5.tooltip, html,python,c,c++,sql,javascript,css, tutorial, html 5,how to, beginners, professionals, introduction, example,bootstrap,vba,Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips " >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-adsense-account" content="ca-pub-7164040233394959">
+<link rel="icon" type="image/x-icon" href="../MK.png">
+    <title>Bootstrap-Tooltip-MK Tutorial</title>
+    <link rel="canonical" href="https://www.mktutorial.in/Bootstrap/tooltip.html">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9528213249119409"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5VBWHH89L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5VBWHH89L');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7164040233394959"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>BOOTSTRAP-Tolltip</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+               
+                
+                <li>
+                    <a href="index.html">Basics Of Bootstrap</a>
+                </li>
+                 <li>
+                    <a href="container.html">Bootstrap-Container</a>
+                </li>
+                <li>
+                    <a href="grid.html">Bootstrap-Grid</a>
+                </li>
+                <li>
+                    <a href="color.html">Bootstrap-Color</a>
+                </li>
+                 <li>
+                    <a href="table.html">Bootstrap-Table</a>
+                </li>
+                 <li>
+                    <a href="image.html">Bootstrap-Image</a>
+                </li>
+                <li>
+                    <a href="jumbotron.html">Bootstrap-Jumbotron</a>
+                </li>
+                <li>
+                    <a href="alert.html">Bootstrap-Alert</a>
+                </li>
+                <li>
+                    <a href="badges.html">Bootstrap-Badges</a>
+                </li>
+                <li>
+                    <a href="button.html">Bootstrap-Button</a>
+                </li>
+                <li>
+                    <a href="progress.html">Bootstrap-Progress Bar</a>
+                </li>
+                <li>
+                    <a href="spinner.html">Bootstrap-Spinners</a>
+                </li>
+                <li>
+                    <a href="pagination.html">Bootstrap-Pagination</a>
+                </li>
+                <li>
+                    <a href="list.html">Bootstrap-List Groups</a>
+                </li>
+                <li>
+                    <a href="card.html">Bootstrap-Cards</a>
+                </li>
+                <li>
+                    <a href="caro.html">Bootstrap-Carousel</a>
+                </li>
+                <li>
+                    <a href="navbar.html">Bootstrap-Navbar</a>
+                </li><li>
+                    <a href="tooltip.html">Bootstrap-Tooltip</a>
+                </li>
+                <li>
+                    <a href="popover.html">Bootstrap-Popover</a>
+                </li>
+                <li>
+                     <a href="modal.html">Bootstrap-Modal</a>
+                </li>
+                <li>
+                    <a href="form.html">Bootstrap-Forms</a>
+                </li>
+                <li>
+                    <a href="media.html">Bootstrap-Media-Query</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a href="/index.html"> <img src="images/home.png" alt="home"> </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html/index.html">HTML</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../CSS/index.html">CSS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../javascript/home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Bootstrap/index.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../jquery/index.html">JQuery</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../C/basics.html">C</a>
+                            </li>
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../C++/basics.html">C++</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../python/basics.html">Python</a>
+                            </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="../SQL/basics.html">SQL</a>
+                            </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../VBA/basics.html">VBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <h2>Bootstrap 5-Tooltips</h2><br>
+    <p>The Tooltip component is small pop-up box that appears when the user moves the mouse pointer over an element:<br><br>To create a tooltip, add the <b>data-bs-toggle="tooltip"</b> attribute to an element.<br><br>Use the <b>title</b> attribute to specify the text that should be displayed inside the tooltip:<p>
+   <hr>
+<h2>Basic Tooltip example</h2>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title> Bootstrap 5 Example &lt;/title&gt; <br> 
+&lt;meta name = "viewport" content = "width=device-width, initial-scale = 1"&gt; <br> 
+&lt;link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;<br>  
+&lt;script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"&gt;  <br>
+&lt;/script&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;div class="container"&gt;<br>
+&lt;h2&gt;Bootstrap 5 Tooltip with Anchor Tag &lt;/h2&gt;<br>
+&lt;a href = "#" type = "button" data-bs-toggle = "tooltip" title = "Thank You!" &gt;
+Hover Here! &lt;/a&gt;<br>
+ &lt;/div&gt;  <br>
+  &lt;script&gt;  <br>
+   var tooltipList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "tooltip"]'))  <br>
+var tooltipList2 = tooltipList1.map(function (tooltipTriggerfun) {  <br>
+return new bootstrap.Tooltip(tooltipTriggerfun)    <br>
+   &lt;script&gt;  <br>
+   &lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<h2>Output</h2>
+<html lang = "en">
+<head>
+<title> Bootstrap 5 Example </title>
+
+</head>
+<body>
+<div class="container">
+<h2>Bootstrap 5 Tooltip with Anchor Tag </h2>
+<a href = "#" type = "button" data-bs-toggle = "tooltip" title = "Thank You!" > Hover Here! </a>
+</div>
+<script>
+var tooltipList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "tooltip"]'))
+var tooltipList2 = tooltipList1.map(function (tooltipTriggerfun) {
+return new bootstrap.Tooltip(tooltipTriggerfun)
+</script>
+</body>
+</html>
+<br>
+<h2>Basic Tooltip with button function </h2>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title> Bootstrap 5 Example &lt;/title&gt; <br> 
+&lt;meta name = "viewport" content = "width=device-width, initial-scale = 1"&gt; <br> 
+&lt;link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;<br>  
+&lt;script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"&gt;  <br>
+&lt;/script&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;div class="container"&gt;<br>
+&lt;h2&gt;Bootstrap 5 Tooltip with Button &lt;/h2&gt;<br>
+&lt;button href = "#" class = "btn btn-info" type = "button" data-bs-toggle = "tooltip" title = "Thank You!"" &gt;
+Hover Here! &lt;/button&gt;<br>
+ &lt;/div&gt;  <br>
+  &lt;script&gt;  <br>
+   var tooltipList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "tooltip"]'))  <br>
+var tooltipList2 = tooltipList1.map(function (tooltipTriggerfun) {  <br>
+return new bootstrap.Tooltip(tooltipTriggerfun)    <br>
+   &lt;/script&gt;  <br>
+   &lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<h2>Output</h2>
+<html lang = "en">
+<head>
+<title> Bootstrap 5 Example </title>
+</head>
+<body>
+<div class="container">
+<h2>Bootstrap 5 Tooltip with Button </h2>
+<button href = "#" class = "btn btn-info" type = "button" data-bs-toggle = "tooltip" title = "Thank You!"" > Hover Here! </button>
+</div>
+<script>
+var tooltipList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "tooltip"]'))
+var tooltipList2 = tooltipList1.map(function (tooltipTriggerfun) {
+return new bootstrap.Tooltip(tooltipTriggerfun)
+</script>
+</body>
+</html>
+<br>
+<h2> Tooltip with Position </h2>
+&lt;html lang = "en"&gt;  <br>
+&lt;head&gt;  <br>
+&lt;title> Bootstrap 5 Example &lt;/title&gt; <br> 
+&lt;meta name = "viewport" content = "width=device-width, initial-scale = 1"&gt; <br> 
+&lt;link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;<br>  
+&lt;script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"&gt;  <br>
+&lt;/script&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+&lt;div class="container"&gt;<br>
+&lt;h2&gt;Bootstrap 5 Tooltip with Button &lt;/h2&gt;<br>
+&lt;button href = "#" class = "btn btn-info" type = "button" data-bs-toggle = "tooltip" data-bs-placement = "right" title = "Thank You!"" &gt;
+Hover Here! &lt;/button&gt;<br>
+ &lt;/div&gt;  <br>
+  &lt;script&gt;  <br>
+   var tooltipList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "tooltip"]'))  <br>
+var tooltipList2 = tooltipList1.map(function (tooltipTriggerfun) {  <br>
+return new bootstrap.Tooltip(tooltipTriggerfun)    <br>
+   &lt;/script&gt;  <br>
+   &lt;/body&gt;  <br>
+&lt;/html&gt; <br>
+<h2>Output</h2>
+<html lang = "en">
+<head>
+<title> Bootstrap 5 Example </title>
+
+</head>
+<body>
+<div class="container">
+<h2>Bootstrap 5 Tooltip with Button </h2>
+<button href = "#" class = "btn btn-info" type = "button" data-bs-toggle = "tooltip" data-bs-placement = "top" title = "Thank You!"" > Hover Here! </button>
+</div>
+<script>
+var tooltipList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "tooltip"]'))
+var tooltipList2 = tooltipList1.map(function (tooltipTriggerfun) {
+return new bootstrap.Tooltip(tooltipTriggerfun)
+</script>
+</body>
+</html>
+
+<br>
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
